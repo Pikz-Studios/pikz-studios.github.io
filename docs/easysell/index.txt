@@ -1,0 +1,1908 @@
+1:"$Sreact.fragment"
+2:I[39756,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"default"]
+3:I[37457,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"default"]
+a:I[68027,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"default",1]
+:HL["/_next/static/chunks/38h9zm6zvt3ca.css","style"]
+:HL["/_next/static/media/797e433ab948586e-s.p.0r6juujl39pe6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+4:T5b5e,
+.dx-root{
+  --dx-nav-w:270px;
+  --dx-toc-w:230px;
+  --dx-topbar-h:52px;
+
+  --dx-bg:#0a0a0b;
+  --dx-bg-soft:#0f0f11;
+  --dx-panel:#131316;
+  --dx-panel-2:#191a1e;
+  --dx-border:rgba(255,255,255,.08);
+  --dx-border-strong:rgba(255,255,255,.15);
+
+  --dx-heading:#f2f2f3;
+  --dx-text:#b4b6bd;
+  --dx-muted:#8b8d95;
+  --dx-faint:#6a6c74;
+
+  --accent:#ef4444;
+  --dx-accent-high:#fca5a5;
+  --dx-accent-low:rgba(239,68,68,.14);
+
+  color:var(--dx-text);
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+/* Flat canvas. */
+body:has(.dx-root){background:var(--dx-bg) !important;background-image:none !important}
+html:has(.dx-root){background:#0a0a0b}
+.dx-root::before{content:"";position:fixed;inset:0;background:#0a0a0b;z-index:-1}
+
+/* ── Mobile top bar (hidden on desktop; the sidebar is the chrome) ────────── */
+.dx-topbar{display:none;position:fixed;top:0;left:0;right:0;z-index:50;height:var(--dx-topbar-h);
+  align-items:center;gap:10px;padding:0 14px;
+  background:color-mix(in srgb,var(--dx-bg) 88%,transparent);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--dx-border)}
+.dx-menu-btn{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;
+  border-radius:8px;border:1px solid var(--dx-border);background:var(--dx-panel);color:var(--dx-text);
+  cursor:pointer;flex:0 0 auto}
+.dx-menu-btn:hover{color:var(--dx-heading);border-color:var(--dx-border-strong)}
+
+/* ── Brand ──────────────────────────────────────────────────────────────── */
+.dx-brand{display:flex;align-items:center;gap:9px;min-width:0;
+  color:var(--dx-heading);text-decoration:none;font-size:14.5px;font-weight:650;letter-spacing:-.015em;
+  white-space:nowrap}
+.dx-brand:hover{color:#fff}
+.dx-brand-mark{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;
+  border-radius:7px;background:linear-gradient(135deg,var(--accent),#f97316);color:#fff;
+  font-size:11.5px;font-weight:800;flex:0 0 auto}
+.dx-brand-txt{overflow:hidden;text-overflow:ellipsis}
+
+/* ── Sidebar ────────────────────────────────────────────────────────────── */
+.dx-sidebar{position:fixed;top:0;left:0;bottom:0;width:var(--dx-nav-w);z-index:45;
+  display:flex;flex-direction:column;background:var(--dx-bg-soft);
+  border-right:1px solid var(--dx-border)}
+.dx-side-head{display:flex;align-items:center;justify-content:space-between;gap:10px;
+  height:56px;padding:0 14px;flex:0 0 auto}
+.dx-side-close{display:none;align-items:center;justify-content:center;width:30px;height:30px;
+  border-radius:7px;border:1px solid transparent;background:none;color:var(--dx-faint);cursor:pointer}
+.dx-side-close:hover{color:var(--dx-heading);border-color:var(--dx-border);background:var(--dx-panel)}
+
+.dx-sidebar .dx-search{margin:0 14px 10px;width:auto}
+.dx-scope{position:relative;margin:0 14px 12px;flex:0 0 auto}
+.dx-scope-btn{display:flex;align-items:center;gap:8px;width:100%;height:38px;padding:0 11px;
+  border-radius:9px;border:1px solid var(--dx-border);background:var(--dx-panel);
+  color:var(--dx-heading);font:inherit;font-size:13.5px;font-weight:550;cursor:pointer;text-align:left;
+  transition:border-color .15s,background .15s}
+.dx-scope-btn:hover{border-color:var(--dx-border-strong);background:var(--dx-panel-2)}
+.dx-scope-btn>span{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis}
+.dx-scope-btn svg{color:var(--dx-faint);flex:0 0 auto}
+.dx-scope-chev{transition:transform .18s}
+.dx-scope-btn[aria-expanded="true"] .dx-scope-chev{transform:rotate(180deg)}
+.dx-scope-pop{position:absolute;top:42px;left:0;right:0;z-index:60;padding:4px;
+  border-radius:10px;border:1px solid var(--dx-border-strong);background:var(--dx-panel);
+  box-shadow:0 24px 55px -22px rgba(0,0,0,.9)}
+.dx-scope-item{display:block;width:100%;padding:8px 10px;border:none;background:none;border-radius:7px;
+  color:var(--dx-text);font:inherit;font-size:13.5px;text-align:left;cursor:pointer}
+.dx-scope-item:hover{background:var(--dx-panel-2);color:var(--dx-heading)}
+.dx-scope-item.active{color:var(--dx-accent-high);background:var(--dx-accent-low);font-weight:600}
+
+.dx-nav{flex:1 1 auto;min-height:0;overflow-y:auto;padding:2px 14px 24px}
+.dx-nav-group+.dx-nav-group{margin-top:20px}
+.dx-nav-label{display:block;padding:5px 10px;color:var(--dx-heading);text-decoration:none;
+  font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.07em}
+.dx-nav-label:hover{color:var(--dx-accent-high)}
+/* The guide-rail: items hang off a hairline, the active one lights it up. */
+.dx-nav-items{display:flex;flex-direction:column;gap:1px;margin-top:5px;padding-left:10px;
+  border-left:1px solid var(--dx-border)}
+.dx-nav-link{position:relative;display:flex;align-items:center;justify-content:space-between;gap:8px;
+  padding:6px 10px;border-radius:7px;color:var(--dx-muted);text-decoration:none;font-size:13.5px;line-height:1.45}
+.dx-nav-link::before{content:"";position:absolute;left:-11px;top:5px;bottom:5px;width:1px;background:transparent}
+.dx-nav-link:hover{color:var(--dx-heading);background:rgba(255,255,255,.04)}
+.dx-nav-link.active{color:#fff;background:var(--dx-accent-low);font-weight:600}
+.dx-nav-link.active::before{background:var(--accent)}
+.dx-nav-img{width:20px;height:20px;border-radius:5px;object-fit:cover;flex:none;margin-right:0}.dx-nav-ph{background:rgba(255,255,255,.06)}
+.dx-nav-txt{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.dx-badge{flex:0 0 auto;padding:1px 6px;border-radius:999px;font-size:10px;font-weight:700;letter-spacing:.02em;
+  border:1px solid var(--dx-border);background:var(--dx-panel-2);color:var(--dx-faint)}
+.dx-nav-link.active .dx-badge{border-color:color-mix(in oklab,var(--accent) 40%,transparent);
+  background:color-mix(in oklab,var(--accent) 20%,transparent);color:var(--dx-accent-high)}
+.dx-nav-empty{padding:8px 10px;font-size:13px;color:var(--dx-faint)}
+
+.dx-side-foot{display:flex;align-items:center;gap:10px;flex:0 0 auto;padding:12px 14px;
+  border-top:1px solid var(--dx-border);background:var(--dx-bg-soft)}
+.dx-foot-btn{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;
+  border-radius:8px;border:1px solid var(--dx-border);background:var(--dx-panel);color:var(--dx-muted);
+  text-decoration:none;flex:0 0 auto}
+.dx-foot-btn:hover{color:var(--dx-heading);border-color:var(--dx-border-strong)}
+.dx-foot-link{color:var(--dx-muted);text-decoration:none;font-size:13px;font-weight:550}
+.dx-foot-link:hover{color:var(--dx-heading)}
+
+/* ── Search ─────────────────────────────────────────────────────────────── */
+.dx-search{position:relative}
+.dx-search-ic{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--dx-faint);pointer-events:none}
+.dx-search-in{width:100%;height:38px;padding:0 58px 0 33px;border-radius:9px;border:1px solid var(--dx-border);
+  background:var(--dx-panel);color:var(--dx-heading);font:inherit;font-size:13.5px;outline:none;
+  transition:border-color .15s,box-shadow .15s}
+.dx-search-in::placeholder{color:var(--dx-faint)}
+.dx-search-in:focus{border-color:color-mix(in oklab,var(--accent) 55%,var(--dx-border));
+  box-shadow:0 0 0 3px color-mix(in oklab,var(--accent) 16%,transparent)}
+.dx-kbd{position:absolute;right:8px;top:50%;transform:translateY(-50%);pointer-events:none;
+  padding:2px 6px;border-radius:5px;border:1px solid var(--dx-border);background:var(--dx-panel-2);
+  color:var(--dx-faint);font-size:10.5px;font-weight:600;letter-spacing:.02em}
+.dx-search-pop{position:absolute;top:44px;left:0;width:100%;min-width:260px;background:var(--dx-panel);
+  border:1px solid var(--dx-border-strong);border-radius:11px;padding:4px;z-index:60;
+  box-shadow:0 26px 60px -22px rgba(0,0,0,.9)}
+.dx-search-item{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;
+  padding:8px 10px;border:none;background:none;border-radius:8px;cursor:pointer;font:inherit;font-size:13px;
+  color:var(--dx-text);text-align:left}
+.dx-search-item.active{background:var(--dx-panel-2)}
+.dx-search-title{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  color:var(--dx-heading);font-weight:500}
+.dx-search-cat{flex:0 0 auto;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--dx-faint)}
+.dx-search-none{padding:14px 12px;font-size:13px;color:var(--dx-faint);text-align:center}
+
+/* ── Shell ──────────────────────────────────────────────────────────────── */
+.dx-panes{margin-left:var(--dx-nav-w);min-width:0}
+.dx-panes.splash{margin-left:var(--dx-nav-w)}
+
+/* Doc page: article + right rail */
+.dx-doc{display:grid;grid-template-columns:minmax(0,1fr) var(--dx-toc-w);gap:48px;
+  max-width:1120px;margin:0 auto;padding:56px 48px 96px}
+.dx-main{min-width:0}
+
+/* ── Article head ───────────────────────────────────────────────────────── */
+.dx-eyebrow{font-size:12px;font-weight:600;color:var(--accent);margin:0 0 10px;letter-spacing:.01em}
+.dx-doc-head{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:0 0 8px}
+.dx-doc-head h1{margin:0;font-size:34px;font-weight:700;line-height:1.2;letter-spacing:-.03em;color:var(--dx-heading)}
+.dx-ver{font-size:11.5px;font-weight:700;color:var(--dx-accent-high);
+  background:var(--dx-accent-low);border:1px solid color-mix(in oklab,var(--accent) 34%,transparent);
+  padding:3px 9px;border-radius:999px}
+.dx-tagline{margin:0;font-size:15.5px;color:var(--dx-muted);line-height:1.65}
+
+/* Action row under the title */
+.dx-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:20px 0 6px;
+  padding-bottom:22px;border-bottom:1px solid var(--dx-border)}
+.dx-action{display:inline-flex;align-items:center;gap:6px;height:30px;padding:0 11px;border-radius:8px;
+  border:1px solid var(--dx-border);background:var(--dx-panel);color:var(--dx-text);
+  font:inherit;font-size:12.5px;font-weight:550;text-decoration:none;cursor:pointer;
+  transition:color .15s,border-color .15s,background .15s}
+.dx-action:hover{color:var(--dx-heading);border-color:var(--dx-border-strong);background:var(--dx-panel-2)}
+.dx-action svg{color:var(--dx-faint)}
+.dx-action:hover svg{color:var(--dx-text)}
+
+/* ── Prose ──────────────────────────────────────────────────────────────── */
+.dx-prose{font-size:15px;line-height:1.75;color:var(--dx-text)}
+.dx-prose>*:first-child{margin-top:0}
+.dx-prose h2{font-size:22px;font-weight:650;margin:46px 0 14px;padding-top:8px;color:var(--dx-heading);
+  letter-spacing:-.02em;scroll-margin-top:72px}
+.dx-prose h3{font-size:17.5px;font-weight:650;margin:32px 0 10px;color:var(--dx-heading);
+  letter-spacing:-.012em;scroll-margin-top:72px}
+.dx-prose h4{font-size:15.5px;font-weight:650;margin:24px 0 8px;color:var(--dx-heading);scroll-margin-top:72px}
+.dx-prose p{margin:16px 0}
+.dx-prose ul,.dx-prose ol{margin:16px 0;padding-left:22px}
+.dx-prose li{margin:6px 0;padding-left:2px}
+.dx-prose li::marker{color:var(--dx-faint)}
+.dx-prose strong{color:var(--dx-heading);font-weight:650}
+.dx-prose a{color:var(--dx-heading);text-decoration:underline;text-underline-offset:3px;
+  text-decoration-color:var(--dx-border-strong);font-weight:500}
+.dx-prose a:hover{color:var(--dx-accent-high);text-decoration-color:currentColor}
+.dx-prose code{background:var(--dx-panel-2);border:1px solid var(--dx-border);padding:1.5px 5px;border-radius:5px;
+  font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:12.5px;color:var(--dx-heading)}
+.dx-table{margin:20px 0;overflow-x:auto;border:1px solid var(--dx-border);border-radius:10px}
+.dx-table table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.55}
+.dx-table th{text-align:left;font-weight:650;color:var(--dx-heading);background:var(--dx-panel);padding:10px 14px;border-bottom:1px solid var(--dx-border);white-space:nowrap}
+.dx-table td{padding:10px 14px;border-bottom:1px solid var(--dx-border);vertical-align:top}
+.dx-table tr:last-child td{border-bottom:none}
+.dx-table td code{white-space:nowrap}
+.dx-prose hr{border:none;border-top:1px solid var(--dx-border);margin:36px 0}
+.dx-prose img{max-width:100%;border-radius:12px;border:1px solid var(--dx-border)}
+
+/* ── Code block ─────────────────────────────────────────────────────────── */
+/* Base frame, so a block still looks right before the client enhancer wraps it. */
+.dx-prose pre{margin:20px 0;padding:16px 18px;overflow:auto;
+  border:1px solid var(--dx-border);border-radius:12px;background:#0d0d10}
+.dx-prose pre code{display:block;background:none;border:none;border-radius:0;padding:0;color:#c3c7d2;
+  font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:12.8px;line-height:1.72}
+.dx-code{position:relative;margin:20px 0;border:1px solid var(--dx-border);border-radius:12px;
+  background:#0d0d10;overflow:hidden}
+.dx-code-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  height:38px;padding:0 8px 0 13px;border-bottom:1px solid var(--dx-border);background:var(--dx-panel)}
+.dx-code-name{display:inline-flex;align-items:center;gap:7px;min-width:0;overflow:hidden;
+  text-overflow:ellipsis;white-space:nowrap;
+  font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:12px;color:var(--dx-muted)}
+.dx-code-name svg{color:var(--dx-faint);flex:0 0 auto}
+.dx-code pre{margin:0;background:none;border:none;border-radius:0;padding:16px 18px;overflow:auto}
+.dx-code pre code{display:block;background:none;border:none;padding:0;color:#c3c7d2;
+  font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:12.8px;line-height:1.72}
+.tk-c{color:#5c6070;font-style:italic}
+.tk-s{color:#8ee7a1}
+.tk-k{color:#c99bff}
+.tk-n{color:#ffc27a}
+.dx-copy{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;flex:0 0 auto;
+  border-radius:7px;border:1px solid transparent;background:none;color:var(--dx-faint);cursor:pointer;
+  transition:color .15s,border-color .15s,background .15s}
+.dx-code-bar .dx-copy:hover{color:var(--dx-heading);border-color:var(--dx-border);background:var(--dx-panel-2)}
+/* Bar-less block: the copy button floats over the code on hover. */
+.dx-code>.dx-copy{position:absolute;top:9px;right:9px;z-index:2;opacity:0;
+  border-color:var(--dx-border);background:var(--dx-panel)}
+.dx-code:hover>.dx-copy,.dx-code>.dx-copy:focus-visible{opacity:1}
+.dx-code>.dx-copy:hover{color:var(--dx-heading);border-color:var(--dx-border-strong)}
+.dx-copy.done{color:#8ee7a1;opacity:1}
+
+/* ── Callouts (from > blockquotes) ──────────────────────────────────────── */
+.dx-callout{display:flex;gap:11px;align-items:flex-start;margin:22px 0;padding:13px 15px;
+  border-radius:10px;border:1px solid var(--dx-border);background:var(--dx-bg-soft);
+  font-size:14px;line-height:1.65}
+.dx-callout-ic{font-size:14px;line-height:1.6;flex:0 0 auto}
+.dx-callout-bd{min-width:0;color:var(--dx-text)}
+.dx-callout--info{border-color:rgba(239,68,68,.3);background:rgba(239,68,68,.07)}
+.dx-callout--warn{border-color:rgba(240,68,68,.3);background:rgba(240,68,68,.07)}
+
+/* ── Pager ──────────────────────────────────────────────────────────────── */
+.dx-pager{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:60px;padding-top:0}
+.dx-pager-btn{display:inline-flex;align-items:center;gap:12px;padding:14px 16px;border-radius:11px;
+  border:1px solid var(--dx-border);background:var(--dx-bg-soft);text-decoration:none;color:var(--dx-heading);
+  transition:border-color .15s,background .15s}
+.dx-pager-btn:hover{border-color:var(--dx-border-strong);background:var(--dx-panel)}
+.dx-pager-btn.next{grid-column:2;justify-content:flex-end;text-align:right}
+.dx-pager-btn span{display:flex;flex-direction:column;min-width:0;font-weight:600;font-size:14px}
+.dx-pager-btn.next span{align-items:flex-end}
+.dx-pager-btn small{font-size:11px;font-weight:600;letter-spacing:.02em;color:var(--dx-faint);margin-bottom:3px}
+.dx-pager-btn svg{color:var(--dx-faint);flex:0 0 auto}
+
+/* ── Right rail ─────────────────────────────────────────────────────────── */
+.dx-aside{position:sticky;top:56px;align-self:start;max-height:calc(100vh - 96px);overflow-y:auto}
+.dx-aside-h{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:650;
+  color:var(--dx-heading);margin:0 0 12px;padding-left:13px}
+.dx-aside-h:not(:first-child){margin-top:26px}
+.dx-aside-h svg{color:var(--dx-faint)}
+/* Indicator line: the whole TOC hangs off a rail, the active item lights its segment. */
+.dx-aside-toc{display:flex;flex-direction:column;border-left:1px solid var(--dx-border)}
+.dx-toc-link{position:relative;display:block;padding:5px 10px 5px 13px;color:var(--dx-muted);
+  text-decoration:none;font-size:12.8px;line-height:1.5}
+.dx-toc-link::before{content:"";position:absolute;left:-1px;top:0;bottom:0;width:2px;
+  background:transparent;border-radius:2px;transition:background .15s}
+.dx-toc-link.sub{padding-left:26px;font-size:12.5px}
+.dx-toc-link:hover{color:var(--dx-heading)}
+.dx-toc-link.active{color:var(--dx-heading);font-weight:600}
+.dx-toc-link.active::before{background:var(--accent)}
+.dx-aside-links{display:flex;flex-direction:column;padding-left:13px}
+.dx-aside-link{padding:5px 0;color:var(--dx-muted);text-decoration:none;font-size:12.8px}
+.dx-aside-link:hover{color:var(--dx-heading)}
+
+/* ── Splash / landing ───────────────────────────────────────────────────── */
+.dx-splash{max-width:880px;margin:0 auto;padding:0 48px 110px}
+.dx-hero{padding:72px 0 8px;border-bottom:1px solid var(--dx-border);margin-bottom:52px}
+.dx-hero h1{font-size:44px;line-height:1.12;font-weight:700;letter-spacing:-.035em;color:var(--dx-heading);
+  margin:0 0 14px}
+.dx-hero p{font-size:16px;color:var(--dx-muted);margin:0 0 26px;max-width:56ch;line-height:1.65}
+.dx-cta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding-bottom:44px}
+.dx-btn{display:inline-flex;align-items:center;gap:7px;height:36px;padding:0 16px;border-radius:9px;
+  font-size:13.5px;font-weight:600;text-decoration:none;transition:background .15s,border-color .15s,color .15s}
+.dx-btn-primary{background:var(--accent);color:#fff;border:1px solid var(--accent)}
+.dx-btn-primary:hover{background:color-mix(in oklab,var(--accent) 84%,#fff)}
+.dx-btn-ghost{color:var(--dx-text);border:1px solid var(--dx-border);background:var(--dx-panel)}
+.dx-btn-ghost:hover{color:var(--dx-heading);border-color:var(--dx-border-strong);background:var(--dx-panel-2)}
+
+.dx-sec-h{font-size:19px;font-weight:650;letter-spacing:-.02em;color:var(--dx-heading);margin:0 0 18px}
+.dx-sec+.dx-sec{margin-top:56px}
+.dx-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.dx-card{display:block;padding:18px;border-radius:12px;border:1px solid var(--dx-border);background:var(--dx-bg-soft);
+  text-decoration:none;transition:border-color .15s,background .15s}
+.dx-card:hover{border-color:color-mix(in oklab,var(--accent) 45%,var(--dx-border));background:var(--dx-panel)}
+.dx-card-top{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.dx-card-ic{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:8px;
+  background:color-mix(in oklab,var(--accent) 18%,transparent);
+  border:1px solid color-mix(in oklab,var(--accent) 30%,transparent);font-size:14px;flex:0 0 auto}
+.dx-card h3{margin:0;flex:1 1 auto;min-width:0;font-size:14.5px;font-weight:650;color:var(--dx-heading)}
+.dx-card p{margin:0;font-size:13.5px;line-height:1.6;color:var(--dx-muted)}
+.dx-card-count{margin-top:11px;font-size:11.5px;font-weight:600;color:var(--dx-faint)}
+
+.dx-quick{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;
+  border:1px solid var(--dx-border);border-radius:12px;overflow:hidden;background:var(--dx-bg-soft)}
+.dx-quick li{font-size:14px;line-height:1.6}
+.dx-quick li+li{border-top:1px solid var(--dx-border)}
+.dx-quick a{display:flex;align-items:baseline;gap:10px;padding:13px 16px;color:var(--dx-text);text-decoration:none}
+.dx-quick strong{flex:0 0 auto;color:var(--dx-heading);font-weight:600}
+.dx-quick em{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  font-style:normal;font-size:13px;color:var(--dx-faint)}
+.dx-quick a:hover{color:var(--dx-heading);background:var(--dx-panel)}
+
+/* ── Category page ──────────────────────────────────────────────────────── */
+.dx-cat{max-width:1120px;margin:0 auto;padding:56px 48px 96px}
+.dx-back{display:inline-flex;align-items:center;gap:6px;color:var(--dx-muted);text-decoration:none;
+  font-size:13px;font-weight:550}
+.dx-back:hover{color:var(--dx-heading)}
+.dx-cat-head{display:flex;align-items:center;gap:12px;margin:18px 0 6px}
+.dx-cat-head .dx-cemoji{font-size:26px;line-height:1}
+.dx-cat-head h1{margin:0;font-size:32px;font-weight:700;letter-spacing:-.03em;color:var(--dx-heading)}
+.dx-cat-blurb{margin:0 0 30px;font-size:15px;color:var(--dx-muted)}
+.dx-cat .dx-cards{grid-template-columns:repeat(auto-fill,minmax(270px,1fr))}
+.dx-empty{color:var(--dx-faint);padding:44px 0;font-size:15px}
+
+/* ── Responsive ─────────────────────────────────────────────────────────── */
+@media(max-width:1180px){
+  .dx-doc{grid-template-columns:minmax(0,1fr);gap:0}
+  .dx-aside{display:none}
+}
+@media(max-width:960px){
+  .dx-root{--dx-nav-w:0px;overflow-x:hidden}
+  .dx-topbar{display:flex}
+  .dx-panes,.dx-panes.splash{margin-left:0;padding-top:var(--dx-topbar-h)}
+  .dx-sidebar{display:none;width:min(300px,86vw);z-index:60;
+    box-shadow:0 0 0 100vmax rgba(0,0,0,.55)}
+  .dx-sidebar.open{display:flex}
+  .dx-side-close{display:inline-flex}
+  .dx-doc,.dx-cat{padding:30px 20px 76px}
+  .dx-splash{padding:0 20px 84px}
+  .dx-hero{padding:38px 0 6px;margin-bottom:40px}
+  .dx-hero h1{font-size:34px}
+  .dx-doc-head h1{font-size:28px}
+  .dx-cards{grid-template-columns:minmax(0,1fr)}
+  .dx-pager{grid-template-columns:minmax(0,1fr)}
+  .dx-pager-btn.next{grid-column:1}
+}
+@media(max-width:620px){
+  .dx-hero h1{font-size:30px}
+  .dx-doc-head h1{font-size:24px}
+}
+0:{"P":null,"c":["","docs","easysell",""],"q":"","i":false,"f":[[["",{"children":["docs",{"children":[["slug","easysell","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/38h9zm6zvt3ca.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/05-c3ty_6dwfk.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/14mrh2-p_w84d.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable","children":["$","body",null,{"children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":[["$","$1","c",{"children":[[["$","script","script-0",{"src":"/_next/static/chunks/06j2s2t32br7l.js","async":true,"nonce":"$undefined"}]],[["$","style",null,{"children":"$4"}],"$L5"]]}],{"children":["$L6",{"children":["$L7",{},null,false,null]},null,false,"$@8"]},null,false,null]},null,false,null],"$L9",false]],"m":"$undefined","G":["$a",["$Lb"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"6h6-rO3s1NA9jLY1OWXvg"}
+c:I[81365,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js"],"DocsShell"]
+e:I[97367,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+12:I[97367,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"ViewportBoundary"]
+14:I[97367,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"MetadataBoundary"]
+5:["$","$Lc",null,{"nav":[{"slug":"economysmp","title":"EconomySMP","bucket":"setups","version":null,"image":null},{"slug":"zelauction","title":"ZelAuction","bucket":"plugins","version":"2.0.3","image":null},{"slug":"zelbounty","title":"ZelBounty","bucket":"plugins","version":"3.0.2","image":null},{"slug":"shards","title":"Shards","bucket":"plugins","version":"2.3.9","image":null},{"slug":"easysell","title":"EasySell","bucket":"plugins","version":null,"image":null},{"slug":"ecobank","title":"EcoBank","bucket":"plugins","version":null,"image":null},{"slug":"adminpanel","title":"AdminPanel","bucket":"plugins","version":"1.0.4","image":null},{"slug":"essentials-staff-moderation","title":"Essentials Staff & Moderation","bucket":"plugins","version":"1.0.0","image":null},{"slug":"boosters","title":"Boosters","bucket":"plugins","version":"1.0.0","image":null},{"slug":"economycore","title":"EconomyCore","bucket":"plugins","version":"1.0.0","image":null},{"slug":"gens","title":"Gens","bucket":"plugins","version":null,"image":null},{"slug":"donuthomes","title":"DonutHomes","bucket":"plugins","version":null,"image":null}],"children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}]
+6:["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+7:["$","$1","c",{"children":["$Ld",[["$","script","script-0",{"src":"/_next/static/chunks/014i8qp0m4e36.js","async":true,"nonce":"$undefined"}]],["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]]}]
+11:[]
+8:"$W11"
+9:["$","$1","h",{"children":[null,["$","$L12",null,{"children":"$L13"}],["$","div",null,{"hidden":true,"children":["$","$L14",null,{"children":["$","$f",null,{"name":"Next.Metadata","children":"$L15"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/38h9zm6zvt3ca.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+16:I[84103,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js","/_next/static/chunks/014i8qp0m4e36.js"],"DocsActions"]
+17:T7951,## Overview
+
+Welcome to the official EasySell documentation! EasySell is a powerful and easy-to-use item selling plugin for Minecraft servers.
+
+### What is EasySell?
+
+EasySell provides players with a simple GUI-based system to sell their items. Players can open a sell menu, place items into it, and when they close the inventory, all items are automatically sold at configured prices. The plugin also features real-time item worth display in item lore.
+
+### Features
+
+* **GUI-Based Selling** - Simple drag-and-drop interface for selling items
+* **Real-Time Worth Display** - See item values directly in item lore while browsing inventory
+* **1500+ Pre-configured Prices** - Extensive default price list for all Minecraft items
+* **Shulker Box Support** - Automatically calculates worth of items inside shulker boxes
+* **Customizable Messages** - Full control over all plugin messages with multiple display types
+* **Sound Effects** - Configurable sounds when items are sold
+* **Vault Integration** - Seamless economy integration
+* **Hex Color Support** - Modern color codes including hex colors (#RRGGBB)
+* **Number Formatting** - Large values displayed with K/M/B/T suffixes
+
+### Requirements
+
+* **Spigot/Paper** 1.16 or higher (developed for 1.21.4)
+* **Vault** - Economy plugin API
+* **ProtocolLib** - Required for item worth display
+* **Economy Plugin** - Any Vault-compatible economy (EssentialsX, CMI, etc.)
+
+### Support
+
+Need help? Join our Discord server at **discord.gg/pikzstudios**
+
+## Installation
+
+This guide will walk you through installing EasySell on your Minecraft server.
+
+### Requirements
+
+Before installing EasySell, ensure you have the following:
+
+| Requirement        | Description                                 |
+| ------------------ | ------------------------------------------- |
+| **Spigot/Paper**   | Version 1.16 or higher (1.21.4 recommended) |
+| **Java**           | Java 21 or higher                           |
+| **Vault**          | Economy API plugin                          |
+| **ProtocolLib**    | Required for real-time worth display        |
+| **Economy Plugin** | Any Vault-compatible economy plugin         |
+
+### Step-by-Step Installation
+
+#### 1. Download Dependencies
+
+Download and install the required plugins first:
+
+1. **Vault** - Download from [SpigotMC](https://www.spigotmc.org/resources/vault.34315/)
+2. **ProtocolLib** - Download from [SpigotMC](https://www.spigotmc.org/resources/protocollib.1997/)
+3. **Economy Plugin** - Install an economy plugin such as:
+   * EssentialsX
+   * CMI
+   * iConomy
+   * Any other Vault-compatible economy
+
+#### 2. Install EasySell
+
+1. Download the latest `EasySell.jar` file
+2. Place it in your server's `plugins` folder
+3. Restart your server (or use a plugin manager to load it)
+
+#### 3. Configure License
+
+1. After first startup, open `plugins/EasySell/config.yml`
+2.  Enter your license key:
+
+    ```yaml
+    License-Key: "YOUR-LICENSE-KEY-HERE"
+    ```
+3. Get your license key from **discord.gg/pikzstudios**
+4. Restart the server
+
+#### 4. Verify Installation
+
+Run the following command to verify EasySell is working:
+
+```
+/sell
+```
+
+You should see the sell GUI open.
+
+### File Structure
+
+After installation, EasySell creates the following files:
+
+```
+plugins/EasySell/
+├── config.yml      # Main configuration
+├── messages.yml    # Message customization
+├── prices.yml      # Item prices
+├── sounds.yml      # Sound effects
+└── data.db         # SQLite database (if using SQLite)
+```
+
+### First-Time Setup Checklist
+
+* [ ] Vault installed and enabled
+* [ ] ProtocolLib installed and enabled
+* [ ] Economy plugin installed and working
+* [ ] EasySell.jar placed in plugins folder
+* [ ] Server restarted
+* [ ] License key configured
+* [ ] `/sell` command working
+
+### Troubleshooting
+
+#### Plugin won't enable
+
+* Check that Vault and ProtocolLib are installed
+* Verify you're running Java 21 or higher
+* Check console for error messages
+
+#### Economy not working
+
+* Ensure an economy plugin is installed
+* Verify Vault recognizes your economy: `/vault-info`
+
+#### Worth display not showing
+
+* Make sure ProtocolLib is installed and enabled
+* Check that `item-worth: true` in config.yml
+
+## Commands and Permissions
+
+This page lists all EasySell commands and their associated permissions.
+
+### Commands
+
+#### /sell
+
+Opens the sell GUI where players can sell their items.
+
+| Property       | Value           |
+| -------------- | --------------- |
+| **Usage**      | `/sell`         |
+| **Permission** | `easysell.sell` |
+| **Default**    | All players     |
+
+**How it works:**
+
+1. Type `/sell` to open a 4-row inventory
+2. Drag and drop items you want to sell
+3. Close the inventory to sell all items
+4. Money is deposited and a summary is displayed
+
+#### /worth
+
+Check the sell value of the item you're holding.
+
+| Property       | Value            |
+| -------------- | ---------------- |
+| **Usage**      | `/worth`         |
+| **Permission** | `easysell.worth` |
+| **Default**    | All players      |
+
+**Example Output:**
+
+```
+You can sell Diamond for $120.00!
+```
+
+**Notes:**
+
+* Hold the item in your main hand
+* Shows the value per single item
+* Stack size is not calculated for this command
+
+#### /easypayreload
+
+Reloads all EasySell configuration files.
+
+| Property       | Value             |
+| -------------- | ----------------- |
+| **Usage**      | `/easypayreload`  |
+| **Permission** | `easysell.reload` |
+| **Default**    | OP only           |
+
+**Reloads:**
+
+* config.yml
+* messages.yml
+* prices.yml
+* sounds.yml
+
+### Permissions
+
+#### Permission Nodes
+
+| Permission        | Description                        | Default              |
+| ----------------- | ---------------------------------- | -------------------- |
+| `easysell.sell`   | Access to `/sell` command          | `true` (all players) |
+| `easysell.worth`  | Access to `/worth` command         | `true` (all players) |
+| `easysell.reload` | Access to `/easypayreload` command | `op`                 |
+
+## Configuration
+
+This page covers all configuration options in EasySell.
+
+### config.yml
+
+The main configuration file controls core plugin settings.
+
+#### Full Default Configuration
+
+```yaml
+License-Key: "GET LICENSE FROM DISCORD.GG/PIKZSTUDIOS"
+
+database:
+  type: sqlite # Options: sqlite, mysql
+  sqlite:
+    file: data
+  mysql:
+    host: localhost
+    port: 3306
+    database: easysell
+    username: root
+    password: password
+
+sell-gui:
+  title: "Put items in here to sell them!"
+
+item-worth: true
+item-worth-lore:
+  - "&7Worth: &a$%worth%"
+```
+
+#### Configuration Options
+
+#### License Key
+
+```yaml
+License-Key: "YOUR-LICENSE-KEY"
+```
+
+Your EasySell license key obtained from **discord.gg/pikzstudios**.
+
+#### Database Settings
+
+```yaml
+database:
+  type: sqlite
+```
+
+Choose between `sqlite` or `mysql` for data storage.
+
+**SQLite Configuration**
+
+```yaml
+sqlite:
+  file: data
+```
+
+* `file` - Name of the SQLite database file (creates `data.db`)
+
+**MySQL Configuration**
+
+```yaml
+mysql:
+  host: localhost
+  port: 3306
+  database: easysell
+  username: root
+  password: password
+```
+
+| Option     | Description                       |
+| ---------- | --------------------------------- |
+| `host`     | MySQL server address              |
+| `port`     | MySQL server port (default: 3306) |
+| `database` | Database name                     |
+| `username` | MySQL username                    |
+| `password` | MySQL password                    |
+
+#### Sell GUI Settings
+
+```yaml
+sell-gui:
+  title: "Put items in here to sell them!"
+```
+
+* `title` - The title displayed on the sell GUI inventory
+* Supports color codes (`&c`, `&a`, etc.)
+* Supports hex colors (`#RRGGBB`)
+
+**Examples:**
+
+```yaml
+sell-gui:
+  title: "&6&lSell Your Items"
+
+sell-gui:
+  title: "#7dfb03Sell Shop"
+```
+
+#### Item Worth Display
+
+```yaml
+item-worth: true
+```
+
+Enable or disable the real-time item worth display in item lore.
+
+* `true` - Show worth in item lore while viewing inventory
+* `false` - Disable worth display feature
+
+```yaml
+item-worth-lore:
+  - "&7Worth: &a$%worth%"
+```
+
+Customize the lore lines added to items showing their worth.
+
+**Placeholders:**
+
+* `%worth%` - The formatted sell value of the item (includes quantity)
+
+**Examples:**
+
+```yaml
+item-worth-lore:
+  - "&7Worth: &a$%worth%"
+
+item-worth-lore:
+  - ""
+  - "&7Sell Value: &e%worth%"
+  - "&7Right-click to sell!"
+
+item-worth-lore:
+  - "#aaffaaValue: $%worth%"
+```
+
+### sounds.yml
+
+Configure sound effects for the plugin.
+
+```yaml
+successfully-sold: ENTITY_PLAYER_LEVELUP
+```
+
+* `successfully-sold` - Sound played when items are sold successfully
+
+**Available Sounds:** Use any valid [Minecraft sound name](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html).
+
+**Popular Options:**
+
+* `ENTITY_PLAYER_LEVELUP`
+* `ENTITY_EXPERIENCE_ORB_PICKUP`
+* `BLOCK_NOTE_BLOCK_PLING`
+* `UI_BUTTON_CLICK`
+
+### Reloading Configuration
+
+After making changes to any configuration file, reload the plugin:
+
+```
+/easypayreload
+```
+
+**Note:** Some changes may require a full server restart.
+
+## Sell GUI
+
+The Sell GUI is the primary way players sell items in EasySell. This page explains how it works and how to customize it.
+
+### Overview
+
+The Sell GUI is a chest-style inventory where players place items to sell them. When the inventory is closed, all items are automatically sold and money is deposited.
+
+### How to Use
+
+#### Opening the GUI
+
+Type `/sell` to open the sell interface.
+
+#### Selling Items
+
+1. **Open** - Type `/sell`
+2. **Add Items** - Drag items from your inventory into the sell GUI
+3. **Close** - Press ESC or click outside the GUI
+4. **Receive Money** - Items are sold and payment is deposited
+
+#### GUI Layout
+
+```
++---+---+---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |   |   |  Row 1
++---+---+---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |   |   |  Row 2
++---+---+---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |   |   |  Row 3
++---+---+---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |   |   |  Row 4
++---+---+---+---+---+---+---+---+---+
+```
+
+* **Size:** 36 slots (4 rows of 9)
+* **All slots** are available for selling items
+* No decorative or locked slots
+
+### Customization
+
+#### GUI Title
+
+Configure the title in `config.yml`:
+
+```yaml
+sell-gui:
+  title: "Put items in here to sell them!"
+```
+
+**Examples with colors:**
+
+```yaml
+sell-gui:
+  title: "&6&lSell Shop"
+```
+
+```yaml
+sell-gui:
+  title: "#7dfb03&lSELL &fYour Items"
+```
+
+**Supported formats:**
+
+* Legacy colors: `&c`, `&a`, `&6`, etc.
+* Formatting: `&l` (bold), `&o` (italic), `&n` (underline)
+* Hex colors: `#RRGGBB` (e.g., `#7dfb03`)
+
+### Features
+
+#### Automatic Price Calculation
+
+* Each item's price is looked up in `prices.yml`
+* Stack size is multiplied by per-item price
+* Total of all items is calculated on close
+
+#### Shulker Box Support
+
+Shulker boxes receive special handling:
+
+1. The shulker box itself has a base price
+2. All items inside are calculated
+3. Total worth = box price + contents worth
+
+**Example:**
+
+* Shulker Box: $75.00
+* 64 Diamonds inside: $7,680.00
+* **Total:** $7,755.00
+
+#### Sound Effect
+
+When items are sold, a sound plays:
+
+```yaml
+# sounds.yml
+successfully-sold: ENTITY_PLAYER_LEVELUP
+```
+
+#### Sold Message
+
+After closing, players see:
+
+* **Title:** The total amount earned (e.g., `+$7,755`)
+* **Subtitle:** Optional item count and total (if enabled)
+* **Action Bar:** Additional information
+
+### What Happens When You Close
+
+1. **Price Calculation** - Each item's worth is calculated
+2. **Total Sum** - All item values are added together
+3. **Money Deposit** - Total is deposited via Vault
+4. **Messages** - Configured messages are sent to player
+5. **Sound** - Success sound plays
+6. **Items Removed** - All items in the GUI are deleted
+
+### Items That Cannot Be Sold
+
+* Items with a price of `0` in prices.yml
+* Items not in prices.yml (if default-price is 0)
+
+When unsellable items are detected, the configured "item-not-sellable" message is shown (if enabled).
+
+### Tips
+
+#### Efficient Selling
+
+1. **Shift-Click** - Quickly move stacks from inventory
+2. **Double-Click** - Collect all matching items
+3. **Drag** - Place items across multiple slots
+
+#### Bulk Selling
+
+* Fill shulker boxes with items before selling
+* The entire contents will be valued automatically
+
+#### Check Before Selling
+
+* Use `/worth` while holding an item to verify its price
+* Enable item-worth display to see prices in item lore
+
+## Worth Display
+
+The Worth Display feature shows item sell values directly in the item's lore while viewing your inventory. This is one of EasySell's most powerful features for player convenience.
+
+### Overview
+
+When enabled, as you hover over items in your inventory, their sell value is automatically added to the item's lore in real-time. This works without modifying the actual items.
+
+### How It Works
+
+1. **Packet Interception** - EasySell uses ProtocolLib to intercept inventory packets
+2. **Lore Injection** - Worth information is added to item lore before display
+3. **Real-Time** - Updates happen as you browse your inventory
+4. **Non-Destructive** - Actual items are never modified
+
+### Configuration
+
+#### Enable/Disable
+
+In `config.yml`:
+
+```yaml
+item-worth: true
+```
+
+* `true` - Enable worth display in item lore
+* `false` - Disable the feature entirely
+
+#### Customize Lore
+
+```yaml
+item-worth-lore:
+  - "&7Worth: &a$%worth%"
+```
+
+**Placeholders:**
+
+* `%worth%` - The calculated sell value (includes stack amount)
+
+#### Examples
+
+**Simple:**
+
+```yaml
+item-worth-lore:
+  - "&7Worth: &a$%worth%"
+```
+
+Display: `Worth: $120.00`
+
+**With separator:**
+
+```yaml
+item-worth-lore:
+  - ""
+  - "&7Sell Value: &e$%worth%"
+```
+
+Display:
+
+```
+(blank line)
+Sell Value: $120.00
+```
+
+**Multiple lines:**
+
+```yaml
+item-worth-lore:
+  - ""
+  - "&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+  - "&7Sell Price: &a$%worth%"
+  - "&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+```
+
+**Hex colors:**
+
+```yaml
+item-worth-lore:
+  - "#aaffaa✦ Value: $%worth%"
+```
+
+### Price Calculation
+
+#### Single Items
+
+Worth = Item Price × Stack Amount
+
+**Example:** 64 diamonds at $120 each = `$7,680.00`
+
+#### Shulker Boxes
+
+Worth = Shulker Box Price + Contents Worth
+
+**Example:**
+
+* Shulker Box: $75
+* Contents: 64 diamonds ($7,680) + 32 emeralds ($256)
+* Display: `$8,011.00`
+
+### Where It Appears
+
+Worth display shows in:
+
+* ✅ Player inventory
+* ✅ Chest inventories
+* ✅ Shulker box previews
+* ✅ Ender chest
+* ✅ Barrel, hopper, etc.
+
+Worth display does NOT show in:
+
+* ❌ Creative mode inventory
+* ❌ Sell GUI (to avoid confusion)
+* ❌ Other plugin GUIs
+
+### Number Formatting
+
+Large values are formatted with suffixes for readability:
+
+| Value         | Display |
+| ------------- | ------- |
+| 1,000         | 1K      |
+| 15,500        | 15.5K   |
+| 1,000,000     | 1M      |
+| 2,140,000,000 | 2.14B   |
+
+### Requirements
+
+* **ProtocolLib** must be installed
+* `item-worth: true` in config.yml
+
+### Troubleshooting
+
+#### Worth not showing
+
+1. Check ProtocolLib is installed and enabled
+2. Verify `item-worth: true` in config.yml
+3. Run `/easypayreload` to reload config
+4. Make sure you're not in Creative mode
+
+#### Wrong prices showing
+
+1. Check prices.yml for the item
+2. Verify the material name is correct
+3. Reload with `/easypayreload`
+
+#### Lore looks wrong
+
+1. Check YAML formatting in config.yml
+2. Ensure color codes are correct
+3. Test with simple lore first
+
+### Performance
+
+The worth display feature is optimized for performance:
+
+* Only processes packets for survival/adventure mode
+* Skips already-processed items
+* Uses efficient number formatting
+* Minimal server impact
+
+### Comparison with /worth
+
+| Feature           | Worth Display    | /worth Command  |
+| ----------------- | ---------------- | --------------- |
+| Shows stack total | ✅ Yes            | ❌ Single item   |
+| Requires action   | ❌ Automatic      | ✅ Type command  |
+| Works in chests   | ✅ Yes            | ❌ No            |
+| Shows all items   | ✅ Simultaneously | ❌ One at a time |
+
+## Prices
+
+EasySell comes with over 1,500 pre-configured item prices. This page explains how the pricing system works.
+
+### prices.yml Structure
+
+```yaml
+sell:
+  default-price: 0.3
+  items:
+    dirt: 2.00
+    stone: 4.00
+    diamond: 120.00
+    # ... more items
+```
+
+#### Default Price
+
+```yaml
+default-price: 0.3
+```
+
+Items not listed in the prices file will sell for this default value. Set to `0` to prevent selling unconfigured items.
+
+#### Item Format
+
+```yaml
+items:
+  material_name: price
+```
+
+* Use Minecraft material names in lowercase
+* Replace spaces with underscores
+* Price is per single item
+
+### Price Categories
+
+#### Building Blocks
+
+| Item        | Price  |
+| ----------- | ------ |
+| dirt        | $2.00  |
+| stone       | $4.00  |
+| cobblestone | $3.00  |
+| sand        | $4.00  |
+| gravel      | $1.00  |
+| glass       | $4.00  |
+| bricks      | $5.00  |
+| obsidian    | $10.00 |
+
+#### Wood
+
+| Item           | Price  |
+| -------------- | ------ |
+| oak\_log       | $16.00 |
+| spruce\_log    | $16.00 |
+| birch\_log     | $16.00 |
+| oak\_planks    | $4.00  |
+| spruce\_planks | $4.00  |
+
+#### Ores & Minerals
+
+| Item             | Price      |
+| ---------------- | ---------- |
+| coal             | $12.00     |
+| coal\_ore        | $28.00     |
+| iron\_ore        | $16.00     |
+| iron\_ingot      | $5.00      |
+| gold\_ore        | $20.00     |
+| gold\_ingot      | $5.00      |
+| diamond          | $120.00    |
+| diamond\_ore     | $100.00    |
+| emerald          | $8.00      |
+| emerald\_ore     | $20.00     |
+| ancient\_debris  | $600.00    |
+| netherite\_ingot | $25,000.00 |
+| netherite\_scrap | $3,000.00  |
+
+#### Tools
+
+| Item               | Price   |
+| ------------------ | ------- |
+| wooden\_pickaxe    | $16.00  |
+| stone\_pickaxe     | $16.00  |
+| iron\_pickaxe      | $5.00   |
+| diamond\_pickaxe   | $35.00  |
+| netherite\_pickaxe | $300.00 |
+
+#### Armor
+
+| Item                  | Price     |
+| --------------------- | --------- |
+| leather\_chestplate   | $16.00    |
+| iron\_chestplate      | $35.00    |
+| diamond\_chestplate   | $40.00    |
+| netherite\_chestplate | $1,400.00 |
+
+#### Rare Items
+
+| Item                     | Price             |
+| ------------------------ | ----------------- |
+| dragon\_egg              | $2,140,000,000.00 |
+| nether\_star             | $50,000.00        |
+| elytra                   | $30,000.00        |
+| trident                  | $10,000.00        |
+| enchanted\_golden\_apple | $10,000.00        |
+| mace                     | $10,000.00        |
+| beacon                   | $7,500.00         |
+| totem\_of\_undying       | $250.00           |
+
+#### Food
+
+| Item             | Price  |
+| ---------------- | ------ |
+| apple            | $3.00  |
+| bread            | $58.00 |
+| golden\_apple    | $20.00 |
+| golden\_carrot   | $20.00 |
+| cooked\_beef     | $5.00  |
+| cooked\_porkchop | $4.00  |
+
+### Customizing Prices
+
+#### Adding New Items
+
+Add new items under the `items:` section:
+
+```yaml
+items:
+  # Existing items...
+  my_custom_item: 50.00
+```
+
+#### Modifying Existing Prices
+
+Simply change the number:
+
+```yaml
+items:
+  diamond: 200.00  # Changed from 120.00
+```
+
+#### Removing Items
+
+Remove the line or set price to 0:
+
+```yaml
+items:
+  unwanted_item: 0  # Won't be sellable
+```
+
+#### Using Decimal Values
+
+```yaml
+items:
+  stick: 0.50
+  string: 0.25
+  dirt: 2.00
+```
+
+### Price Calculation
+
+#### Single Items
+
+Price shown = configured price × stack amount
+
+**Example:** 64 diamonds × $120.00 = $7,680.00
+
+#### Shulker Boxes
+
+EasySell automatically calculates the total worth of items inside shulker boxes:
+
+1. Shulker box base price (e.g., $75.00)
+2. Plus sum of all items inside
+3. Total displayed includes all contents
+
+### Number Formatting
+
+Large prices are formatted with suffixes:
+
+| Value                     | Display |
+| ------------------------- | ------- |
+| 1,000                     | 1K      |
+| 1,000,000                 | 1M      |
+| 1,000,000,000             | 1B      |
+| 1,000,000,000,000         | 1T      |
+| 1,000,000,000,000,000     | 1Q      |
+| 1,000,000,000,000,000,000 | 1QQ     |
+
+**Example:** Dragon Egg ($2,140,000,000) displays as `$2.14B`
+
+### Tips
+
+1. **Balance your economy** - Consider your server's economy when setting prices
+2. **Rare items should be rare** - High prices for rare items prevent inflation
+3. **Consider farming methods** - Items that can be farmed easily should cost less
+4. **Test your prices** - Use `/worth` to verify prices are correct
+5. **Regular updates** - Review prices after Minecraft updates add new items
+
+## Messages
+
+EasySell provides full customization of all plugin messages. This page explains every message option in `messages.yml`.
+
+### Message Structure
+
+Each message has three properties:
+
+```yaml
+message-key:
+  enabled: true          # Whether to show this message
+  message: 'Your text'   # The message content
+  type: CHAT             # How to display the message
+```
+
+### Message Types
+
+| Type        | Description               |
+| ----------- | ------------------------- |
+| `CHAT`      | Standard chat message     |
+| `ACTIONBAR` | Action bar (above hotbar) |
+| `TITLE`     | Large center-screen title |
+| `SUBTITLE`  | Smaller text below title  |
+| `BOTH`      | Chat + Action bar         |
+
+### All Messages
+
+#### no-permission
+
+Shown when a player lacks permission for a command.
+
+```yaml
+no-permission:
+  enabled: true
+  message: '&cYou do not have permission to do that!'
+  type: BOTH
+```
+
+#### items-sold-title
+
+Main title shown when items are sold successfully.
+
+```yaml
+items-sold-title:
+  enabled: true
+  message: '#7dfb03+$%total%'
+  type: TITLE
+```
+
+**Placeholders:**
+
+* `%total%` - Total money earned (formatted)
+
+#### amount-sold-subtitle
+
+Subtitle with additional sale details.
+
+```yaml
+amount-sold-subtitle:
+  enabled: false
+  message: '&aYou sold &e%items% &aitems for &e%total% &ato the shop!'
+  type: SUBTITLE
+```
+
+**Placeholders:**
+
+* `%items%` - Number of items sold
+* `%total%` - Total money earned
+
+#### no-items-to-selling
+
+Shown when the sell GUI is closed with no valid items.
+
+```yaml
+no-items-to-selling:
+  enabled: false
+  message: '&cYou sold no items!'
+  type: ACTIONBAR
+```
+
+#### item-not-sellable
+
+Shown when an item cannot be sold (price is 0 or not configured).
+
+```yaml
+item-not-sellable:
+  enabled: false
+  message: '&cYou can not sell this item!'
+  type: ACTIONBAR
+```
+
+#### item-worth
+
+Shown when using the `/worth` command.
+
+```yaml
+item-worth:
+  enabled: true
+  message: '&aYou can sell %item% for &e%worth%!'
+  type: ACTIONBAR
+```
+
+**Placeholders:**
+
+* `%item%` - Item name
+* `%worth%` - Item's sell value
+
+#### worth-display-disabled
+
+Shown when a player tries to use a feature while worth display is off.
+
+```yaml
+worth-display-disabled:
+  enabled: true
+  message: '&cWorth display is disabled!'
+  type: ACTIONBAR
+```
+
+#### worth-display-enabled
+
+Confirmation when worth display is enabled.
+
+```yaml
+worth-display-enabled:
+  enabled: true
+  message: "&aWorth display enabled!"
+  type: ACTIONBAR
+```
+
+### Color Codes
+
+#### Legacy Colors
+
+| Code | Color        |
+| ---- | ------------ |
+| `&0` | Black        |
+| `&1` | Dark Blue    |
+| `&2` | Dark Green   |
+| `&3` | Dark Aqua    |
+| `&4` | Dark Red     |
+| `&5` | Dark Purple  |
+| `&6` | Gold         |
+| `&7` | Gray         |
+| `&8` | Dark Gray    |
+| `&9` | Blue         |
+| `&a` | Green        |
+| `&b` | Aqua         |
+| `&c` | Red          |
+| `&d` | Light Purple |
+| `&e` | Yellow       |
+| `&f` | White        |
+
+#### Formatting Codes
+
+| Code | Effect            |
+| ---- | ----------------- |
+| `&l` | **Bold**          |
+| `&o` | _Italic_          |
+| `&n` | Underline         |
+| `&m` | ~~Strikethrough~~ |
+| `&k` | Obfuscated        |
+| `&r` | Reset             |
+
+#### Hex Colors
+
+Use `#RRGGBB` format for custom colors:
+
+```yaml
+message: '#7dfb03This is green!'
+message: '#ff6b6bThis is coral red!'
+message: '#4ecdc4This is teal!'
+```
+
+### Example Configurations
+
+#### Minimal Messages
+
+```yaml
+no-permission:
+  enabled: true
+  message: '&cNo permission!'
+  type: CHAT
+
+items-sold-title:
+  enabled: true
+  message: '&a+$%total%'
+  type: ACTIONBAR
+
+amount-sold-subtitle:
+  enabled: false
+  message: ''
+  type: SUBTITLE
+
+no-items-to-selling:
+  enabled: false
+  message: ''
+  type: ACTIONBAR
+
+item-not-sellable:
+  enabled: false
+  message: ''
+  type: ACTIONBAR
+
+item-worth:
+  enabled: true
+  message: '&7Worth: &e%worth%'
+  type: ACTIONBAR
+```
+
+#### Detailed Messages
+
+```yaml
+no-permission:
+  enabled: true
+  message: '&c&l[!] &cYou don''t have permission to use this command!'
+  type: BOTH
+
+items-sold-title:
+  enabled: true
+  message: '#55ff55&lSOLD!'
+  type: TITLE
+
+amount-sold-subtitle:
+  enabled: true
+  message: '&f%items% items for &a$%total%'
+  type: SUBTITLE
+
+no-items-to-selling:
+  enabled: true
+  message: '&eNo items were sold. Put items in the GUI first!'
+  type: CHAT
+
+item-not-sellable:
+  enabled: true
+  message: '&cThis item cannot be sold!'
+  type: ACTIONBAR
+
+item-worth:
+  enabled: true
+  message: '&6[Worth] &f%item% &7sells for &a$%worth%'
+  type: CHAT
+```
+
+### Tips
+
+1. **Disable unused messages** - Set `enabled: false` for cleaner experience
+2. **Use appropriate types** - Titles for important info, action bar for quick feedback
+3. **Keep it concise** - Short messages are easier to read
+4. **Test colors** - Join the server to verify colors look correct
+5. **Escape quotes** - Use `''` for single quotes in YAML
+
+## FAQ
+
+Common questions and answers about EasySell.
+
+### General
+
+#### What is EasySell?
+
+EasySell is a Minecraft plugin that allows players to easily sell items through a GUI-based interface. Players simply open a menu, place items in it, and close it to sell everything at once.
+
+#### What versions are supported?
+
+EasySell supports Minecraft 1.16 and above. It's developed and tested primarily on 1.21.4.
+
+#### Is EasySell free?
+
+EasySell requires a license key. Visit discord.gg/pikzstudios to obtain your license.
+
+### Installation
+
+#### What plugins are required?
+
+| Plugin             | Purpose                                       |
+| ------------------ | --------------------------------------------- |
+| **Vault**          | Economy API integration                       |
+| **ProtocolLib**    | Real-time worth display                       |
+| **Economy Plugin** | Actual money storage (EssentialsX, CMI, etc.) |
+
+#### Why isn't the plugin enabling?
+
+Check the following:
+
+1. Vault is installed and enabled
+2. ProtocolLib is installed and enabled
+3. You're running Java 21 or higher
+4. License key is valid
+
+#### How do I get a license key?
+
+Join discord.gg/pikzstudios to request a license key.
+
+### Economy
+
+#### What economy plugins work with EasySell?
+
+Any Vault-compatible economy plugin works:
+
+* EssentialsX
+* CMI
+* iConomy
+* TheNewEconomy
+* And many more
+
+#### Why isn't money being deposited?
+
+1. Verify an economy plugin is installed
+2. Check Vault recognizes your economy: look for Vault messages on startup
+3. Ensure the player has a valid economy account
+
+#### Can I use multiple currencies?
+
+EasySell uses Vault's default economy. For multiple currencies, use an economy plugin that supports that feature.
+
+### Prices
+
+#### How do I change item prices?
+
+Edit `plugins/EasySell/prices.yml`:
+
+```yaml
+sell:
+  items:
+    diamond: 150.00  # Change from 120.00
+```
+
+Then run `/easypayreload`.
+
+#### What happens if an item isn't in the price list?
+
+It uses the `default-price` value:
+
+```yaml
+sell:
+  default-price: 0.3
+```
+
+Set to `0` to prevent selling unconfigured items.
+
+#### How do I add new items?
+
+Add them to the `items:` section in prices.yml:
+
+```yaml
+items:
+  new_item_name: 50.00
+```
+
+Use the Minecraft material name in lowercase with underscores.
+
+#### Why is my item selling for the wrong price?
+
+1. Check the exact material name in prices.yml
+2. Material names are case-sensitive (use lowercase)
+3. Reload with `/easypayreload` after changes
+
+### Worth Display
+
+#### The worth lore isn't showing on items
+
+1. Ensure `item-worth: true` in config.yml
+2. Verify ProtocolLib is installed
+3. Make sure you're not in Creative mode
+4. Reload the plugin
+
+#### Can I disable the worth display?
+
+Yes, set `item-worth: false` in config.yml.
+
+#### Why does the worth show in my inventory but not chests?
+
+Worth display should work in all inventories. If it doesn't:
+
+1. Check ProtocolLib version is up to date
+2. Look for errors in console
+3. Try restarting the server
+
+### Sell GUI
+
+#### How big is the sell GUI?
+
+The sell GUI has 36 slots (4 rows of 9 slots).
+
+#### Can I change the GUI size?
+
+Currently, the GUI size is fixed at 36 slots.
+
+#### Can I add decoration items to the GUI?
+
+The current version doesn't support decoration items. All slots are available for selling.
+
+#### What happens to unsellable items?
+
+Items with a price of 0 or not in the price list (when default-price is 0) cannot be sold. The "item-not-sellable" message will display if enabled.
+
+### Commands
+
+#### What's the difference between /sell and /worth?
+
+| Command  | Function                         |
+| -------- | -------------------------------- |
+| `/sell`  | Opens GUI to sell multiple items |
+| `/worth` | Shows value of item in hand      |
+
+#### Can I create aliases for commands?
+
+Use a plugin like CommandAliases or add aliases in your server's commands.yml.
+
+#### How do I reload the config?
+
+Use `/easypayreload` (requires `easysell.reload` permission).
+
+### Permissions
+
+#### Can players sell by default?
+
+Yes, `easysell.sell` and `easysell.worth` are granted to all players by default.
+
+#### How do I restrict selling to certain ranks?
+
+```bash
+# Using LuckPerms
+/lp group default permission set easysell.sell false
+/lp group vip permission set easysell.sell true
+```
+
+### Troubleshooting
+
+#### Plugin loads but commands don't work
+
+1. Check for error messages in console
+2. Verify license key is valid
+3. Ensure dependencies are loading before EasySell
+
+#### "No permission" message even though I'm OP
+
+1. Check if another plugin is interfering
+2. Verify permission nodes with your permission plugin
+3. Try giving explicit permission: `/op <your name>`
+
+#### Items disappear but no money received
+
+1. Check console for economy errors
+2. Verify Vault is working: `/vault-info`
+3. Ensure your economy plugin is functioning
+
+#### Console shows errors about packets
+
+1. Update ProtocolLib to the latest version
+2. Ensure server version matches ProtocolLib version
+3. Check for plugin conflicts
+
+### Performance
+
+#### Does EasySell cause lag?
+
+EasySell is optimized for performance:
+
+* Efficient packet handling
+* Optimized price lookups
+* Minimal database usage
+
+#### Will it affect TPS?
+
+Under normal usage, EasySell has negligible impact on server TPS.
+
+### Support
+
+#### Where can I get help?
+
+Join our Discord server: discord.gg/pikzstudios
+
+#### How do I report a bug?
+
+Report bugs on our Discord server with:
+
+1. Server version
+2. EasySell version
+3. Error messages from console
+4. Steps to reproduce
+
+#### Can I request features?
+
+Yes! Feature requests are welcome on our Discord server.d:["$","div",null,{"className":"dx-doc","style":{"--accent":"#ef4444"},"children":[["$","main",null,{"className":"dx-main","children":[["$","p",null,{"className":"dx-eyebrow","children":"Plugins"}],["$","header",null,{"className":"dx-doc-head","children":[["$","h1",null,{"children":"EasySell"}],null]}],["$","p",null,{"className":"dx-tagline","children":"Sell items from a simple GUI with live worth in lore."}],["$","$L16",null,{"markdown":"$17","resourceId":56512}],"$L18","$L19","$L1a"]}],"$L1b"]}]
+1d:I[55260,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js","/_next/static/chunks/014i8qp0m4e36.js"],"CodeEnhancer"]
+1e:I[22016,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js","/_next/static/chunks/014i8qp0m4e36.js"],""]
+1f:I[5014,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js","/_next/static/chunks/014i8qp0m4e36.js"],"default"]
+20:I[73785,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js","/_next/static/chunks/014i8qp0m4e36.js"],"DocsAside"]
+1c:Tad75,<h2 id="overview">Overview</h2><p>Welcome to the official EasySell documentation! EasySell is a powerful and easy-to-use item selling plugin for Minecraft servers.</p><h3 id="what-is-easysell">What is EasySell?</h3><p>EasySell provides players with a simple GUI-based system to sell their items. Players can open a sell menu, place items into it, and when they close the inventory, all items are automatically sold at configured prices. The plugin also features real-time item worth display in item lore.</p><h3 id="features">Features</h3><ul><li><strong>GUI-Based Selling</strong> - Simple drag-and-drop interface for selling items</li><li><strong>Real-Time Worth Display</strong> - See item values directly in item lore while browsing inventory</li><li><strong>1500+ Pre-configured Prices</strong> - Extensive default price list for all Minecraft items</li><li><strong>Shulker Box Support</strong> - Automatically calculates worth of items inside shulker boxes</li><li><strong>Customizable Messages</strong> - Full control over all plugin messages with multiple display types</li><li><strong>Sound Effects</strong> - Configurable sounds when items are sold</li><li><strong>Vault Integration</strong> - Seamless economy integration</li><li><strong>Hex Color Support</strong> - Modern color codes including hex colors (#RRGGBB)</li><li><strong>Number Formatting</strong> - Large values displayed with K/M/B/T suffixes</li></ul><h3 id="requirements">Requirements</h3><ul><li><strong>Spigot/Paper</strong> 1.16 or higher (developed for 1.21.4)</li><li><strong>Vault</strong> - Economy plugin API</li><li><strong>ProtocolLib</strong> - Required for item worth display</li><li><strong>Economy Plugin</strong> - Any Vault-compatible economy (EssentialsX, CMI, etc.)</li></ul><h3 id="support">Support</h3><p>Need help? Join our Discord server at <strong>discord.gg/pikzstudios</strong></p><h2 id="installation">Installation</h2><p>This guide will walk you through installing EasySell on your Minecraft server.</p><h3 id="requirements">Requirements</h3><p>Before installing EasySell, ensure you have the following:</p><div class="dx-table"><table><thead><tr><th>Requirement</th><th>Description</th></tr></thead><tbody><tr><td><strong>Spigot/Paper</strong></td><td>Version 1.16 or higher (1.21.4 recommended)</td></tr><tr><td><strong>Java</strong></td><td>Java 21 or higher</td></tr><tr><td><strong>Vault</strong></td><td>Economy API plugin</td></tr><tr><td><strong>ProtocolLib</strong></td><td>Required for real-time worth display</td></tr><tr><td><strong>Economy Plugin</strong></td><td>Any Vault-compatible economy plugin</td></tr></tbody></table></div><h3 id="step-by-step-installation">Step-by-Step Installation</h3><h4 id="1-download-dependencies">1. Download Dependencies</h4><p>Download and install the required plugins first:</p><ol><li><strong>Vault</strong> - Download from <a href="https://www.spigotmc.org/resources/vault.34315/" target="_blank" rel="noreferrer">SpigotMC</a></li><li><strong>ProtocolLib</strong> - Download from <a href="https://www.spigotmc.org/resources/protocollib.1997/" target="_blank" rel="noreferrer">SpigotMC</a></li><li><strong>Economy Plugin</strong> - Install an economy plugin such as:</li></ol><ul><li>EssentialsX</li><li>CMI</li><li>iConomy</li><li>Any other Vault-compatible economy</li></ul><h4 id="2-install-easysell">2. Install EasySell</h4><ol><li>Download the latest <code>EasySell.jar</code> file</li><li>Place it in your server's <code>plugins</code> folder</li><li>Restart your server (or use a plugin manager to load it)</li></ol><h4 id="3-configure-license">3. Configure License</h4><ol><li>After first startup, open <code>plugins/EasySell/config.yml</code></li><li>Enter your license key:</li></ol><pre data-lang="yaml" data-label="yaml"><code>    License-Key: "YOUR-LICENSE-KEY-HERE"</code></pre><ol><li>Get your license key from <strong>discord.gg/pikzstudios</strong></li><li>Restart the server</li></ol><h4 id="4-verify-installation">4. Verify Installation</h4><p>Run the following command to verify EasySell is working:</p><pre><code>/sell</code></pre><p>You should see the sell GUI open.</p><h3 id="file-structure">File Structure</h3><p>After installation, EasySell creates the following files:</p><pre><code>plugins/EasySell/
+├── config.yml      # Main configuration
+├── messages.yml    # Message customization
+├── prices.yml      # Item prices
+├── sounds.yml      # Sound effects
+└── data.db         # SQLite database (if using SQLite)</code></pre><h3 id="first-time-setup-checklist">First-Time Setup Checklist</h3><ul><li>[ ] Vault installed and enabled</li><li>[ ] ProtocolLib installed and enabled</li><li>[ ] Economy plugin installed and working</li><li>[ ] EasySell.jar placed in plugins folder</li><li>[ ] Server restarted</li><li>[ ] License key configured</li><li>[ ] <code>/sell</code> command working</li></ul><h3 id="troubleshooting">Troubleshooting</h3><h4 id="plugin-won-t-enable">Plugin won't enable</h4><ul><li>Check that Vault and ProtocolLib are installed</li><li>Verify you're running Java 21 or higher</li><li>Check console for error messages</li></ul><h4 id="economy-not-working">Economy not working</h4><ul><li>Ensure an economy plugin is installed</li><li>Verify Vault recognizes your economy: <code>/vault-info</code></li></ul><h4 id="worth-display-not-showing">Worth display not showing</h4><ul><li>Make sure ProtocolLib is installed and enabled</li><li>Check that <code>item-worth: true</code> in config.yml</li></ul><h2 id="commands-and-permissions">Commands and Permissions</h2><p>This page lists all EasySell commands and their associated permissions.</p><h3 id="commands">Commands</h3><h4 id="sell">/sell</h4><p>Opens the sell GUI where players can sell their items.</p><div class="dx-table"><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><strong>Usage</strong></td><td><code>/sell</code></td></tr><tr><td><strong>Permission</strong></td><td><code>easysell.sell</code></td></tr><tr><td><strong>Default</strong></td><td>All players</td></tr></tbody></table></div><p><strong>How it works:</strong></p><ol><li>Type <code>/sell</code> to open a 4-row inventory</li><li>Drag and drop items you want to sell</li><li>Close the inventory to sell all items</li><li>Money is deposited and a summary is displayed</li></ol><h4 id="worth">/worth</h4><p>Check the sell value of the item you're holding.</p><div class="dx-table"><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><strong>Usage</strong></td><td><code>/worth</code></td></tr><tr><td><strong>Permission</strong></td><td><code>easysell.worth</code></td></tr><tr><td><strong>Default</strong></td><td>All players</td></tr></tbody></table></div><p><strong>Example Output:</strong></p><pre><code>You can sell Diamond for $120.00!</code></pre><p><strong>Notes:</strong></p><ul><li>Hold the item in your main hand</li><li>Shows the value per single item</li><li>Stack size is not calculated for this command</li></ul><h4 id="easypayreload">/easypayreload</h4><p>Reloads all EasySell configuration files.</p><div class="dx-table"><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td><strong>Usage</strong></td><td><code>/easypayreload</code></td></tr><tr><td><strong>Permission</strong></td><td><code>easysell.reload</code></td></tr><tr><td><strong>Default</strong></td><td>OP only</td></tr></tbody></table></div><p><strong>Reloads:</strong></p><ul><li>config.yml</li><li>messages.yml</li><li>prices.yml</li><li>sounds.yml</li></ul><h3 id="permissions">Permissions</h3><h4 id="permission-nodes">Permission Nodes</h4><div class="dx-table"><table><thead><tr><th>Permission</th><th>Description</th><th>Default</th></tr></thead><tbody><tr><td><code>easysell.sell</code></td><td>Access to <code>/sell</code> command</td><td><code>true</code> (all players)</td></tr><tr><td><code>easysell.worth</code></td><td>Access to <code>/worth</code> command</td><td><code>true</code> (all players)</td></tr><tr><td><code>easysell.reload</code></td><td>Access to <code>/easypayreload</code> command</td><td><code>op</code></td></tr></tbody></table></div><h2 id="configuration">Configuration</h2><p>This page covers all configuration options in EasySell.</p><h3 id="config-yml">config.yml</h3><p>The main configuration file controls core plugin settings.</p><h4 id="full-default-configuration">Full Default Configuration</h4><pre data-lang="yaml" data-label="yaml"><code>License-Key: "GET LICENSE FROM DISCORD.GG/PIKZSTUDIOS"
+
+database:
+  type: sqlite # Options: sqlite, mysql
+  sqlite:
+    file: data
+  mysql:
+    host: localhost
+    port: 3306
+    database: easysell
+    username: root
+    password: password
+
+sell-gui:
+  title: "Put items in here to sell them!"
+
+item-worth: true
+item-worth-lore:
+  - "&amp;7Worth: &amp;a$%worth%"</code></pre><h4 id="configuration-options">Configuration Options</h4><h4 id="license-key">License Key</h4><pre data-lang="yaml" data-label="yaml"><code>License-Key: "YOUR-LICENSE-KEY"</code></pre><p>Your EasySell license key obtained from <strong>discord.gg/pikzstudios</strong>.</p><h4 id="database-settings">Database Settings</h4><pre data-lang="yaml" data-label="yaml"><code>database:
+  type: sqlite</code></pre><p>Choose between <code>sqlite</code> or <code>mysql</code> for data storage.</p><p><strong>SQLite Configuration</strong></p><pre data-lang="yaml" data-label="yaml"><code>sqlite:
+  file: data</code></pre><ul><li><code>file</code> - Name of the SQLite database file (creates <code>data.db</code>)</li></ul><p><strong>MySQL Configuration</strong></p><pre data-lang="yaml" data-label="yaml"><code>mysql:
+  host: localhost
+  port: 3306
+  database: easysell
+  username: root
+  password: password</code></pre><div class="dx-table"><table><thead><tr><th>Option</th><th>Description</th></tr></thead><tbody><tr><td><code>host</code></td><td>MySQL server address</td></tr><tr><td><code>port</code></td><td>MySQL server port (default: 3306)</td></tr><tr><td><code>database</code></td><td>Database name</td></tr><tr><td><code>username</code></td><td>MySQL username</td></tr><tr><td><code>password</code></td><td>MySQL password</td></tr></tbody></table></div><h4 id="sell-gui-settings">Sell GUI Settings</h4><pre data-lang="yaml" data-label="yaml"><code>sell-gui:
+  title: "Put items in here to sell them!"</code></pre><ul><li><code>title</code> - The title displayed on the sell GUI inventory</li><li>Supports color codes (<code>&amp;c</code>, <code>&amp;a</code>, etc.)</li><li>Supports hex colors (<code>#RRGGBB</code>)</li></ul><p><strong>Examples:</strong></p><pre data-lang="yaml" data-label="yaml"><code>sell-gui:
+  title: "&amp;6&amp;lSell Your Items"
+
+sell-gui:
+  title: "#7dfb03Sell Shop"</code></pre><h4 id="item-worth-display">Item Worth Display</h4><pre data-lang="yaml" data-label="yaml"><code>item-worth: true</code></pre><p>Enable or disable the real-time item worth display in item lore.</p><ul><li><code>true</code> - Show worth in item lore while viewing inventory</li><li><code>false</code> - Disable worth display feature</li></ul><pre data-lang="yaml" data-label="yaml"><code>item-worth-lore:
+  - "&amp;7Worth: &amp;a$%worth%"</code></pre><p>Customize the lore lines added to items showing their worth.</p><p><strong>Placeholders:</strong></p><ul><li><code>%worth%</code> - The formatted sell value of the item (includes quantity)</li></ul><p><strong>Examples:</strong></p><pre data-lang="yaml" data-label="yaml"><code>item-worth-lore:
+  - "&amp;7Worth: &amp;a$%worth%"
+
+item-worth-lore:
+  - ""
+  - "&amp;7Sell Value: &amp;e%worth%"
+  - "&amp;7Right-click to sell!"
+
+item-worth-lore:
+  - "#aaffaaValue: $%worth%"</code></pre><h3 id="sounds-yml">sounds.yml</h3><p>Configure sound effects for the plugin.</p><pre data-lang="yaml" data-label="yaml"><code>successfully-sold: ENTITY_PLAYER_LEVELUP</code></pre><ul><li><code>successfully-sold</code> - Sound played when items are sold successfully</li></ul><p><strong>Available Sounds:</strong> Use any valid <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html" target="_blank" rel="noreferrer">Minecraft sound name</a>.</p><p><strong>Popular Options:</strong></p><ul><li><code>ENTITY_PLAYER_LEVELUP</code></li><li><code>ENTITY_EXPERIENCE_ORB_PICKUP</code></li><li><code>BLOCK_NOTE_BLOCK_PLING</code></li><li><code>UI_BUTTON_CLICK</code></li></ul><h3 id="reloading-configuration">Reloading Configuration</h3><p>After making changes to any configuration file, reload the plugin:</p><pre><code>/easypayreload</code></pre><p><strong>Note:</strong> Some changes may require a full server restart.</p><h2 id="sell-gui">Sell GUI</h2><p>The Sell GUI is the primary way players sell items in EasySell. This page explains how it works and how to customize it.</p><h3 id="overview">Overview</h3><p>The Sell GUI is a chest-style inventory where players place items to sell them. When the inventory is closed, all items are automatically sold and money is deposited.</p><h3 id="how-to-use">How to Use</h3><h4 id="opening-the-gui">Opening the GUI</h4><p>Type <code>/sell</code> to open the sell interface.</p><h4 id="selling-items">Selling Items</h4><ol><li><strong>Open</strong> - Type <code>/sell</code></li><li><strong>Add Items</strong> - Drag items from your inventory into the sell GUI</li><li><strong>Close</strong> - Press ESC or click outside the GUI</li><li><strong>Receive Money</strong> - Items are sold and payment is deposited</li></ol><h4 id="gui-layout">GUI Layout</h4><pre><code>+---+---+---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |   |   |  Row 1
++---+---+---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |   |   |  Row 2
++---+---+---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |   |   |  Row 3
++---+---+---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |   |   |  Row 4
++---+---+---+---+---+---+---+---+---+</code></pre><ul><li><strong>Size:</strong> 36 slots (4 rows of 9)</li><li><strong>All slots</strong> are available for selling items</li><li>No decorative or locked slots</li></ul><h3 id="customization">Customization</h3><h4 id="gui-title">GUI Title</h4><p>Configure the title in <code>config.yml</code>:</p><pre data-lang="yaml" data-label="yaml"><code>sell-gui:
+  title: "Put items in here to sell them!"</code></pre><p><strong>Examples with colors:</strong></p><pre data-lang="yaml" data-label="yaml"><code>sell-gui:
+  title: "&amp;6&amp;lSell Shop"</code></pre><pre data-lang="yaml" data-label="yaml"><code>sell-gui:
+  title: "#7dfb03&amp;lSELL &amp;fYour Items"</code></pre><p><strong>Supported formats:</strong></p><ul><li>Legacy colors: <code>&amp;c</code>, <code>&amp;a</code>, <code>&amp;6</code>, etc.</li><li>Formatting: <code>&amp;l</code> (bold), <code>&amp;o</code> (italic), <code>&amp;n</code> (underline)</li><li>Hex colors: <code>#RRGGBB</code> (e.g., <code>#7dfb03</code>)</li></ul><h3 id="features">Features</h3><h4 id="automatic-price-calculation">Automatic Price Calculation</h4><ul><li>Each item's price is looked up in <code>prices.yml</code></li><li>Stack size is multiplied by per-item price</li><li>Total of all items is calculated on close</li></ul><h4 id="shulker-box-support">Shulker Box Support</h4><p>Shulker boxes receive special handling:</p><ol><li>The shulker box itself has a base price</li><li>All items inside are calculated</li><li>Total worth = box price + contents worth</li></ol><p><strong>Example:</strong></p><ul><li>Shulker Box: $75.00</li><li>64 Diamonds inside: $7,680.00</li><li><strong>Total:</strong> $7,755.00</li></ul><h4 id="sound-effect">Sound Effect</h4><p>When items are sold, a sound plays:</p><pre data-lang="yaml" data-label="yaml"><code># sounds.yml
+successfully-sold: ENTITY_PLAYER_LEVELUP</code></pre><h4 id="sold-message">Sold Message</h4><p>After closing, players see:</p><ul><li><strong>Title:</strong> The total amount earned (e.g., <code>+$7,755</code>)</li><li><strong>Subtitle:</strong> Optional item count and total (if enabled)</li><li><strong>Action Bar:</strong> Additional information</li></ul><h3 id="what-happens-when-you-close">What Happens When You Close</h3><ol><li><strong>Price Calculation</strong> - Each item's worth is calculated</li><li><strong>Total Sum</strong> - All item values are added together</li><li><strong>Money Deposit</strong> - Total is deposited via Vault</li><li><strong>Messages</strong> - Configured messages are sent to player</li><li><strong>Sound</strong> - Success sound plays</li><li><strong>Items Removed</strong> - All items in the GUI are deleted</li></ol><h3 id="items-that-cannot-be-sold">Items That Cannot Be Sold</h3><ul><li>Items with a price of <code>0</code> in prices.yml</li><li>Items not in prices.yml (if default-price is 0)</li></ul><p>When unsellable items are detected, the configured "item-not-sellable" message is shown (if enabled).</p><h3 id="tips">Tips</h3><h4 id="efficient-selling">Efficient Selling</h4><ol><li><strong>Shift-Click</strong> - Quickly move stacks from inventory</li><li><strong>Double-Click</strong> - Collect all matching items</li><li><strong>Drag</strong> - Place items across multiple slots</li></ol><h4 id="bulk-selling">Bulk Selling</h4><ul><li>Fill shulker boxes with items before selling</li><li>The entire contents will be valued automatically</li></ul><h4 id="check-before-selling">Check Before Selling</h4><ul><li>Use <code>/worth</code> while holding an item to verify its price</li><li>Enable item-worth display to see prices in item lore</li></ul><h2 id="worth-display">Worth Display</h2><p>The Worth Display feature shows item sell values directly in the item's lore while viewing your inventory. This is one of EasySell's most powerful features for player convenience.</p><h3 id="overview">Overview</h3><p>When enabled, as you hover over items in your inventory, their sell value is automatically added to the item's lore in real-time. This works without modifying the actual items.</p><h3 id="how-it-works">How It Works</h3><ol><li><strong>Packet Interception</strong> - EasySell uses ProtocolLib to intercept inventory packets</li><li><strong>Lore Injection</strong> - Worth information is added to item lore before display</li><li><strong>Real-Time</strong> - Updates happen as you browse your inventory</li><li><strong>Non-Destructive</strong> - Actual items are never modified</li></ol><h3 id="configuration">Configuration</h3><h4 id="enable-disable">Enable/Disable</h4><p>In <code>config.yml</code>:</p><pre data-lang="yaml" data-label="yaml"><code>item-worth: true</code></pre><ul><li><code>true</code> - Enable worth display in item lore</li><li><code>false</code> - Disable the feature entirely</li></ul><h4 id="customize-lore">Customize Lore</h4><pre data-lang="yaml" data-label="yaml"><code>item-worth-lore:
+  - "&amp;7Worth: &amp;a$%worth%"</code></pre><p><strong>Placeholders:</strong></p><ul><li><code>%worth%</code> - The calculated sell value (includes stack amount)</li></ul><h4 id="examples">Examples</h4><p><strong>Simple:</strong></p><pre data-lang="yaml" data-label="yaml"><code>item-worth-lore:
+  - "&amp;7Worth: &amp;a$%worth%"</code></pre><p>Display: <code>Worth: $120.00</code></p><p><strong>With separator:</strong></p><pre data-lang="yaml" data-label="yaml"><code>item-worth-lore:
+  - ""
+  - "&amp;7Sell Value: &amp;e$%worth%"</code></pre><p>Display:</p><pre><code>(blank line)
+Sell Value: $120.00</code></pre><p><strong>Multiple lines:</strong></p><pre data-lang="yaml" data-label="yaml"><code>item-worth-lore:
+  - ""
+  - "&amp;8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+  - "&amp;7Sell Price: &amp;a$%worth%"
+  - "&amp;8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"</code></pre><p><strong>Hex colors:</strong></p><pre data-lang="yaml" data-label="yaml"><code>item-worth-lore:
+  - "#aaffaa✦ Value: $%worth%"</code></pre><h3 id="price-calculation">Price Calculation</h3><h4 id="single-items">Single Items</h4><p>Worth = Item Price × Stack Amount</p><p><strong>Example:</strong> 64 diamonds at $120 each = <code>$7,680.00</code></p><h4 id="shulker-boxes">Shulker Boxes</h4><p>Worth = Shulker Box Price + Contents Worth</p><p><strong>Example:</strong></p><ul><li>Shulker Box: $75</li><li>Contents: 64 diamonds ($7,680) + 32 emeralds ($256)</li><li>Display: <code>$8,011.00</code></li></ul><h3 id="where-it-appears">Where It Appears</h3><p>Worth display shows in:</p><ul><li>✅ Player inventory</li><li>✅ Chest inventories</li><li>✅ Shulker box previews</li><li>✅ Ender chest</li><li>✅ Barrel, hopper, etc.</li></ul><p>Worth display does NOT show in:</p><ul><li>❌ Creative mode inventory</li><li>❌ Sell GUI (to avoid confusion)</li><li>❌ Other plugin GUIs</li></ul><h3 id="number-formatting">Number Formatting</h3><p>Large values are formatted with suffixes for readability:</p><div class="dx-table"><table><thead><tr><th>Value</th><th>Display</th></tr></thead><tbody><tr><td>1,000</td><td>1K</td></tr><tr><td>15,500</td><td>15.5K</td></tr><tr><td>1,000,000</td><td>1M</td></tr><tr><td>2,140,000,000</td><td>2.14B</td></tr></tbody></table></div><h3 id="requirements">Requirements</h3><ul><li><strong>ProtocolLib</strong> must be installed</li><li><code>item-worth: true</code> in config.yml</li></ul><h3 id="troubleshooting">Troubleshooting</h3><h4 id="worth-not-showing">Worth not showing</h4><ol><li>Check ProtocolLib is installed and enabled</li><li>Verify <code>item-worth: true</code> in config.yml</li><li>Run <code>/easypayreload</code> to reload config</li><li>Make sure you're not in Creative mode</li></ol><h4 id="wrong-prices-showing">Wrong prices showing</h4><ol><li>Check prices.yml for the item</li><li>Verify the material name is correct</li><li>Reload with <code>/easypayreload</code></li></ol><h4 id="lore-looks-wrong">Lore looks wrong</h4><ol><li>Check YAML formatting in config.yml</li><li>Ensure color codes are correct</li><li>Test with simple lore first</li></ol><h3 id="performance">Performance</h3><p>The worth display feature is optimized for performance:</p><ul><li>Only processes packets for survival/adventure mode</li><li>Skips already-processed items</li><li>Uses efficient number formatting</li><li>Minimal server impact</li></ul><h3 id="comparison-with-worth">Comparison with /worth</h3><div class="dx-table"><table><thead><tr><th>Feature</th><th>Worth Display</th><th>/worth Command</th></tr></thead><tbody><tr><td>Shows stack total</td><td>✅ Yes</td><td>❌ Single item</td></tr><tr><td>Requires action</td><td>❌ Automatic</td><td>✅ Type command</td></tr><tr><td>Works in chests</td><td>✅ Yes</td><td>❌ No</td></tr><tr><td>Shows all items</td><td>✅ Simultaneously</td><td>❌ One at a time</td></tr></tbody></table></div><h2 id="prices">Prices</h2><p>EasySell comes with over 1,500 pre-configured item prices. This page explains how the pricing system works.</p><h3 id="prices-yml-structure">prices.yml Structure</h3><pre data-lang="yaml" data-label="yaml"><code>sell:
+  default-price: 0.3
+  items:
+    dirt: 2.00
+    stone: 4.00
+    diamond: 120.00
+    # ... more items</code></pre><h4 id="default-price">Default Price</h4><pre data-lang="yaml" data-label="yaml"><code>default-price: 0.3</code></pre><p>Items not listed in the prices file will sell for this default value. Set to <code>0</code> to prevent selling unconfigured items.</p><h4 id="item-format">Item Format</h4><pre data-lang="yaml" data-label="yaml"><code>items:
+  material_name: price</code></pre><ul><li>Use Minecraft material names in lowercase</li><li>Replace spaces with underscores</li><li>Price is per single item</li></ul><h3 id="price-categories">Price Categories</h3><h4 id="building-blocks">Building Blocks</h4><div class="dx-table"><table><thead><tr><th>Item</th><th>Price</th></tr></thead><tbody><tr><td>dirt</td><td>$2.00</td></tr><tr><td>stone</td><td>$4.00</td></tr><tr><td>cobblestone</td><td>$3.00</td></tr><tr><td>sand</td><td>$4.00</td></tr><tr><td>gravel</td><td>$1.00</td></tr><tr><td>glass</td><td>$4.00</td></tr><tr><td>bricks</td><td>$5.00</td></tr><tr><td>obsidian</td><td>$10.00</td></tr></tbody></table></div><h4 id="wood">Wood</h4><div class="dx-table"><table><thead><tr><th>Item</th><th>Price</th></tr></thead><tbody><tr><td>oak\_log</td><td>$16.00</td></tr><tr><td>spruce\_log</td><td>$16.00</td></tr><tr><td>birch\_log</td><td>$16.00</td></tr><tr><td>oak\_planks</td><td>$4.00</td></tr><tr><td>spruce\_planks</td><td>$4.00</td></tr></tbody></table></div><h4 id="ores-minerals">Ores &amp; Minerals</h4><div class="dx-table"><table><thead><tr><th>Item</th><th>Price</th></tr></thead><tbody><tr><td>coal</td><td>$12.00</td></tr><tr><td>coal\_ore</td><td>$28.00</td></tr><tr><td>iron\_ore</td><td>$16.00</td></tr><tr><td>iron\_ingot</td><td>$5.00</td></tr><tr><td>gold\_ore</td><td>$20.00</td></tr><tr><td>gold\_ingot</td><td>$5.00</td></tr><tr><td>diamond</td><td>$120.00</td></tr><tr><td>diamond\_ore</td><td>$100.00</td></tr><tr><td>emerald</td><td>$8.00</td></tr><tr><td>emerald\_ore</td><td>$20.00</td></tr><tr><td>ancient\_debris</td><td>$600.00</td></tr><tr><td>netherite\_ingot</td><td>$25,000.00</td></tr><tr><td>netherite\_scrap</td><td>$3,000.00</td></tr></tbody></table></div><h4 id="tools">Tools</h4><div class="dx-table"><table><thead><tr><th>Item</th><th>Price</th></tr></thead><tbody><tr><td>wooden\_pickaxe</td><td>$16.00</td></tr><tr><td>stone\_pickaxe</td><td>$16.00</td></tr><tr><td>iron\_pickaxe</td><td>$5.00</td></tr><tr><td>diamond\_pickaxe</td><td>$35.00</td></tr><tr><td>netherite\_pickaxe</td><td>$300.00</td></tr></tbody></table></div><h4 id="armor">Armor</h4><div class="dx-table"><table><thead><tr><th>Item</th><th>Price</th></tr></thead><tbody><tr><td>leather\_chestplate</td><td>$16.00</td></tr><tr><td>iron\_chestplate</td><td>$35.00</td></tr><tr><td>diamond\_chestplate</td><td>$40.00</td></tr><tr><td>netherite\_chestplate</td><td>$1,400.00</td></tr></tbody></table></div><h4 id="rare-items">Rare Items</h4><div class="dx-table"><table><thead><tr><th>Item</th><th>Price</th></tr></thead><tbody><tr><td>dragon\_egg</td><td>$2,140,000,000.00</td></tr><tr><td>nether\_star</td><td>$50,000.00</td></tr><tr><td>elytra</td><td>$30,000.00</td></tr><tr><td>trident</td><td>$10,000.00</td></tr><tr><td>enchanted\_golden\_apple</td><td>$10,000.00</td></tr><tr><td>mace</td><td>$10,000.00</td></tr><tr><td>beacon</td><td>$7,500.00</td></tr><tr><td>totem\_of\_undying</td><td>$250.00</td></tr></tbody></table></div><h4 id="food">Food</h4><div class="dx-table"><table><thead><tr><th>Item</th><th>Price</th></tr></thead><tbody><tr><td>apple</td><td>$3.00</td></tr><tr><td>bread</td><td>$58.00</td></tr><tr><td>golden\_apple</td><td>$20.00</td></tr><tr><td>golden\_carrot</td><td>$20.00</td></tr><tr><td>cooked\_beef</td><td>$5.00</td></tr><tr><td>cooked\_porkchop</td><td>$4.00</td></tr></tbody></table></div><h3 id="customizing-prices">Customizing Prices</h3><h4 id="adding-new-items">Adding New Items</h4><p>Add new items under the <code>items:</code> section:</p><pre data-lang="yaml" data-label="yaml"><code>items:
+  # Existing items...
+  my_custom_item: 50.00</code></pre><h4 id="modifying-existing-prices">Modifying Existing Prices</h4><p>Simply change the number:</p><pre data-lang="yaml" data-label="yaml"><code>items:
+  diamond: 200.00  # Changed from 120.00</code></pre><h4 id="removing-items">Removing Items</h4><p>Remove the line or set price to 0:</p><pre data-lang="yaml" data-label="yaml"><code>items:
+  unwanted_item: 0  # Won't be sellable</code></pre><h4 id="using-decimal-values">Using Decimal Values</h4><pre data-lang="yaml" data-label="yaml"><code>items:
+  stick: 0.50
+  string: 0.25
+  dirt: 2.00</code></pre><h3 id="price-calculation">Price Calculation</h3><h4 id="single-items">Single Items</h4><p>Price shown = configured price × stack amount</p><p><strong>Example:</strong> 64 diamonds × $120.00 = $7,680.00</p><h4 id="shulker-boxes">Shulker Boxes</h4><p>EasySell automatically calculates the total worth of items inside shulker boxes:</p><ol><li>Shulker box base price (e.g., $75.00)</li><li>Plus sum of all items inside</li><li>Total displayed includes all contents</li></ol><h3 id="number-formatting">Number Formatting</h3><p>Large prices are formatted with suffixes:</p><div class="dx-table"><table><thead><tr><th>Value</th><th>Display</th></tr></thead><tbody><tr><td>1,000</td><td>1K</td></tr><tr><td>1,000,000</td><td>1M</td></tr><tr><td>1,000,000,000</td><td>1B</td></tr><tr><td>1,000,000,000,000</td><td>1T</td></tr><tr><td>1,000,000,000,000,000</td><td>1Q</td></tr><tr><td>1,000,000,000,000,000,000</td><td>1QQ</td></tr></tbody></table></div><p><strong>Example:</strong> Dragon Egg ($2,140,000,000) displays as <code>$2.14B</code></p><h3 id="tips">Tips</h3><ol><li><strong>Balance your economy</strong> - Consider your server's economy when setting prices</li><li><strong>Rare items should be rare</strong> - High prices for rare items prevent inflation</li><li><strong>Consider farming methods</strong> - Items that can be farmed easily should cost less</li><li><strong>Test your prices</strong> - Use <code>/worth</code> to verify prices are correct</li><li><strong>Regular updates</strong> - Review prices after Minecraft updates add new items</li></ol><h2 id="messages">Messages</h2><p>EasySell provides full customization of all plugin messages. This page explains every message option in <code>messages.yml</code>.</p><h3 id="message-structure">Message Structure</h3><p>Each message has three properties:</p><pre data-lang="yaml" data-label="yaml"><code>message-key:
+  enabled: true          # Whether to show this message
+  message: 'Your text'   # The message content
+  type: CHAT             # How to display the message</code></pre><h3 id="message-types">Message Types</h3><div class="dx-table"><table><thead><tr><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><code>CHAT</code></td><td>Standard chat message</td></tr><tr><td><code>ACTIONBAR</code></td><td>Action bar (above hotbar)</td></tr><tr><td><code>TITLE</code></td><td>Large center-screen title</td></tr><tr><td><code>SUBTITLE</code></td><td>Smaller text below title</td></tr><tr><td><code>BOTH</code></td><td>Chat + Action bar</td></tr></tbody></table></div><h3 id="all-messages">All Messages</h3><h4 id="no-permission">no-permission</h4><p>Shown when a player lacks permission for a command.</p><pre data-lang="yaml" data-label="yaml"><code>no-permission:
+  enabled: true
+  message: '&amp;cYou do not have permission to do that!'
+  type: BOTH</code></pre><h4 id="items-sold-title">items-sold-title</h4><p>Main title shown when items are sold successfully.</p><pre data-lang="yaml" data-label="yaml"><code>items-sold-title:
+  enabled: true
+  message: '#7dfb03+$%total%'
+  type: TITLE</code></pre><p><strong>Placeholders:</strong></p><ul><li><code>%total%</code> - Total money earned (formatted)</li></ul><h4 id="amount-sold-subtitle">amount-sold-subtitle</h4><p>Subtitle with additional sale details.</p><pre data-lang="yaml" data-label="yaml"><code>amount-sold-subtitle:
+  enabled: false
+  message: '&amp;aYou sold &amp;e%items% &amp;aitems for &amp;e%total% &amp;ato the shop!'
+  type: SUBTITLE</code></pre><p><strong>Placeholders:</strong></p><ul><li><code>%items%</code> - Number of items sold</li><li><code>%total%</code> - Total money earned</li></ul><h4 id="no-items-to-selling">no-items-to-selling</h4><p>Shown when the sell GUI is closed with no valid items.</p><pre data-lang="yaml" data-label="yaml"><code>no-items-to-selling:
+  enabled: false
+  message: '&amp;cYou sold no items!'
+  type: ACTIONBAR</code></pre><h4 id="item-not-sellable">item-not-sellable</h4><p>Shown when an item cannot be sold (price is 0 or not configured).</p><pre data-lang="yaml" data-label="yaml"><code>item-not-sellable:
+  enabled: false
+  message: '&amp;cYou can not sell this item!'
+  type: ACTIONBAR</code></pre><h4 id="item-worth">item-worth</h4><p>Shown when using the <code>/worth</code> command.</p><pre data-lang="yaml" data-label="yaml"><code>item-worth:
+  enabled: true
+  message: '&amp;aYou can sell %item% for &amp;e%worth%!'
+  type: ACTIONBAR</code></pre><p><strong>Placeholders:</strong></p><ul><li><code>%item%</code> - Item name</li><li><code>%worth%</code> - Item's sell value</li></ul><h4 id="worth-display-disabled">worth-display-disabled</h4><p>Shown when a player tries to use a feature while worth display is off.</p><pre data-lang="yaml" data-label="yaml"><code>worth-display-disabled:
+  enabled: true
+  message: '&amp;cWorth display is disabled!'
+  type: ACTIONBAR</code></pre><h4 id="worth-display-enabled">worth-display-enabled</h4><p>Confirmation when worth display is enabled.</p><pre data-lang="yaml" data-label="yaml"><code>worth-display-enabled:
+  enabled: true
+  message: "&amp;aWorth display enabled!"
+  type: ACTIONBAR</code></pre><h3 id="color-codes">Color Codes</h3><h4 id="legacy-colors">Legacy Colors</h4><div class="dx-table"><table><thead><tr><th>Code</th><th>Color</th></tr></thead><tbody><tr><td><code>&amp;0</code></td><td>Black</td></tr><tr><td><code>&amp;1</code></td><td>Dark Blue</td></tr><tr><td><code>&amp;2</code></td><td>Dark Green</td></tr><tr><td><code>&amp;3</code></td><td>Dark Aqua</td></tr><tr><td><code>&amp;4</code></td><td>Dark Red</td></tr><tr><td><code>&amp;5</code></td><td>Dark Purple</td></tr><tr><td><code>&amp;6</code></td><td>Gold</td></tr><tr><td><code>&amp;7</code></td><td>Gray</td></tr><tr><td><code>&amp;8</code></td><td>Dark Gray</td></tr><tr><td><code>&amp;9</code></td><td>Blue</td></tr><tr><td><code>&amp;a</code></td><td>Green</td></tr><tr><td><code>&amp;b</code></td><td>Aqua</td></tr><tr><td><code>&amp;c</code></td><td>Red</td></tr><tr><td><code>&amp;d</code></td><td>Light Purple</td></tr><tr><td><code>&amp;e</code></td><td>Yellow</td></tr><tr><td><code>&amp;f</code></td><td>White</td></tr></tbody></table></div><h4 id="formatting-codes">Formatting Codes</h4><div class="dx-table"><table><thead><tr><th>Code</th><th>Effect</th></tr></thead><tbody><tr><td><code>&amp;l</code></td><td><strong>Bold</strong></td></tr><tr><td><code>&amp;o</code></td><td>_Italic_</td></tr><tr><td><code>&amp;n</code></td><td>Underline</td></tr><tr><td><code>&amp;m</code></td><td>~~Strikethrough~~</td></tr><tr><td><code>&amp;k</code></td><td>Obfuscated</td></tr><tr><td><code>&amp;r</code></td><td>Reset</td></tr></tbody></table></div><h4 id="hex-colors">Hex Colors</h4><p>Use <code>#RRGGBB</code> format for custom colors:</p><pre data-lang="yaml" data-label="yaml"><code>message: '#7dfb03This is green!'
+message: '#ff6b6bThis is coral red!'
+message: '#4ecdc4This is teal!'</code></pre><h3 id="example-configurations">Example Configurations</h3><h4 id="minimal-messages">Minimal Messages</h4><pre data-lang="yaml" data-label="yaml"><code>no-permission:
+  enabled: true
+  message: '&amp;cNo permission!'
+  type: CHAT
+
+items-sold-title:
+  enabled: true
+  message: '&amp;a+$%total%'
+  type: ACTIONBAR
+
+amount-sold-subtitle:
+  enabled: false
+  message: ''
+  type: SUBTITLE
+
+no-items-to-selling:
+  enabled: false
+  message: ''
+  type: ACTIONBAR
+
+item-not-sellable:
+  enabled: false
+  message: ''
+  type: ACTIONBAR
+
+item-worth:
+  enabled: true
+  message: '&amp;7Worth: &amp;e%worth%'
+  type: ACTIONBAR</code></pre><h4 id="detailed-messages">Detailed Messages</h4><pre data-lang="yaml" data-label="yaml"><code>no-permission:
+  enabled: true
+  message: '&amp;c&amp;l[!] &amp;cYou don''t have permission to use this command!'
+  type: BOTH
+
+items-sold-title:
+  enabled: true
+  message: '#55ff55&amp;lSOLD!'
+  type: TITLE
+
+amount-sold-subtitle:
+  enabled: true
+  message: '&amp;f%items% items for &amp;a$%total%'
+  type: SUBTITLE
+
+no-items-to-selling:
+  enabled: true
+  message: '&amp;eNo items were sold. Put items in the GUI first!'
+  type: CHAT
+
+item-not-sellable:
+  enabled: true
+  message: '&amp;cThis item cannot be sold!'
+  type: ACTIONBAR
+
+item-worth:
+  enabled: true
+  message: '&amp;6[Worth] &amp;f%item% &amp;7sells for &amp;a$%worth%'
+  type: CHAT</code></pre><h3 id="tips">Tips</h3><ol><li><strong>Disable unused messages</strong> - Set <code>enabled: false</code> for cleaner experience</li><li><strong>Use appropriate types</strong> - Titles for important info, action bar for quick feedback</li><li><strong>Keep it concise</strong> - Short messages are easier to read</li><li><strong>Test colors</strong> - Join the server to verify colors look correct</li><li><strong>Escape quotes</strong> - Use <code>''</code> for single quotes in YAML</li></ol><h2 id="faq">FAQ</h2><p>Common questions and answers about EasySell.</p><h3 id="general">General</h3><h4 id="what-is-easysell">What is EasySell?</h4><p>EasySell is a Minecraft plugin that allows players to easily sell items through a GUI-based interface. Players simply open a menu, place items in it, and close it to sell everything at once.</p><h4 id="what-versions-are-supported">What versions are supported?</h4><p>EasySell supports Minecraft 1.16 and above. It's developed and tested primarily on 1.21.4.</p><h4 id="is-easysell-free">Is EasySell free?</h4><p>EasySell requires a license key. Visit discord.gg/pikzstudios to obtain your license.</p><h3 id="installation">Installation</h3><h4 id="what-plugins-are-required">What plugins are required?</h4><div class="dx-table"><table><thead><tr><th>Plugin</th><th>Purpose</th></tr></thead><tbody><tr><td><strong>Vault</strong></td><td>Economy API integration</td></tr><tr><td><strong>ProtocolLib</strong></td><td>Real-time worth display</td></tr><tr><td><strong>Economy Plugin</strong></td><td>Actual money storage (EssentialsX, CMI, etc.)</td></tr></tbody></table></div><h4 id="why-isn-t-the-plugin-enabling">Why isn't the plugin enabling?</h4><p>Check the following:</p><ol><li>Vault is installed and enabled</li><li>ProtocolLib is installed and enabled</li><li>You're running Java 21 or higher</li><li>License key is valid</li></ol><h4 id="how-do-i-get-a-license-key">How do I get a license key?</h4><p>Join discord.gg/pikzstudios to request a license key.</p><h3 id="economy">Economy</h3><h4 id="what-economy-plugins-work-with-easysell">What economy plugins work with EasySell?</h4><p>Any Vault-compatible economy plugin works:</p><ul><li>EssentialsX</li><li>CMI</li><li>iConomy</li><li>TheNewEconomy</li><li>And many more</li></ul><h4 id="why-isn-t-money-being-deposited">Why isn't money being deposited?</h4><ol><li>Verify an economy plugin is installed</li><li>Check Vault recognizes your economy: look for Vault messages on startup</li><li>Ensure the player has a valid economy account</li></ol><h4 id="can-i-use-multiple-currencies">Can I use multiple currencies?</h4><p>EasySell uses Vault's default economy. For multiple currencies, use an economy plugin that supports that feature.</p><h3 id="prices">Prices</h3><h4 id="how-do-i-change-item-prices">How do I change item prices?</h4><p>Edit <code>plugins/EasySell/prices.yml</code>:</p><pre data-lang="yaml" data-label="yaml"><code>sell:
+  items:
+    diamond: 150.00  # Change from 120.00</code></pre><p>Then run <code>/easypayreload</code>.</p><h4 id="what-happens-if-an-item-isn-t-in-the-price-list">What happens if an item isn't in the price list?</h4><p>It uses the <code>default-price</code> value:</p><pre data-lang="yaml" data-label="yaml"><code>sell:
+  default-price: 0.3</code></pre><p>Set to <code>0</code> to prevent selling unconfigured items.</p><h4 id="how-do-i-add-new-items">How do I add new items?</h4><p>Add them to the <code>items:</code> section in prices.yml:</p><pre data-lang="yaml" data-label="yaml"><code>items:
+  new_item_name: 50.00</code></pre><p>Use the Minecraft material name in lowercase with underscores.</p><h4 id="why-is-my-item-selling-for-the-wrong-price">Why is my item selling for the wrong price?</h4><ol><li>Check the exact material name in prices.yml</li><li>Material names are case-sensitive (use lowercase)</li><li>Reload with <code>/easypayreload</code> after changes</li></ol><h3 id="worth-display">Worth Display</h3><h4 id="the-worth-lore-isn-t-showing-on-items">The worth lore isn't showing on items</h4><ol><li>Ensure <code>item-worth: true</code> in config.yml</li><li>Verify ProtocolLib is installed</li><li>Make sure you're not in Creative mode</li><li>Reload the plugin</li></ol><h4 id="can-i-disable-the-worth-display">Can I disable the worth display?</h4><p>Yes, set <code>item-worth: false</code> in config.yml.</p><h4 id="why-does-the-worth-show-in-my-inventory-but-not-chests">Why does the worth show in my inventory but not chests?</h4><p>Worth display should work in all inventories. If it doesn't:</p><ol><li>Check ProtocolLib version is up to date</li><li>Look for errors in console</li><li>Try restarting the server</li></ol><h3 id="sell-gui">Sell GUI</h3><h4 id="how-big-is-the-sell-gui">How big is the sell GUI?</h4><p>The sell GUI has 36 slots (4 rows of 9 slots).</p><h4 id="can-i-change-the-gui-size">Can I change the GUI size?</h4><p>Currently, the GUI size is fixed at 36 slots.</p><h4 id="can-i-add-decoration-items-to-the-gui">Can I add decoration items to the GUI?</h4><p>The current version doesn't support decoration items. All slots are available for selling.</p><h4 id="what-happens-to-unsellable-items">What happens to unsellable items?</h4><p>Items with a price of 0 or not in the price list (when default-price is 0) cannot be sold. The "item-not-sellable" message will display if enabled.</p><h3 id="commands">Commands</h3><h4 id="what-s-the-difference-between-sell-and-worth">What's the difference between /sell and /worth?</h4><div class="dx-table"><table><thead><tr><th>Command</th><th>Function</th></tr></thead><tbody><tr><td><code>/sell</code></td><td>Opens GUI to sell multiple items</td></tr><tr><td><code>/worth</code></td><td>Shows value of item in hand</td></tr></tbody></table></div><h4 id="can-i-create-aliases-for-commands">Can I create aliases for commands?</h4><p>Use a plugin like CommandAliases or add aliases in your server's commands.yml.</p><h4 id="how-do-i-reload-the-config">How do I reload the config?</h4><p>Use <code>/easypayreload</code> (requires <code>easysell.reload</code> permission).</p><h3 id="permissions">Permissions</h3><h4 id="can-players-sell-by-default">Can players sell by default?</h4><p>Yes, <code>easysell.sell</code> and <code>easysell.worth</code> are granted to all players by default.</p><h4 id="how-do-i-restrict-selling-to-certain-ranks">How do I restrict selling to certain ranks?</h4><pre data-lang="bash" data-label="bash"><code># Using LuckPerms
+/lp group default permission set easysell.sell false
+/lp group vip permission set easysell.sell true</code></pre><h3 id="troubleshooting">Troubleshooting</h3><h4 id="plugin-loads-but-commands-don-t-work">Plugin loads but commands don't work</h4><ol><li>Check for error messages in console</li><li>Verify license key is valid</li><li>Ensure dependencies are loading before EasySell</li></ol><h4 id="no-permission-message-even-though-i-m-op">"No permission" message even though I'm OP</h4><ol><li>Check if another plugin is interfering</li><li>Verify permission nodes with your permission plugin</li><li>Try giving explicit permission: <code>/op &lt;your name&gt;</code></li></ol><h4 id="items-disappear-but-no-money-received">Items disappear but no money received</h4><ol><li>Check console for economy errors</li><li>Verify Vault is working: <code>/vault-info</code></li><li>Ensure your economy plugin is functioning</li></ol><h4 id="console-shows-errors-about-packets">Console shows errors about packets</h4><ol><li>Update ProtocolLib to the latest version</li><li>Ensure server version matches ProtocolLib version</li><li>Check for plugin conflicts</li></ol><h3 id="performance">Performance</h3><h4 id="does-easysell-cause-lag">Does EasySell cause lag?</h4><p>EasySell is optimized for performance:</p><ul><li>Efficient packet handling</li><li>Optimized price lookups</li><li>Minimal database usage</li></ul><h4 id="will-it-affect-tps">Will it affect TPS?</h4><p>Under normal usage, EasySell has negligible impact on server TPS.</p><h3 id="support">Support</h3><h4 id="where-can-i-get-help">Where can I get help?</h4><p>Join our Discord server: discord.gg/pikzstudios</p><h4 id="how-do-i-report-a-bug">How do I report a bug?</h4><p>Report bugs on our Discord server with:</p><ol><li>Server version</li><li>EasySell version</li><li>Error messages from console</li><li>Steps to reproduce</li></ol><h4 id="can-i-request-features">Can I request features?</h4><p>Yes! Feature requests are welcome on our Discord server.</p>18:["$","article",null,{"className":"dx-prose","dangerouslySetInnerHTML":{"__html":"$1c"}}]
+19:["$","$L1d",null,{}]
+1a:["$","nav",null,{"className":"dx-pager","children":[["$","$L1e",null,{"href":"/docs/shards","className":"dx-pager-btn prev","children":[["$","$L1f",null,{"ref":"$undefined","icon":{"name":"arrow-left","size":24,"node":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]]},"className":"$undefined","size":16}],["$","span",null,{"children":[["$","small",null,{"children":"Prev"}],"Shards"]}]]}],["$","$L1e",null,{"href":"/docs/ecobank","className":"dx-pager-btn next","children":[["$","span",null,{"children":[["$","small",null,{"children":"Next"}],"EcoBank"]}],["$","$L1f",null,{"ref":"$undefined","icon":{"name":"arrow-right","size":24,"node":[["path",{"d":"M5 12h14","key":"1ays0h"}],["path",{"d":"m12 5 7 7-7 7","key":"xquz4c"}]]},"className":"$undefined","size":16}]]}]]}]
+1b:["$","$L20",null,{"items":[{"level":2,"text":"Overview","id":"overview"},{"level":3,"text":"What is EasySell?","id":"what-is-easysell"},{"level":3,"text":"Features","id":"features"},{"level":3,"text":"Requirements","id":"requirements"},{"level":3,"text":"Support","id":"support"},{"level":2,"text":"Installation","id":"installation"},{"level":3,"text":"Requirements","id":"requirements"},{"level":3,"text":"Step-by-Step Installation","id":"step-by-step-installation"},{"level":3,"text":"File Structure","id":"file-structure"},{"level":3,"text":"First-Time Setup Checklist","id":"first-time-setup-checklist"},{"level":3,"text":"Troubleshooting","id":"troubleshooting"},{"level":2,"text":"Commands and Permissions","id":"commands-and-permissions"},{"level":3,"text":"Commands","id":"commands"},{"level":3,"text":"Permissions","id":"permissions"},{"level":2,"text":"Configuration","id":"configuration"},{"level":3,"text":"config.yml","id":"config-yml"},{"level":3,"text":"sounds.yml","id":"sounds-yml"},{"level":3,"text":"Reloading Configuration","id":"reloading-configuration"},{"level":2,"text":"Sell GUI","id":"sell-gui"},{"level":3,"text":"Overview","id":"overview"},{"level":3,"text":"How to Use","id":"how-to-use"},{"level":3,"text":"Customization","id":"customization"},{"level":3,"text":"Features","id":"features"},{"level":3,"text":"What Happens When You Close","id":"what-happens-when-you-close"},{"level":3,"text":"Items That Cannot Be Sold","id":"items-that-cannot-be-sold"},{"level":3,"text":"Tips","id":"tips"},{"level":2,"text":"Worth Display","id":"worth-display"},{"level":3,"text":"Overview","id":"overview"},{"level":3,"text":"How It Works","id":"how-it-works"},{"level":3,"text":"Configuration","id":"configuration"},{"level":3,"text":"Price Calculation","id":"price-calculation"},{"level":3,"text":"Where It Appears","id":"where-it-appears"},{"level":3,"text":"Number Formatting","id":"number-formatting"},{"level":3,"text":"Requirements","id":"requirements"},{"level":3,"text":"Troubleshooting","id":"troubleshooting"},{"level":3,"text":"Performance","id":"performance"},{"level":3,"text":"Comparison with /worth","id":"comparison-with-worth"},{"level":2,"text":"Prices","id":"prices"},{"level":3,"text":"prices.yml Structure","id":"prices-yml-structure"},{"level":3,"text":"Price Categories","id":"price-categories"},{"level":3,"text":"Customizing Prices","id":"customizing-prices"},{"level":3,"text":"Price Calculation","id":"price-calculation"},{"level":3,"text":"Number Formatting","id":"number-formatting"},{"level":3,"text":"Tips","id":"tips"},{"level":2,"text":"Messages","id":"messages"},{"level":3,"text":"Message Structure","id":"message-structure"},{"level":3,"text":"Message Types","id":"message-types"},{"level":3,"text":"All Messages","id":"all-messages"},{"level":3,"text":"Color Codes","id":"color-codes"},{"level":3,"text":"Example Configurations","id":"example-configurations"},{"level":3,"text":"Tips","id":"tips"},{"level":2,"text":"FAQ","id":"faq"},{"level":3,"text":"General","id":"general"},{"level":3,"text":"Installation","id":"installation"},{"level":3,"text":"Economy","id":"economy"},{"level":3,"text":"Prices","id":"prices"},{"level":3,"text":"Worth Display","id":"worth-display"},{"level":3,"text":"Sell GUI","id":"sell-gui"},{"level":3,"text":"Commands","id":"commands"},{"level":3,"text":"Permissions","id":"permissions"},{"level":3,"text":"Troubleshooting","id":"troubleshooting"},{"level":3,"text":"Performance","id":"performance"},{"level":3,"text":"Support","id":"support"}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+21:I[27201,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"IconMark"]
+10:null
+15:[["$","title","0",{"children":"EasySell — Docs"}],["$","meta","1",{"name":"description","content":"Setup guides, commands and configuration for every Pikz Studio product."}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L21","3",{}]]

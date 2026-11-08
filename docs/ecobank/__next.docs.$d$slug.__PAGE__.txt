@@ -1,0 +1,138 @@
+1:"$Sreact.fragment"
+2:I[84103,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js","/_next/static/chunks/014i8qp0m4e36.js"],"DocsActions"]
+b:I[55260,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js","/_next/static/chunks/014i8qp0m4e36.js"],"CodeEnhancer"]
+c:I[22016,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js","/_next/static/chunks/014i8qp0m4e36.js"],""]
+d:I[5014,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js","/_next/static/chunks/014i8qp0m4e36.js"],"default"]
+e:I[73785,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js","/_next/static/chunks/014i8qp0m4e36.js"],"DocsAside"]
+f:I[97367,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+3:Tf00,## Overview
+
+EcoBank adds a loan system to your server economy. Players open the bank menu, pick a loan size, and pay it back through a debt menu. Loans carry interest and a due date, and players who stay overdue run into punishments you define.
+
+### Requirements
+
+* Paper or Folia 1.21 or newer
+* Vault and a Vault-compatible economy plugin
+* Optional: PlaceholderAPI for the stat lines in menus
+
+### Installation
+
+1. Put `EcoBank.jar` in your `plugins` folder.
+2. Start the server once so the config files are created.
+3. Set `license-key` in `plugins/EcoBank/config.yml`. Get your key on [discord.gg/pikzstudios](https://discord.gg/pikzstudios).
+4. Restart the server.
+
+## Commands
+
+| Command | Description | Permission |
+| --- | --- | --- |
+| `/bank` | Open the loan menu | `ecobank.bank` |
+| `/debt` | Open the debt menu to repay what you owe | `ecobank.debt` |
+| `/ecobank` | Open the admin config menu (aliases `/ecob`, `/eb`) | `ecobank.admin` |
+| `/ecobank gui` | Open the admin config menu | `ecobank.admin` |
+| `/ecobank reload` | Reload all config files | `ecobank.admin` |
+| `/ecobank save` | Save the config | `ecobank.admin` |
+
+## Permissions
+
+| Permission | Description | Default |
+| --- | --- | --- |
+| `ecobank.bank` | Use `/bank` | everyone |
+| `ecobank.debt` | Use `/debt` | everyone |
+| `ecobank.admin` | Admin command and config menu | op |
+
+## Configuration
+
+### config.yml
+
+| Option | Default | Description |
+| --- | --- | --- |
+| `license-key` | | Your license key |
+| `database.type` | `sqlite` | `sqlite` or `mysql` |
+| `loans.interest-rate` | `5.0` | Interest in percent, added to every loan |
+| `loans.max-active-loans` | `1` | Loans a player can hold at once |
+| `loans.due-days` | `7` | Days until a loan is due |
+| `loans.max-debt` | `98000.0` | Highest total debt a player can reach |
+| `anti-alt.enabled` | `true` | Block loans when another online account on the same IP has an active loan |
+| `punishment.check-interval-minutes` | `60` | How often overdue loans are checked |
+| `stat-requirements.enabled` | `false` | Require player statistics before a loan |
+
+### Stat requirements
+
+When enabled, a player must meet every listed statistic before borrowing. Any Bukkit statistic name works.
+
+```yaml
+stat-requirements:
+  enabled: true
+  requirements:
+    kills:
+      statistic: PLAYER_KILLS
+      min-value: 10
+      display-name: Player Kills
+    mob-kills:
+      statistic: MOB_KILLS
+      min-value: 50
+      display-name: Mob Kills
+```
+
+### Loan sizes
+
+`loans.yml` defines the loans shown in the bank menu. The defaults are `small` (1,000), `medium` (5,000), `large` (10,000) and `massive` (50,000). Each loan sets its `amount`, menu `slot`, `material`, `name` and `lore`. The lore supports `{amount}`, `{interest_rate}`, `{interest_amount}`, `{total_owed}`, `{due_days}` and `{requirements}`.
+
+### Punishments
+
+`punishments.yml` lists tiers that trigger when a loan is a number of days overdue. Each tier has `days-overdue`, a `type` and a `value`.
+
+| Type | Value |
+| --- | --- |
+| `MESSAGE` | Message sent to the player |
+| `COMMAND` | Console command, `%player%` is the player name |
+| `KICK` | Kick message |
+| `TEMP_BAN` | `<days>\|<reason>` |
+| `BAN` | Ban reason |
+
+```yaml
+punishments:
+  tier-1:
+    days-overdue: 1
+    type: MESSAGE
+    value: '&eYour loan is overdue.'
+  tier-4:
+    days-overdue: 14
+    type: TEMP_BAN
+    value: '3|You failed to repay your loan.'
+```
+
+### Menus and messages
+
+The bank menu and the debt menu are configured in `config.yml` under `bank-gui` and `debt-gui`: titles, sizes, filler glass, item materials, names, lore and slots. The debt menu has repay buttons for fixed amounts (`pay-amounts`) and a pay full button. All chat messages are in `messages.yml`.
+
+## Support
+
+Join [discord.gg/pikzstudios](https://discord.gg/pikzstudios) for help and license keys.0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"dx-doc","style":{"--accent":"#ef4444"},"children":[["$","main",null,{"className":"dx-main","children":[["$","p",null,{"className":"dx-eyebrow","children":"Plugins"}],["$","header",null,{"className":"dx-doc-head","children":[["$","h1",null,{"children":"EcoBank"}],null]}],["$","p",null,{"className":"dx-tagline","children":"A bank where players borrow money and repay it with interest."}],["$","$L2",null,{"markdown":"$3","resourceId":106809}],"$L4","$L5","$L6"]}],"$L7"]}],["$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"6h6-rO3s1NA9jLY1OWXvg"}
+a:T1795,<h2 id="overview">Overview</h2><p>EcoBank adds a loan system to your server economy. Players open the bank menu, pick a loan size, and pay it back through a debt menu. Loans carry interest and a due date, and players who stay overdue run into punishments you define.</p><h3 id="requirements">Requirements</h3><ul><li>Paper or Folia 1.21 or newer</li><li>Vault and a Vault-compatible economy plugin</li><li>Optional: PlaceholderAPI for the stat lines in menus</li></ul><h3 id="installation">Installation</h3><ol><li>Put <code>EcoBank.jar</code> in your <code>plugins</code> folder.</li><li>Start the server once so the config files are created.</li><li>Set <code>license-key</code> in <code>plugins/EcoBank/config.yml</code>. Get your key on <a href="https://discord.gg/pikzstudios" target="_blank" rel="noreferrer">discord.gg/pikzstudios</a>.</li><li>Restart the server.</li></ol><h2 id="commands">Commands</h2><div class="dx-table"><table><thead><tr><th>Command</th><th>Description</th><th>Permission</th></tr></thead><tbody><tr><td><code>/bank</code></td><td>Open the loan menu</td><td><code>ecobank.bank</code></td></tr><tr><td><code>/debt</code></td><td>Open the debt menu to repay what you owe</td><td><code>ecobank.debt</code></td></tr><tr><td><code>/ecobank</code></td><td>Open the admin config menu (aliases <code>/ecob</code>, <code>/eb</code>)</td><td><code>ecobank.admin</code></td></tr><tr><td><code>/ecobank gui</code></td><td>Open the admin config menu</td><td><code>ecobank.admin</code></td></tr><tr><td><code>/ecobank reload</code></td><td>Reload all config files</td><td><code>ecobank.admin</code></td></tr><tr><td><code>/ecobank save</code></td><td>Save the config</td><td><code>ecobank.admin</code></td></tr></tbody></table></div><h2 id="permissions">Permissions</h2><div class="dx-table"><table><thead><tr><th>Permission</th><th>Description</th><th>Default</th></tr></thead><tbody><tr><td><code>ecobank.bank</code></td><td>Use <code>/bank</code></td><td>everyone</td></tr><tr><td><code>ecobank.debt</code></td><td>Use <code>/debt</code></td><td>everyone</td></tr><tr><td><code>ecobank.admin</code></td><td>Admin command and config menu</td><td>op</td></tr></tbody></table></div><h2 id="configuration">Configuration</h2><h3 id="config-yml">config.yml</h3><div class="dx-table"><table><thead><tr><th>Option</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>license-key</code></td><td></td><td>Your license key</td></tr><tr><td><code>database.type</code></td><td><code>sqlite</code></td><td><code>sqlite</code> or <code>mysql</code></td></tr><tr><td><code>loans.interest-rate</code></td><td><code>5.0</code></td><td>Interest in percent, added to every loan</td></tr><tr><td><code>loans.max-active-loans</code></td><td><code>1</code></td><td>Loans a player can hold at once</td></tr><tr><td><code>loans.due-days</code></td><td><code>7</code></td><td>Days until a loan is due</td></tr><tr><td><code>loans.max-debt</code></td><td><code>98000.0</code></td><td>Highest total debt a player can reach</td></tr><tr><td><code>anti-alt.enabled</code></td><td><code>true</code></td><td>Block loans when another online account on the same IP has an active loan</td></tr><tr><td><code>punishment.check-interval-minutes</code></td><td><code>60</code></td><td>How often overdue loans are checked</td></tr><tr><td><code>stat-requirements.enabled</code></td><td><code>false</code></td><td>Require player statistics before a loan</td></tr></tbody></table></div><h3 id="stat-requirements">Stat requirements</h3><p>When enabled, a player must meet every listed statistic before borrowing. Any Bukkit statistic name works.</p><pre data-lang="yaml" data-label="yaml"><code>stat-requirements:
+  enabled: true
+  requirements:
+    kills:
+      statistic: PLAYER_KILLS
+      min-value: 10
+      display-name: Player Kills
+    mob-kills:
+      statistic: MOB_KILLS
+      min-value: 50
+      display-name: Mob Kills</code></pre><h3 id="loan-sizes">Loan sizes</h3><p><code>loans.yml</code> defines the loans shown in the bank menu. The defaults are <code>small</code> (1,000), <code>medium</code> (5,000), <code>large</code> (10,000) and <code>massive</code> (50,000). Each loan sets its <code>amount</code>, menu <code>slot</code>, <code>material</code>, <code>name</code> and <code>lore</code>. The lore supports <code>{amount}</code>, <code>{interest_rate}</code>, <code>{interest_amount}</code>, <code>{total_owed}</code>, <code>{due_days}</code> and <code>{requirements}</code>.</p><h3 id="punishments">Punishments</h3><p><code>punishments.yml</code> lists tiers that trigger when a loan is a number of days overdue. Each tier has <code>days-overdue</code>, a <code>type</code> and a <code>value</code>.</p><div class="dx-table"><table><thead><tr><th>Type</th><th>Value</th></tr></thead><tbody><tr><td><code>MESSAGE</code></td><td>Message sent to the player</td></tr><tr><td><code>COMMAND</code></td><td>Console command, <code>%player%</code> is the player name</td></tr><tr><td><code>KICK</code></td><td>Kick message</td></tr><tr><td><code>TEMP_BAN</code></td><td><code>&lt;days&gt;|&lt;reason&gt;</code></td></tr><tr><td><code>BAN</code></td><td>Ban reason</td></tr></tbody></table></div><pre data-lang="yaml" data-label="yaml"><code>punishments:
+  tier-1:
+    days-overdue: 1
+    type: MESSAGE
+    value: '&amp;eYour loan is overdue.'
+  tier-4:
+    days-overdue: 14
+    type: TEMP_BAN
+    value: '3|You failed to repay your loan.'</code></pre><h3 id="menus-and-messages">Menus and messages</h3><p>The bank menu and the debt menu are configured in <code>config.yml</code> under <code>bank-gui</code> and <code>debt-gui</code>: titles, sizes, filler glass, item materials, names, lore and slots. The debt menu has repay buttons for fixed amounts (<code>pay-amounts</code>) and a pay full button. All chat messages are in <code>messages.yml</code>.</p><h2 id="support">Support</h2><p>Join <a href="https://discord.gg/pikzstudios" target="_blank" rel="noreferrer">discord.gg/pikzstudios</a> for help and license keys.</p>4:["$","article",null,{"className":"dx-prose","dangerouslySetInnerHTML":{"__html":"$a"}}]
+5:["$","$Lb",null,{}]
+6:["$","nav",null,{"className":"dx-pager","children":[["$","$Lc",null,{"href":"/docs/easysell","className":"dx-pager-btn prev","children":[["$","$Ld",null,{"icon":{"name":"arrow-left","size":24,"node":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]]},"size":16}],["$","span",null,{"children":[["$","small",null,{"children":"Prev"}],"EasySell"]}]]}],["$","$Lc",null,{"href":"/docs/adminpanel","className":"dx-pager-btn next","children":[["$","span",null,{"children":[["$","small",null,{"children":"Next"}],"AdminPanel"]}],["$","$Ld",null,{"icon":{"name":"arrow-right","size":24,"node":[["path",{"d":"M5 12h14","key":"1ays0h"}],["path",{"d":"m12 5 7 7-7 7","key":"xquz4c"}]]},"size":16}]]}]]}]
+7:["$","$Le",null,{"items":[{"level":2,"text":"Overview","id":"overview"},{"level":3,"text":"Requirements","id":"requirements"},{"level":3,"text":"Installation","id":"installation"},{"level":2,"text":"Commands","id":"commands"},{"level":2,"text":"Permissions","id":"permissions"},{"level":2,"text":"Configuration","id":"configuration"},{"level":3,"text":"config.yml","id":"config-yml"},{"level":3,"text":"Stat requirements","id":"stat-requirements"},{"level":3,"text":"Loan sizes","id":"loan-sizes"},{"level":3,"text":"Punishments","id":"punishments"},{"level":3,"text":"Menus and messages","id":"menus-and-messages"},{"level":2,"text":"Support","id":"support"}]}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/014i8qp0m4e36.js","async":true}]
+9:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+11:null

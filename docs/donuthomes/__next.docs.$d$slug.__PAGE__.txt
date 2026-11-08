@@ -1,0 +1,64 @@
+1:"$Sreact.fragment"
+2:I[84103,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js","/_next/static/chunks/014i8qp0m4e36.js"],"DocsActions"]
+a:I[55260,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js","/_next/static/chunks/014i8qp0m4e36.js"],"CodeEnhancer"]
+b:I[22016,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js","/_next/static/chunks/014i8qp0m4e36.js"],""]
+c:I[5014,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js","/_next/static/chunks/014i8qp0m4e36.js"],"default"]
+d:I[73785,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js","/_next/static/chunks/014i8qp0m4e36.js"],"DocsAside"]
+e:I[97367,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+3:T840,## Overview
+
+DonutHomes gives every player numbered homes managed through a native dialog. Players set a home on a free slot, rename it, give it an icon, teleport to it or delete it. How many slots a player can use depends on permissions.
+
+### Requirements
+
+* Paper or Folia 1.21.6 or newer, since the menus use native dialogs
+
+### Installation
+
+1. Put `DonutHomes.jar` in your `plugins` folder.
+2. Start the server once so the config files are created.
+3. Set `licenseKey` in the main config. Get your key on [discord.gg/pikzstudios](https://discord.gg/pikzstudios).
+4. Restart the server.
+
+## Commands
+
+| Command | Description | Permission |
+| --- | --- | --- |
+| `/home` | Open the homes dialog (alias `/homes`) | `donuthomes.homes.use` |
+| `/sethome <number>` | Set a home on that slot | `donuthomes.homes.use` |
+| `/delhome <number>` | Delete the home on that slot | `donuthomes.homes.use` |
+
+## Permissions
+
+| Permission | Description | Default |
+| --- | --- | --- |
+| `donuthomes.homes.use` | Open and use homes | everyone |
+| `donuthomes.homes.slots.<n>` | Unlock home slots up to number `n` | none |
+| `donuthomes.homes.slots.*` | Unlock every slot | op |
+
+Players get `defaultUnlockedHomes` slots without a permission. The highest `slots.<n>` permission a player has decides how many more they can use.
+
+## Configuration
+
+| Option | Default | Description |
+| --- | --- | --- |
+| `maxHomes` | `90` | Slots shown in the dialog |
+| `defaultUnlockedHomes` | `2` | Slots every player has |
+| `slotPermission` | `donuthomes.homes.slots.{slot}` | Permission pattern per slot |
+| `allSlotsPermission` | `donuthomes.homes.slots.*` | Permission for every slot |
+| `defaultHomeName` | `Home {slot}` | Name of a new home |
+| `defaultIcon` | `WHITE_BED` | Icon of a new home |
+| `database.type` | `SQLITE` | `SQLITE` or `MYSQL` |
+
+The main dialog (title, columns, button size, labels and tooltips), the manage dialog (rename input, buttons), the icon picker and all messages are configurable with `&` color codes.
+
+## Support
+
+Join [discord.gg/pikzstudios](https://discord.gg/pikzstudios) for help and license keys.4:Td16,<h2 id="overview">Overview</h2><p>DonutHomes gives every player numbered homes managed through a native dialog. Players set a home on a free slot, rename it, give it an icon, teleport to it or delete it. How many slots a player can use depends on permissions.</p><h3 id="requirements">Requirements</h3><ul><li>Paper or Folia 1.21.6 or newer, since the menus use native dialogs</li></ul><h3 id="installation">Installation</h3><ol><li>Put <code>DonutHomes.jar</code> in your <code>plugins</code> folder.</li><li>Start the server once so the config files are created.</li><li>Set <code>licenseKey</code> in the main config. Get your key on <a href="https://discord.gg/pikzstudios" target="_blank" rel="noreferrer">discord.gg/pikzstudios</a>.</li><li>Restart the server.</li></ol><h2 id="commands">Commands</h2><div class="dx-table"><table><thead><tr><th>Command</th><th>Description</th><th>Permission</th></tr></thead><tbody><tr><td><code>/home</code></td><td>Open the homes dialog (alias <code>/homes</code>)</td><td><code>donuthomes.homes.use</code></td></tr><tr><td><code>/sethome &lt;number&gt;</code></td><td>Set a home on that slot</td><td><code>donuthomes.homes.use</code></td></tr><tr><td><code>/delhome &lt;number&gt;</code></td><td>Delete the home on that slot</td><td><code>donuthomes.homes.use</code></td></tr></tbody></table></div><h2 id="permissions">Permissions</h2><div class="dx-table"><table><thead><tr><th>Permission</th><th>Description</th><th>Default</th></tr></thead><tbody><tr><td><code>donuthomes.homes.use</code></td><td>Open and use homes</td><td>everyone</td></tr><tr><td><code>donuthomes.homes.slots.&lt;n&gt;</code></td><td>Unlock home slots up to number <code>n</code></td><td>none</td></tr><tr><td><code>donuthomes.homes.slots.*</code></td><td>Unlock every slot</td><td>op</td></tr></tbody></table></div><p>Players get <code>defaultUnlockedHomes</code> slots without a permission. The highest <code>slots.&lt;n&gt;</code> permission a player has decides how many more they can use.</p><h2 id="configuration">Configuration</h2><div class="dx-table"><table><thead><tr><th>Option</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>maxHomes</code></td><td><code>90</code></td><td>Slots shown in the dialog</td></tr><tr><td><code>defaultUnlockedHomes</code></td><td><code>2</code></td><td>Slots every player has</td></tr><tr><td><code>slotPermission</code></td><td><code>donuthomes.homes.slots.{slot}</code></td><td>Permission pattern per slot</td></tr><tr><td><code>allSlotsPermission</code></td><td><code>donuthomes.homes.slots.*</code></td><td>Permission for every slot</td></tr><tr><td><code>defaultHomeName</code></td><td><code>Home {slot}</code></td><td>Name of a new home</td></tr><tr><td><code>defaultIcon</code></td><td><code>WHITE_BED</code></td><td>Icon of a new home</td></tr><tr><td><code>database.type</code></td><td><code>SQLITE</code></td><td><code>SQLITE</code> or <code>MYSQL</code></td></tr></tbody></table></div><p>The main dialog (title, columns, button size, labels and tooltips), the manage dialog (rename input, buttons), the icon picker and all messages are configurable with <code>&amp;</code> color codes.</p><h2 id="support">Support</h2><p>Join <a href="https://discord.gg/pikzstudios" target="_blank" rel="noreferrer">discord.gg/pikzstudios</a> for help and license keys.</p>0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"dx-doc","style":{"--accent":"#ef4444"},"children":[["$","main",null,{"className":"dx-main","children":[["$","p",null,{"className":"dx-eyebrow","children":"Plugins"}],["$","header",null,{"className":"dx-doc-head","children":[["$","h1",null,{"children":"DonutHomes"}],null]}],["$","p",null,{"className":"dx-tagline","children":"Numbered homes in a dialog menu with icons and slot permissions."}],["$","$L2",null,{"markdown":"$3"}],["$","article",null,{"className":"dx-prose","dangerouslySetInnerHTML":{"__html":"$4"}}],"$L5","$L6"]}],"$L7"]}],["$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"6h6-rO3s1NA9jLY1OWXvg"}
+5:["$","$La",null,{}]
+6:["$","nav",null,{"className":"dx-pager","children":[["$","$Lb",null,{"href":"/docs/gens","className":"dx-pager-btn prev","children":[["$","$Lc",null,{"icon":{"name":"arrow-left","size":24,"node":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]]},"size":16}],["$","span",null,{"children":[["$","small",null,{"children":"Prev"}],"Gens"]}]]}],["$","span",null,{}]]}]
+7:["$","$Ld",null,{"items":[{"level":2,"text":"Overview","id":"overview"},{"level":3,"text":"Requirements","id":"requirements"},{"level":3,"text":"Installation","id":"installation"},{"level":2,"text":"Commands","id":"commands"},{"level":2,"text":"Permissions","id":"permissions"},{"level":2,"text":"Configuration","id":"configuration"},{"level":2,"text":"Support","id":"support"}]}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/014i8qp0m4e36.js","async":true}]
+9:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
+10:null

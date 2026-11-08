@@ -1,0 +1,1968 @@
+1:"$Sreact.fragment"
+2:I[39756,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"default"]
+3:I[37457,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"default"]
+a:I[68027,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"default",1]
+:HL["/_next/static/chunks/38h9zm6zvt3ca.css","style"]
+:HL["/_next/static/media/797e433ab948586e-s.p.0r6juujl39pe6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+4:T5b5e,
+.dx-root{
+  --dx-nav-w:270px;
+  --dx-toc-w:230px;
+  --dx-topbar-h:52px;
+
+  --dx-bg:#0a0a0b;
+  --dx-bg-soft:#0f0f11;
+  --dx-panel:#131316;
+  --dx-panel-2:#191a1e;
+  --dx-border:rgba(255,255,255,.08);
+  --dx-border-strong:rgba(255,255,255,.15);
+
+  --dx-heading:#f2f2f3;
+  --dx-text:#b4b6bd;
+  --dx-muted:#8b8d95;
+  --dx-faint:#6a6c74;
+
+  --accent:#ef4444;
+  --dx-accent-high:#fca5a5;
+  --dx-accent-low:rgba(239,68,68,.14);
+
+  color:var(--dx-text);
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+/* Flat canvas. */
+body:has(.dx-root){background:var(--dx-bg) !important;background-image:none !important}
+html:has(.dx-root){background:#0a0a0b}
+.dx-root::before{content:"";position:fixed;inset:0;background:#0a0a0b;z-index:-1}
+
+/* ── Mobile top bar (hidden on desktop; the sidebar is the chrome) ────────── */
+.dx-topbar{display:none;position:fixed;top:0;left:0;right:0;z-index:50;height:var(--dx-topbar-h);
+  align-items:center;gap:10px;padding:0 14px;
+  background:color-mix(in srgb,var(--dx-bg) 88%,transparent);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--dx-border)}
+.dx-menu-btn{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;
+  border-radius:8px;border:1px solid var(--dx-border);background:var(--dx-panel);color:var(--dx-text);
+  cursor:pointer;flex:0 0 auto}
+.dx-menu-btn:hover{color:var(--dx-heading);border-color:var(--dx-border-strong)}
+
+/* ── Brand ──────────────────────────────────────────────────────────────── */
+.dx-brand{display:flex;align-items:center;gap:9px;min-width:0;
+  color:var(--dx-heading);text-decoration:none;font-size:14.5px;font-weight:650;letter-spacing:-.015em;
+  white-space:nowrap}
+.dx-brand:hover{color:#fff}
+.dx-brand-mark{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;
+  border-radius:7px;background:linear-gradient(135deg,var(--accent),#f97316);color:#fff;
+  font-size:11.5px;font-weight:800;flex:0 0 auto}
+.dx-brand-txt{overflow:hidden;text-overflow:ellipsis}
+
+/* ── Sidebar ────────────────────────────────────────────────────────────── */
+.dx-sidebar{position:fixed;top:0;left:0;bottom:0;width:var(--dx-nav-w);z-index:45;
+  display:flex;flex-direction:column;background:var(--dx-bg-soft);
+  border-right:1px solid var(--dx-border)}
+.dx-side-head{display:flex;align-items:center;justify-content:space-between;gap:10px;
+  height:56px;padding:0 14px;flex:0 0 auto}
+.dx-side-close{display:none;align-items:center;justify-content:center;width:30px;height:30px;
+  border-radius:7px;border:1px solid transparent;background:none;color:var(--dx-faint);cursor:pointer}
+.dx-side-close:hover{color:var(--dx-heading);border-color:var(--dx-border);background:var(--dx-panel)}
+
+.dx-sidebar .dx-search{margin:0 14px 10px;width:auto}
+.dx-scope{position:relative;margin:0 14px 12px;flex:0 0 auto}
+.dx-scope-btn{display:flex;align-items:center;gap:8px;width:100%;height:38px;padding:0 11px;
+  border-radius:9px;border:1px solid var(--dx-border);background:var(--dx-panel);
+  color:var(--dx-heading);font:inherit;font-size:13.5px;font-weight:550;cursor:pointer;text-align:left;
+  transition:border-color .15s,background .15s}
+.dx-scope-btn:hover{border-color:var(--dx-border-strong);background:var(--dx-panel-2)}
+.dx-scope-btn>span{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis}
+.dx-scope-btn svg{color:var(--dx-faint);flex:0 0 auto}
+.dx-scope-chev{transition:transform .18s}
+.dx-scope-btn[aria-expanded="true"] .dx-scope-chev{transform:rotate(180deg)}
+.dx-scope-pop{position:absolute;top:42px;left:0;right:0;z-index:60;padding:4px;
+  border-radius:10px;border:1px solid var(--dx-border-strong);background:var(--dx-panel);
+  box-shadow:0 24px 55px -22px rgba(0,0,0,.9)}
+.dx-scope-item{display:block;width:100%;padding:8px 10px;border:none;background:none;border-radius:7px;
+  color:var(--dx-text);font:inherit;font-size:13.5px;text-align:left;cursor:pointer}
+.dx-scope-item:hover{background:var(--dx-panel-2);color:var(--dx-heading)}
+.dx-scope-item.active{color:var(--dx-accent-high);background:var(--dx-accent-low);font-weight:600}
+
+.dx-nav{flex:1 1 auto;min-height:0;overflow-y:auto;padding:2px 14px 24px}
+.dx-nav-group+.dx-nav-group{margin-top:20px}
+.dx-nav-label{display:block;padding:5px 10px;color:var(--dx-heading);text-decoration:none;
+  font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.07em}
+.dx-nav-label:hover{color:var(--dx-accent-high)}
+/* The guide-rail: items hang off a hairline, the active one lights it up. */
+.dx-nav-items{display:flex;flex-direction:column;gap:1px;margin-top:5px;padding-left:10px;
+  border-left:1px solid var(--dx-border)}
+.dx-nav-link{position:relative;display:flex;align-items:center;justify-content:space-between;gap:8px;
+  padding:6px 10px;border-radius:7px;color:var(--dx-muted);text-decoration:none;font-size:13.5px;line-height:1.45}
+.dx-nav-link::before{content:"";position:absolute;left:-11px;top:5px;bottom:5px;width:1px;background:transparent}
+.dx-nav-link:hover{color:var(--dx-heading);background:rgba(255,255,255,.04)}
+.dx-nav-link.active{color:#fff;background:var(--dx-accent-low);font-weight:600}
+.dx-nav-link.active::before{background:var(--accent)}
+.dx-nav-img{width:20px;height:20px;border-radius:5px;object-fit:cover;flex:none;margin-right:0}.dx-nav-ph{background:rgba(255,255,255,.06)}
+.dx-nav-txt{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.dx-badge{flex:0 0 auto;padding:1px 6px;border-radius:999px;font-size:10px;font-weight:700;letter-spacing:.02em;
+  border:1px solid var(--dx-border);background:var(--dx-panel-2);color:var(--dx-faint)}
+.dx-nav-link.active .dx-badge{border-color:color-mix(in oklab,var(--accent) 40%,transparent);
+  background:color-mix(in oklab,var(--accent) 20%,transparent);color:var(--dx-accent-high)}
+.dx-nav-empty{padding:8px 10px;font-size:13px;color:var(--dx-faint)}
+
+.dx-side-foot{display:flex;align-items:center;gap:10px;flex:0 0 auto;padding:12px 14px;
+  border-top:1px solid var(--dx-border);background:var(--dx-bg-soft)}
+.dx-foot-btn{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;
+  border-radius:8px;border:1px solid var(--dx-border);background:var(--dx-panel);color:var(--dx-muted);
+  text-decoration:none;flex:0 0 auto}
+.dx-foot-btn:hover{color:var(--dx-heading);border-color:var(--dx-border-strong)}
+.dx-foot-link{color:var(--dx-muted);text-decoration:none;font-size:13px;font-weight:550}
+.dx-foot-link:hover{color:var(--dx-heading)}
+
+/* ── Search ─────────────────────────────────────────────────────────────── */
+.dx-search{position:relative}
+.dx-search-ic{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--dx-faint);pointer-events:none}
+.dx-search-in{width:100%;height:38px;padding:0 58px 0 33px;border-radius:9px;border:1px solid var(--dx-border);
+  background:var(--dx-panel);color:var(--dx-heading);font:inherit;font-size:13.5px;outline:none;
+  transition:border-color .15s,box-shadow .15s}
+.dx-search-in::placeholder{color:var(--dx-faint)}
+.dx-search-in:focus{border-color:color-mix(in oklab,var(--accent) 55%,var(--dx-border));
+  box-shadow:0 0 0 3px color-mix(in oklab,var(--accent) 16%,transparent)}
+.dx-kbd{position:absolute;right:8px;top:50%;transform:translateY(-50%);pointer-events:none;
+  padding:2px 6px;border-radius:5px;border:1px solid var(--dx-border);background:var(--dx-panel-2);
+  color:var(--dx-faint);font-size:10.5px;font-weight:600;letter-spacing:.02em}
+.dx-search-pop{position:absolute;top:44px;left:0;width:100%;min-width:260px;background:var(--dx-panel);
+  border:1px solid var(--dx-border-strong);border-radius:11px;padding:4px;z-index:60;
+  box-shadow:0 26px 60px -22px rgba(0,0,0,.9)}
+.dx-search-item{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;
+  padding:8px 10px;border:none;background:none;border-radius:8px;cursor:pointer;font:inherit;font-size:13px;
+  color:var(--dx-text);text-align:left}
+.dx-search-item.active{background:var(--dx-panel-2)}
+.dx-search-title{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  color:var(--dx-heading);font-weight:500}
+.dx-search-cat{flex:0 0 auto;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--dx-faint)}
+.dx-search-none{padding:14px 12px;font-size:13px;color:var(--dx-faint);text-align:center}
+
+/* ── Shell ──────────────────────────────────────────────────────────────── */
+.dx-panes{margin-left:var(--dx-nav-w);min-width:0}
+.dx-panes.splash{margin-left:var(--dx-nav-w)}
+
+/* Doc page: article + right rail */
+.dx-doc{display:grid;grid-template-columns:minmax(0,1fr) var(--dx-toc-w);gap:48px;
+  max-width:1120px;margin:0 auto;padding:56px 48px 96px}
+.dx-main{min-width:0}
+
+/* ── Article head ───────────────────────────────────────────────────────── */
+.dx-eyebrow{font-size:12px;font-weight:600;color:var(--accent);margin:0 0 10px;letter-spacing:.01em}
+.dx-doc-head{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:0 0 8px}
+.dx-doc-head h1{margin:0;font-size:34px;font-weight:700;line-height:1.2;letter-spacing:-.03em;color:var(--dx-heading)}
+.dx-ver{font-size:11.5px;font-weight:700;color:var(--dx-accent-high);
+  background:var(--dx-accent-low);border:1px solid color-mix(in oklab,var(--accent) 34%,transparent);
+  padding:3px 9px;border-radius:999px}
+.dx-tagline{margin:0;font-size:15.5px;color:var(--dx-muted);line-height:1.65}
+
+/* Action row under the title */
+.dx-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:20px 0 6px;
+  padding-bottom:22px;border-bottom:1px solid var(--dx-border)}
+.dx-action{display:inline-flex;align-items:center;gap:6px;height:30px;padding:0 11px;border-radius:8px;
+  border:1px solid var(--dx-border);background:var(--dx-panel);color:var(--dx-text);
+  font:inherit;font-size:12.5px;font-weight:550;text-decoration:none;cursor:pointer;
+  transition:color .15s,border-color .15s,background .15s}
+.dx-action:hover{color:var(--dx-heading);border-color:var(--dx-border-strong);background:var(--dx-panel-2)}
+.dx-action svg{color:var(--dx-faint)}
+.dx-action:hover svg{color:var(--dx-text)}
+
+/* ── Prose ──────────────────────────────────────────────────────────────── */
+.dx-prose{font-size:15px;line-height:1.75;color:var(--dx-text)}
+.dx-prose>*:first-child{margin-top:0}
+.dx-prose h2{font-size:22px;font-weight:650;margin:46px 0 14px;padding-top:8px;color:var(--dx-heading);
+  letter-spacing:-.02em;scroll-margin-top:72px}
+.dx-prose h3{font-size:17.5px;font-weight:650;margin:32px 0 10px;color:var(--dx-heading);
+  letter-spacing:-.012em;scroll-margin-top:72px}
+.dx-prose h4{font-size:15.5px;font-weight:650;margin:24px 0 8px;color:var(--dx-heading);scroll-margin-top:72px}
+.dx-prose p{margin:16px 0}
+.dx-prose ul,.dx-prose ol{margin:16px 0;padding-left:22px}
+.dx-prose li{margin:6px 0;padding-left:2px}
+.dx-prose li::marker{color:var(--dx-faint)}
+.dx-prose strong{color:var(--dx-heading);font-weight:650}
+.dx-prose a{color:var(--dx-heading);text-decoration:underline;text-underline-offset:3px;
+  text-decoration-color:var(--dx-border-strong);font-weight:500}
+.dx-prose a:hover{color:var(--dx-accent-high);text-decoration-color:currentColor}
+.dx-prose code{background:var(--dx-panel-2);border:1px solid var(--dx-border);padding:1.5px 5px;border-radius:5px;
+  font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:12.5px;color:var(--dx-heading)}
+.dx-table{margin:20px 0;overflow-x:auto;border:1px solid var(--dx-border);border-radius:10px}
+.dx-table table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.55}
+.dx-table th{text-align:left;font-weight:650;color:var(--dx-heading);background:var(--dx-panel);padding:10px 14px;border-bottom:1px solid var(--dx-border);white-space:nowrap}
+.dx-table td{padding:10px 14px;border-bottom:1px solid var(--dx-border);vertical-align:top}
+.dx-table tr:last-child td{border-bottom:none}
+.dx-table td code{white-space:nowrap}
+.dx-prose hr{border:none;border-top:1px solid var(--dx-border);margin:36px 0}
+.dx-prose img{max-width:100%;border-radius:12px;border:1px solid var(--dx-border)}
+
+/* ── Code block ─────────────────────────────────────────────────────────── */
+/* Base frame, so a block still looks right before the client enhancer wraps it. */
+.dx-prose pre{margin:20px 0;padding:16px 18px;overflow:auto;
+  border:1px solid var(--dx-border);border-radius:12px;background:#0d0d10}
+.dx-prose pre code{display:block;background:none;border:none;border-radius:0;padding:0;color:#c3c7d2;
+  font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:12.8px;line-height:1.72}
+.dx-code{position:relative;margin:20px 0;border:1px solid var(--dx-border);border-radius:12px;
+  background:#0d0d10;overflow:hidden}
+.dx-code-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  height:38px;padding:0 8px 0 13px;border-bottom:1px solid var(--dx-border);background:var(--dx-panel)}
+.dx-code-name{display:inline-flex;align-items:center;gap:7px;min-width:0;overflow:hidden;
+  text-overflow:ellipsis;white-space:nowrap;
+  font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:12px;color:var(--dx-muted)}
+.dx-code-name svg{color:var(--dx-faint);flex:0 0 auto}
+.dx-code pre{margin:0;background:none;border:none;border-radius:0;padding:16px 18px;overflow:auto}
+.dx-code pre code{display:block;background:none;border:none;padding:0;color:#c3c7d2;
+  font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:12.8px;line-height:1.72}
+.tk-c{color:#5c6070;font-style:italic}
+.tk-s{color:#8ee7a1}
+.tk-k{color:#c99bff}
+.tk-n{color:#ffc27a}
+.dx-copy{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;flex:0 0 auto;
+  border-radius:7px;border:1px solid transparent;background:none;color:var(--dx-faint);cursor:pointer;
+  transition:color .15s,border-color .15s,background .15s}
+.dx-code-bar .dx-copy:hover{color:var(--dx-heading);border-color:var(--dx-border);background:var(--dx-panel-2)}
+/* Bar-less block: the copy button floats over the code on hover. */
+.dx-code>.dx-copy{position:absolute;top:9px;right:9px;z-index:2;opacity:0;
+  border-color:var(--dx-border);background:var(--dx-panel)}
+.dx-code:hover>.dx-copy,.dx-code>.dx-copy:focus-visible{opacity:1}
+.dx-code>.dx-copy:hover{color:var(--dx-heading);border-color:var(--dx-border-strong)}
+.dx-copy.done{color:#8ee7a1;opacity:1}
+
+/* ── Callouts (from > blockquotes) ──────────────────────────────────────── */
+.dx-callout{display:flex;gap:11px;align-items:flex-start;margin:22px 0;padding:13px 15px;
+  border-radius:10px;border:1px solid var(--dx-border);background:var(--dx-bg-soft);
+  font-size:14px;line-height:1.65}
+.dx-callout-ic{font-size:14px;line-height:1.6;flex:0 0 auto}
+.dx-callout-bd{min-width:0;color:var(--dx-text)}
+.dx-callout--info{border-color:rgba(239,68,68,.3);background:rgba(239,68,68,.07)}
+.dx-callout--warn{border-color:rgba(240,68,68,.3);background:rgba(240,68,68,.07)}
+
+/* ── Pager ──────────────────────────────────────────────────────────────── */
+.dx-pager{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:60px;padding-top:0}
+.dx-pager-btn{display:inline-flex;align-items:center;gap:12px;padding:14px 16px;border-radius:11px;
+  border:1px solid var(--dx-border);background:var(--dx-bg-soft);text-decoration:none;color:var(--dx-heading);
+  transition:border-color .15s,background .15s}
+.dx-pager-btn:hover{border-color:var(--dx-border-strong);background:var(--dx-panel)}
+.dx-pager-btn.next{grid-column:2;justify-content:flex-end;text-align:right}
+.dx-pager-btn span{display:flex;flex-direction:column;min-width:0;font-weight:600;font-size:14px}
+.dx-pager-btn.next span{align-items:flex-end}
+.dx-pager-btn small{font-size:11px;font-weight:600;letter-spacing:.02em;color:var(--dx-faint);margin-bottom:3px}
+.dx-pager-btn svg{color:var(--dx-faint);flex:0 0 auto}
+
+/* ── Right rail ─────────────────────────────────────────────────────────── */
+.dx-aside{position:sticky;top:56px;align-self:start;max-height:calc(100vh - 96px);overflow-y:auto}
+.dx-aside-h{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:650;
+  color:var(--dx-heading);margin:0 0 12px;padding-left:13px}
+.dx-aside-h:not(:first-child){margin-top:26px}
+.dx-aside-h svg{color:var(--dx-faint)}
+/* Indicator line: the whole TOC hangs off a rail, the active item lights its segment. */
+.dx-aside-toc{display:flex;flex-direction:column;border-left:1px solid var(--dx-border)}
+.dx-toc-link{position:relative;display:block;padding:5px 10px 5px 13px;color:var(--dx-muted);
+  text-decoration:none;font-size:12.8px;line-height:1.5}
+.dx-toc-link::before{content:"";position:absolute;left:-1px;top:0;bottom:0;width:2px;
+  background:transparent;border-radius:2px;transition:background .15s}
+.dx-toc-link.sub{padding-left:26px;font-size:12.5px}
+.dx-toc-link:hover{color:var(--dx-heading)}
+.dx-toc-link.active{color:var(--dx-heading);font-weight:600}
+.dx-toc-link.active::before{background:var(--accent)}
+.dx-aside-links{display:flex;flex-direction:column;padding-left:13px}
+.dx-aside-link{padding:5px 0;color:var(--dx-muted);text-decoration:none;font-size:12.8px}
+.dx-aside-link:hover{color:var(--dx-heading)}
+
+/* ── Splash / landing ───────────────────────────────────────────────────── */
+.dx-splash{max-width:880px;margin:0 auto;padding:0 48px 110px}
+.dx-hero{padding:72px 0 8px;border-bottom:1px solid var(--dx-border);margin-bottom:52px}
+.dx-hero h1{font-size:44px;line-height:1.12;font-weight:700;letter-spacing:-.035em;color:var(--dx-heading);
+  margin:0 0 14px}
+.dx-hero p{font-size:16px;color:var(--dx-muted);margin:0 0 26px;max-width:56ch;line-height:1.65}
+.dx-cta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding-bottom:44px}
+.dx-btn{display:inline-flex;align-items:center;gap:7px;height:36px;padding:0 16px;border-radius:9px;
+  font-size:13.5px;font-weight:600;text-decoration:none;transition:background .15s,border-color .15s,color .15s}
+.dx-btn-primary{background:var(--accent);color:#fff;border:1px solid var(--accent)}
+.dx-btn-primary:hover{background:color-mix(in oklab,var(--accent) 84%,#fff)}
+.dx-btn-ghost{color:var(--dx-text);border:1px solid var(--dx-border);background:var(--dx-panel)}
+.dx-btn-ghost:hover{color:var(--dx-heading);border-color:var(--dx-border-strong);background:var(--dx-panel-2)}
+
+.dx-sec-h{font-size:19px;font-weight:650;letter-spacing:-.02em;color:var(--dx-heading);margin:0 0 18px}
+.dx-sec+.dx-sec{margin-top:56px}
+.dx-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.dx-card{display:block;padding:18px;border-radius:12px;border:1px solid var(--dx-border);background:var(--dx-bg-soft);
+  text-decoration:none;transition:border-color .15s,background .15s}
+.dx-card:hover{border-color:color-mix(in oklab,var(--accent) 45%,var(--dx-border));background:var(--dx-panel)}
+.dx-card-top{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.dx-card-ic{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:8px;
+  background:color-mix(in oklab,var(--accent) 18%,transparent);
+  border:1px solid color-mix(in oklab,var(--accent) 30%,transparent);font-size:14px;flex:0 0 auto}
+.dx-card h3{margin:0;flex:1 1 auto;min-width:0;font-size:14.5px;font-weight:650;color:var(--dx-heading)}
+.dx-card p{margin:0;font-size:13.5px;line-height:1.6;color:var(--dx-muted)}
+.dx-card-count{margin-top:11px;font-size:11.5px;font-weight:600;color:var(--dx-faint)}
+
+.dx-quick{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;
+  border:1px solid var(--dx-border);border-radius:12px;overflow:hidden;background:var(--dx-bg-soft)}
+.dx-quick li{font-size:14px;line-height:1.6}
+.dx-quick li+li{border-top:1px solid var(--dx-border)}
+.dx-quick a{display:flex;align-items:baseline;gap:10px;padding:13px 16px;color:var(--dx-text);text-decoration:none}
+.dx-quick strong{flex:0 0 auto;color:var(--dx-heading);font-weight:600}
+.dx-quick em{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  font-style:normal;font-size:13px;color:var(--dx-faint)}
+.dx-quick a:hover{color:var(--dx-heading);background:var(--dx-panel)}
+
+/* ── Category page ──────────────────────────────────────────────────────── */
+.dx-cat{max-width:1120px;margin:0 auto;padding:56px 48px 96px}
+.dx-back{display:inline-flex;align-items:center;gap:6px;color:var(--dx-muted);text-decoration:none;
+  font-size:13px;font-weight:550}
+.dx-back:hover{color:var(--dx-heading)}
+.dx-cat-head{display:flex;align-items:center;gap:12px;margin:18px 0 6px}
+.dx-cat-head .dx-cemoji{font-size:26px;line-height:1}
+.dx-cat-head h1{margin:0;font-size:32px;font-weight:700;letter-spacing:-.03em;color:var(--dx-heading)}
+.dx-cat-blurb{margin:0 0 30px;font-size:15px;color:var(--dx-muted)}
+.dx-cat .dx-cards{grid-template-columns:repeat(auto-fill,minmax(270px,1fr))}
+.dx-empty{color:var(--dx-faint);padding:44px 0;font-size:15px}
+
+/* ── Responsive ─────────────────────────────────────────────────────────── */
+@media(max-width:1180px){
+  .dx-doc{grid-template-columns:minmax(0,1fr);gap:0}
+  .dx-aside{display:none}
+}
+@media(max-width:960px){
+  .dx-root{--dx-nav-w:0px;overflow-x:hidden}
+  .dx-topbar{display:flex}
+  .dx-panes,.dx-panes.splash{margin-left:0;padding-top:var(--dx-topbar-h)}
+  .dx-sidebar{display:none;width:min(300px,86vw);z-index:60;
+    box-shadow:0 0 0 100vmax rgba(0,0,0,.55)}
+  .dx-sidebar.open{display:flex}
+  .dx-side-close{display:inline-flex}
+  .dx-doc,.dx-cat{padding:30px 20px 76px}
+  .dx-splash{padding:0 20px 84px}
+  .dx-hero{padding:38px 0 6px;margin-bottom:40px}
+  .dx-hero h1{font-size:34px}
+  .dx-doc-head h1{font-size:28px}
+  .dx-cards{grid-template-columns:minmax(0,1fr)}
+  .dx-pager{grid-template-columns:minmax(0,1fr)}
+  .dx-pager-btn.next{grid-column:1}
+}
+@media(max-width:620px){
+  .dx-hero h1{font-size:30px}
+  .dx-doc-head h1{font-size:24px}
+}
+0:{"P":null,"c":["","docs","shards",""],"q":"","i":false,"f":[[["",{"children":["docs",{"children":[["slug","shards","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/38h9zm6zvt3ca.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/05-c3ty_6dwfk.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/14mrh2-p_w84d.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable","children":["$","body",null,{"children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":[["$","$1","c",{"children":[[["$","script","script-0",{"src":"/_next/static/chunks/06j2s2t32br7l.js","async":true,"nonce":"$undefined"}]],[["$","style",null,{"children":"$4"}],"$L5"]]}],{"children":["$L6",{"children":["$L7",{},null,false,null]},null,false,"$@8"]},null,false,null]},null,false,null],"$L9",false]],"m":"$undefined","G":["$a",["$Lb"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"6h6-rO3s1NA9jLY1OWXvg"}
+c:I[81365,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js"],"DocsShell"]
+e:I[97367,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+12:I[97367,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"ViewportBoundary"]
+14:I[97367,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"MetadataBoundary"]
+5:["$","$Lc",null,{"nav":[{"slug":"economysmp","title":"EconomySMP","bucket":"setups","version":null,"image":null},{"slug":"zelauction","title":"ZelAuction","bucket":"plugins","version":"2.0.3","image":null},{"slug":"zelbounty","title":"ZelBounty","bucket":"plugins","version":"3.0.2","image":null},{"slug":"shards","title":"Shards","bucket":"plugins","version":"2.3.9","image":null},{"slug":"easysell","title":"EasySell","bucket":"plugins","version":null,"image":null},{"slug":"ecobank","title":"EcoBank","bucket":"plugins","version":null,"image":null},{"slug":"adminpanel","title":"AdminPanel","bucket":"plugins","version":"1.0.4","image":null},{"slug":"essentials-staff-moderation","title":"Essentials Staff & Moderation","bucket":"plugins","version":"1.0.0","image":null},{"slug":"boosters","title":"Boosters","bucket":"plugins","version":"1.0.0","image":null},{"slug":"economycore","title":"EconomyCore","bucket":"plugins","version":"1.0.0","image":null},{"slug":"gens","title":"Gens","bucket":"plugins","version":null,"image":null},{"slug":"donuthomes","title":"DonutHomes","bucket":"plugins","version":null,"image":null}],"children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}]
+6:["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+7:["$","$1","c",{"children":["$Ld",[["$","script","script-0",{"src":"/_next/static/chunks/014i8qp0m4e36.js","async":true,"nonce":"$undefined"}]],["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]]}]
+11:[]
+8:"$W11"
+9:["$","$1","h",{"children":[null,["$","$L12",null,{"children":"$L13"}],["$","div",null,{"hidden":true,"children":["$","$L14",null,{"children":["$","$f",null,{"name":"Next.Metadata","children":"$L15"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/38h9zm6zvt3ca.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+16:I[84103,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js","/_next/static/chunks/014i8qp0m4e36.js"],"DocsActions"]
+17:T7322,## Getting Started
+
+Welcome to the official wiki for the Shards plugin! This guide contains everything you need to know, from initial setup and configuration to commands and developer integration.
+
+#### Requirements
+
+* **Minecraft Version:** 1.20+ (Recommended: 1.21+)
+* **Required Plugins:** WorldGuard
+* **Optional Plugins:** PlaceholderAPI, ShopGUIPlus
+
+#### Installation
+
+1. Download the Shards plugin
+2. Place the `.jar` file in your server's `plugins` folder
+3. Start/restart your server
+4. Configure your `config.yml` with your license key
+5. Set up your WorldGuard regions for AFK shard generation
+
+## Commands
+
+#### Player Commands
+
+| Command                        | Description                   |
+| ------------------------------ | ----------------------------- |
+| `/<cmd> help`                  | Show help menu                |
+| `/<cmd> balance`               | View your shard balance       |
+| `/<cmd> pay <player> <amount>` | Send shards to another player |
+| `/<cmd> shop`                  | Open the shard shop           |
+| `/<cmd> leaderboard`           | View the leaderboard          |
+| `/afk`                         | Teleport to AFK zone          |
+
+#### Admin Commands
+
+| Command                         | Permission    | Description                   |
+| ------------------------------- | ------------- | ----------------------------- |
+| `/<cmd> set <player> <amount>`  | `shard.admin` | Set a player's balance        |
+| `/<cmd> give <player> <amount>` | `shard.admin` | Give shards to a player       |
+| `/<cmd> take <player> <amount>` | `shard.admin` | Take shards from a player     |
+| `/<cmd> see <player>`           | `shard.admin` | View a player's balance       |
+| `/<cmd> setafk`                 | `shard.admin` | Set the AFK teleport location |
+| `/<cmd> reload`                 | `shard.admin` | Reload the plugin             |
+
+> **Note:** `<cmd>` is the command name set in `config.yml` (default: `shard`)
+
+## Permissions
+
+#### Basic Permissions
+
+| Permission          | Description                           |
+| ------------------- | ------------------------------------- |
+| `shard.use`         | Access basic shard commands           |
+| `shard.shop`        | Access the shop                       |
+| `shard.pay`         | Send shards to other players          |
+| `shard.leaderboard` | View the leaderboard                  |
+| `shard.afk`         | Use the AFK teleport command          |
+| shards.alwaysearn   | Make the player earns shards anywhere |
+
+#### Admin Permissions
+
+| Permission     | Description               |
+| -------------- | ------------------------- |
+| `shard.admin`  | Access all admin commands |
+| `shard.reload` | Reload the plugin         |
+
+#### Bonus Permissions
+
+| Permission               | Description                 |
+| ------------------------ | --------------------------- |
+| `shard.gennodes.<node>`  | Bonus shards per generation |
+| `shard.killnodes.<node>` | Bonus shards per kill       |
+
+## Placeholders
+
+**Requires** [**PlaceholderAPI**](https://www.spigotmc.org/resources/placeholderapi.6245/)
+
+| Placeholder                       | Description                     |
+| --------------------------------- | ------------------------------- |
+| `%shards_value%`                  | Player's shard balance          |
+| `%shards_value_formatted%`        | Formatted balance (with commas) |
+| `%shards_currency%`               | Currency name                   |
+| `%shards_leaderboard_<position>%` | Leaderboard entry at position   |
+
+**Leaderboard Format (configurable in messages.yml):**
+
+```yaml
+leaderboard-placeholderapi-format: "&d%player% &7- &f%amount%"
+```
+
+## config.yml
+
+The main configuration file for the Shards plugin.
+
+#### License
+
+```yaml
+License-Key: "YOUR-LICENSE-KEY"
+```
+
+Get your license key from [discord.gg/pikzstudios](https://discord.gg/pikzstudios)
+
+#### General Settings
+
+| Option        | Type    | Default   | Description                                              |
+| ------------- | ------- | --------- | -------------------------------------------------------- |
+| `Currency`    | String  | `"Shard"` | The name of your currency displayed in messages          |
+| `Command`     | String  | `"shard"` | Main command name (e.g., `/shard`, `/shards`, `/points`) |
+| `pay-enabled` | Boolean | `true`    | Allow players to send shards to each other               |
+
+```yaml
+Currency: "Shard"
+Command: "shard"
+pay-enabled: true
+```
+
+#### Feature Toggles
+
+Enable or disable specific plugin features:
+
+```yaml
+Features:
+  AFK-Teleport: true    # /afk command and AFK teleportation system
+  Shop: true            # In-game shop where players can spend shards
+  Leaderboard: true     # Shard leaderboard GUI
+```
+
+#### Shard Generation (AFK Zones)
+
+Configure passive shard generation in WorldGuard regions:
+
+| Option        | Type    | Description                                       |
+| ------------- | ------- | ------------------------------------------------- |
+| `AFK-Regions` | List    | WorldGuard region names where players earn shards |
+| `Shard-Delay` | Integer | Time in seconds between each shard generation     |
+
+```yaml
+AFK-Regions:
+  - afk_zone
+  - spawn_afk
+
+Shard-Delay: 15
+```
+
+#### Generation Bonus Nodes
+
+Grant bonus shards per generation based on permissions:
+
+```yaml
+Gen-Nodes:
+  extra_two: 2      # Permission: shard.gennodes.extra_two
+  extra_three: 3    # Permission: shard.gennodes.extra_three
+  vip: 5            # Permission: shard.gennodes.vip
+```
+
+Players with `shard.gennodes.extra_two` will receive +2 bonus shards per generation cycle.
+
+#### Kill Rewards
+
+Configure shards earned from PvP kills:
+
+| Option                     | Type    | Default | Description                                                                    |
+| -------------------------- | ------- | ------- | ------------------------------------------------------------------------------ |
+| `Shard-Kill`               | Integer | `15`    | Base shards awarded for killing a player                                       |
+| `Kill-Nodes.prevent_abuse` | Boolean | `true`  | Prevent farming by blocking rewards for killing the same player twice in a row |
+
+```yaml
+Shard-Kill: 15
+
+Kill-Nodes:
+  prevent_abuse: true
+  extra_ten: 10       # Permission: shard.killnodes.extra_ten
+  extra_twenty: 20    # Permission: shard.killnodes.extra_twenty
+```
+
+#### AFK Teleport System
+
+Configure the `/afk` teleportation command:
+
+```yaml
+AFK-Teleport:
+  enable-commands: true      # Enable the /afk command
+  command-name: "afk"        # Custom command name
+  countdown-time: 5          # Seconds before teleporting
+  use-action-bar: true       # Show countdown in action bar
+  use-chat: true             # Show countdown in chat
+```
+
+#### Leaderboard Settings
+
+```yaml
+Leaderboard:
+  Refresh-Rate: 1200    # Refresh interval in seconds (20 minutes)
+```
+
+> **Note:** Minimum recommended refresh rate is 300 seconds (5 minutes) to avoid performance issues.
+
+#### Time Formatting
+
+Customize how time is displayed in messages:
+
+```yaml
+time-format:
+  labels:
+    day: "d"
+    hour: "h"
+    minute: "m"
+    second: "s"
+
+  formats:
+    '1': "%d%%day% %h%%hour% %m%%minute% %s%%second%"   # Days remaining
+    '2': "%h%%hour% %m%%minute% %s%%second%"            # Hours remaining
+    '3': "%m%%minute% %s%%second%"                      # Minutes remaining
+    '4': "%s%%second%"                                  # Seconds only
+```
+
+#### Database Configuration
+
+Shards supports both SQLite and MySQL:
+
+**SQLite (Default):**
+
+```yaml
+Database:
+  Type: SQLite
+```
+
+**MySQL:**
+
+```yaml
+Database:
+  Type: MySQL
+  MySQL:
+    host: "localhost"
+    port: 3306
+    database: "shards"
+    user: "root"
+    password: "your_password"
+    max-pool: 15
+    use-ssl: false
+    url: ""    # Leave empty to use host/port/database
+```
+
+## messages.yml
+
+Customize all plugin messages. Supports color codes and hex colors.
+
+#### Available Placeholders
+
+| Placeholder  | Description                   |
+| ------------ | ----------------------------- |
+| `%currency%` | Currency name from config.yml |
+| `%command%`  | Command name from config.yml  |
+| `%player%`   | Player name                   |
+| `%amount%`   | Shard amount                  |
+| `%balance%`  | Player's balance              |
+| `%target%`   | Target player name            |
+| `%from%`     | Sender name (for payments)    |
+| `%time%`     | Time remaining                |
+| `%price%`    | Item price                    |
+| `%missing%`  | Missing shards amount         |
+| `%product%`  | Product name                  |
+| `%page%`     | Current page                  |
+| `%max%`      | Maximum pages                 |
+
+#### Color Codes
+
+* `&0-9`, `&a-f` - Standard colors
+* `&l`, `&n`, `&o` - Bold, underline, italic
+* `&k`, `&m` - Obfuscated, strikethrough
+* `&r` - Reset
+* `&#RRGGBB` - Hex colors (1.16+)
+
+#### Example Messages
+
+```yaml
+# Help menus
+help:
+  - "&d&lShards Help &7>>"
+  - "&7/%command% balance &8- &fView your shard balance"
+  - "&7/%command% pay <player> <amount> &8- &fSend shards"
+  - "&7/%command% shop &8- &fOpen the shard shop"
+
+# General
+no-permission: "&cYou do not have permission."
+invalid-player: "&cInvalid player."
+balance: "&7Your balance is &d%balance% %currency%(s)&7."
+
+# Shop
+no-enough-shard-shop: "&cYou need %price% %currency% but you're missing %missing%."
+purchased-from-shop: "&aYou purchased %product% &afor %price% %currency%!"
+
+# AFK
+afk-countdown: "&7Teleporting in &b%time% &7seconds..."
+afk-teleported: "&7You have been teleported to the &dAFK Area&7."
+afk-cancelled: "&cTeleportation cancelled due to movement."
+```
+
+## shop.yml
+
+Configure the main shop menu and category buttons.
+
+#### Global Settings
+
+```yaml
+CloseGuiOnPurchase: true        # Close GUI after purchase
+DisablePurchaseMessages: false  # Disable purchase messages in chat
+MultiCategory: true             # Use multiple categories
+Category: "spawners.yml"        # Default category (when MultiCategory is false)
+```
+
+#### Shop Settings
+
+```yaml
+shop:
+  title: "&5&lShards Shop"    # Shop GUI title
+  size: 36                     # Inventory size (9, 18, 27, 36, 45, 54)
+```
+
+#### Navigation Items
+
+```yaml
+navigation:
+  close:
+    material: BARRIER
+    name: "&c&lClose"
+    slot: 31
+
+  filler:
+    material: GRAY_STAINED_GLASS_PANE
+    name: " "
+```
+
+#### Category Buttons
+
+Define buttons that open category inventories:
+
+```yaml
+categories:
+  blocks:
+    material: STONE
+    name: "&e&lBlocks"
+    lore:
+      - "&7Click to browse blocks!"
+    slot: 11
+    file: "blocks.yml"
+    glow: true
+
+  spawners:
+    material: SPAWNER
+    name: "&d&lSpawners"
+    lore:
+      - "&7Click to browse spawners!"
+    slot: 15
+    file: "spawners.yml"
+    permission: "shards.category.spawners"
+```
+
+## sounds.yml
+
+Configure all plugin sounds.
+
+#### Sound Format
+
+```yaml
+sound-name:
+  sound: SOUND_NAME    # Bukkit sound enum
+  volume: 1.0          # Volume (0.0 - 1.0)
+  pitch: 1.0           # Pitch (0.5 - 2.0)
+```
+
+Set `sound` to `"NONE"` to disable a specific sound.
+
+#### Available Sounds
+
+```yaml
+# Shard sounds
+shard-given:
+  sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  volume: 1
+  pitch: 1
+
+shard-enter:
+  sound: UI_TOAST_IN
+  volume: 1
+  pitch: 1
+
+# UI sounds
+ui-click:
+  sound: UI_BUTTON_CLICK
+  volume: 1
+  pitch: 1
+
+error:
+  sound: ENTITY_VILLAGER_NO
+  volume: 1
+  pitch: 1
+
+purchase:
+  sound: ENTITY_PLAYER_LEVELUP
+  volume: 1
+  pitch: 1
+
+# AFK sounds
+afk-countdown:
+  sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  volume: 1
+  pitch: 1
+
+afk-teleport:
+  sound: ENTITY_ENDERMAN_TELEPORT
+  volume: 1
+  pitch: 1
+```
+
+> **Sound List:** [Bukkit Sound Enum](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html)
+
+## Gui's
+
+## Leaderboard
+
+Configure the leaderboard GUI in `Gui/Leaderboard.yml`.
+
+```yaml
+Title: '&d%currency% Leaderboard &8(&7%page%/%max%&8)'
+Size: 54
+
+# Slots where player heads will be displayed
+Players-Display-Slot: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+                       10, 11, 12, 13, 14, 15, 16, 17]
+
+# Player head configuration
+Head-config:
+  Player-Display-Name: '&5&l%player%'
+  Player-Lore:
+    - '&7'
+    - '&7%currency%: &d%shard%'
+
+# Navigation items
+Items:
+  Current-Page:
+    slot: 49
+    material: SPECTRAL_ARROW
+    name: '&eCurrent Page'
+    lore:
+      - '&fThis is page %page%.'
+
+  Next-Page:
+    slot: 50
+    material: PLAYER_HEAD
+    name: '&eNext Page'
+    texture: "eyJ0ZXh0dXJlcy..."
+
+  Previous-Page:
+    slot: 48
+    material: PLAYER_HEAD
+    name: '&ePrevious Page'
+    texture: "eyJ0ZXh0dXJlcy..."
+```
+
+## Shop System
+
+#### Category Files
+
+Category files are stored in the `plugins/Shards/Categories/` folder. Each `.yml` file represents a shop category.
+
+#### Category Structure
+
+```yaml
+category:
+  title: "&5&lShards Shop &8>> &eBlocks"
+  size: 54              # Inventory size (9, 18, 27, 36, 45, 54)
+  total-pages: 3        # Number of pages
+  permission: ""        # Permission to access (optional)
+
+navigation:
+  next-page:
+    material: ARROW
+    name: "&a&lNext Page"
+    slot: 53
+
+  previous-page:
+    material: ARROW
+    name: "&c&lPrevious Page"
+    slot: 45
+
+  back:
+    material: BARRIER
+    name: "&c&lBack to Shop"
+    slot: 49
+
+  filler:
+    material: GRAY_STAINED_GLASS_PANE
+    name: " "
+
+items:
+  # Your shop items here
+```
+
+#### Title Placeholders
+
+| Placeholder  | Description           |
+| ------------ | --------------------- |
+| `%page%`     | Current page number   |
+| `%max_page%` | Total number of pages |
+
+## Custom Items
+
+#### Item Configuration
+
+Complete reference for all item configuration options.
+
+#### Basic Properties
+
+| Property      | Type    | Required | Description                                     |
+| ------------- | ------- | -------- | ----------------------------------------------- |
+| `material`    | String  | **Yes**  | Minecraft material name (e.g., `DIAMOND_SWORD`) |
+| `name`        | String  | No       | Display name (supports color codes)             |
+| `displayName` | String  | No       | Alternative to `name`                           |
+| `lore`        | List    | No       | Item lore lines                                 |
+| `amount`      | Integer | No       | Stack size (default: 1)                         |
+
+```yaml
+example_item:
+  material: DIAMOND_SWORD
+  name: "&b&lDiamond Sword"
+  lore:
+    - "&7A powerful weapon"
+    - ""
+    - "&eClick to purchase!"
+  amount: 1
+```
+
+#### Shop Properties
+
+| Property      | Type    | Description                                        |
+| ------------- | ------- | -------------------------------------------------- |
+| `slot`        | Integer | Inventory slot position (0-53)                     |
+| `page`        | Integer | Page number (default: 1)                           |
+| `price`       | Integer | Cost in shards                                     |
+| `commands`    | List    | Commands executed on purchase                      |
+| `CommandType` | String  | Command executor: `PLAYER`, `CONSOLE`, or `BUNGEE` |
+| `permission`  | String  | Permission required to purchase                    |
+
+```yaml
+vip_rank:
+  material: NETHER_STAR
+  name: "&6&lVIP Rank"
+  lore:
+    - "&7Get VIP privileges!"
+    - "&7Price: &a1000 Shards"
+  slot: 13
+  page: 1
+  price: 1000
+  permission: "shop.buy.vip"
+  CommandType: CONSOLE
+  commands:
+    - "lp user %player% parent set vip"
+    - "broadcast &a%player% purchased VIP!"
+```
+
+#### Visual Properties
+
+| Property            | Type    | Description                          |
+| ------------------- | ------- | ------------------------------------ |
+| `glow`              | Boolean | Add enchantment glow effect          |
+| `unbreakable`       | Boolean | Make item unbreakable                |
+| `damage`            | Integer | Durability damage value              |
+| `custom-model-data` | Integer | Custom model data for resource packs |
+
+```yaml
+glowing_item:
+  material: DIAMOND
+  name: "&bGlowing Diamond"
+  glow: true
+  unbreakable: true
+  custom-model-data: 1001
+```
+
+#### Item Flags
+
+Hide specific item attributes:
+
+```yaml
+flags:
+  - HIDE_ATTRIBUTES      # Hide attack damage, armor, etc.
+  - HIDE_ENCHANTS        # Hide enchantment list
+  - HIDE_UNBREAKABLE     # Hide "Unbreakable" text
+  - HIDE_DESTROYS        # Hide "Can destroy" list
+  - HIDE_PLACED_ON       # Hide "Can be placed on" list
+  - HIDE_POTION_EFFECTS  # Hide potion effects
+  - HIDE_DYE             # Hide dye color
+```
+
+**Example:**
+
+```yaml
+clean_sword:
+  material: NETHERITE_SWORD
+  name: "&c&lBattle Sword"
+  flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+  glow: true
+```
+
+> **Note:** `HIDE_ATTRIBUTES` requires Minecraft 1.21+ for full functionality.
+
+#### Enchantments
+
+Format: `ENCHANTMENT_NAME:LEVEL`
+
+```yaml
+enchantments:
+  - "SHARPNESS:5"
+  - "UNBREAKING:3"
+  - "FIRE_ASPECT:2"
+```
+
+> **Enchantment List:** [Bukkit Enchantment Enum](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/enchantments/Enchantment.html)
+
+#### Player Heads
+
+**Using Base64 Texture:**
+
+```yaml
+custom_head:
+  material: PLAYER_HEAD
+  name: "&eCustom Head"
+  texture: "eyJ0ZXh0d
+```
+
+## API Overview
+
+The Shards API provides access to:
+
+| Component            | Description                            |
+| -------------------- | -------------------------------------- |
+| `ShardsAPI`          | Main API entry point                   |
+| `OfflineUserAPI`     | Player shard balance management        |
+| `LeaderboardAPI`     | Leaderboard GUI access                 |
+| `AFKManagerAPI`      | AFK teleportation system               |
+| `ShopAPI`            | Shop management                        |
+| `GenMultiplayerAPI`  | Generation bonus multipliers           |
+| `KillMultiplayerAPI` | Kill bonus multipliers                 |
+| `ShardGainEvent`     | Event fired when a player gains shards |
+| `ShardLoseEvent`     | Event fired when a player loses shards |
+
+## Accessing the API
+
+Use `ShardsAPIProvider` to access the API:
+
+```java
+import bg.pikz.shards.api.ShardsAPIProvider;
+import bg.pikz.shards.api.interfaces.ShardsAPI;
+
+public class MyPlugin extends JavaPlugin {
+
+    private ShardsAPI shardsAPI;
+
+    @Override
+    public void onEnable() {
+        // Check if Shards is loaded
+        if (getServer().getPluginManager().getPlugin("Shards") != null) {
+            shardsAPI = ShardsAPIProvider.getAPI();
+            getLogger().info("Hooked into Shards v" + shardsAPI.getVersion());
+        } else {
+            getLogger().warning("Shards not found! Some features will be disabled.");
+        }
+    }
+}
+```
+
+## shard gain event
+
+Fired when a player gains shards. This event is **cancellable**.
+
+### Package
+
+```
+bg.pikz.shards.api.events.ShardGainEvent
+```
+
+### Event Information
+
+| Property    | Value |
+| ----------- | ----- |
+| Cancellable | Yes   |
+| Async       | No    |
+
+### Methods
+
+#### getPlayer()
+
+Gets the player gaining shards.
+
+```java
+Player getPlayer()
+```
+
+**Returns:** The player
+
+#### getAmount()
+
+Gets the amount of shards being gained.
+
+```java
+long getAmount()
+```
+
+**Returns:** The shard amount
+
+#### setAmount(long amount)
+
+Sets a new amount of shards to be gained.
+
+```java
+void setAmount(long amount)
+```
+
+**Parameters:**
+
+* `amount` - The new amount
+
+#### getReason()
+
+Gets the reason for gaining shards.
+
+```java
+GainReason getReason()
+```
+
+**Returns:** The GainReason enum value
+
+#### isCancelled()
+
+Check if the event is cancelled.
+
+```java
+boolean isCancelled()
+```
+
+**Returns:** `true` if cancelled
+
+#### setCancelled(boolean cancelled)
+
+Cancel or uncancel the event.
+
+```java
+void setCancelled(boolean cancelled)
+```
+
+**Parameters:**
+
+* `cancelled` - Whether to cancel
+
+### GainReason Enum
+
+| Value               | Description                                          |
+| ------------------- | ---------------------------------------------------- |
+| `REGION_GENERATION` | Shards gained from being in an AFK region            |
+| `KILL`              | Shards gained from killing another player            |
+| `ADMIN_GIVE`        | Shards given by an admin command                     |
+| `PAYMENT_RECEIVED`  | Shards received from another player via `/shard pay` |
+| `SHOP_PURCHASE`     | Shards refunded from a shop purchase (rare)          |
+| `OTHER`             | Any other source                                     |
+
+### Basic Listener Example
+
+```java
+import bg.pikz.shards.api.events.ShardGainEvent;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+
+public class MyListener implements Listener {
+
+    @EventHandler
+    public void onShardGain(ShardGainEvent event) {
+        Player player = event.getPlayer();
+        long amount = event.getAmount();
+        ShardGainEvent.GainReason reason = event.getReason();
+
+        // Log the shard gain
+        Bukkit.getLogger().info(player.getName() + " gained " + amount + " shards (" + reason + ")");
+    }
+}
+```
+
+### Modify Shard Amount Example
+
+```java
+@EventHandler
+public void onShardGain(ShardGainEvent event) {
+    Player player = event.getPlayer();
+
+    // Double shards from kills for VIP players
+    if (event.getReason() == ShardGainEvent.GainReason.KILL) {
+        if (player.hasPermission("vip.doublekill")) {
+            event.setAmount(event.getAmount() * 2);
+            player.sendMessage("VIP bonus: Double kill reward!");
+        }
+    }
+
+    // 50% bonus shards from AFK generation during weekend
+    if (event.getReason() == ShardGainEvent.GainReason.REGION_GENERATION) {
+        if (isWeekend()) {
+            long bonus = event.getAmount() / 2;
+            event.setAmount(event.getAmount() + bonus);
+        }
+    }
+}
+```
+
+### Cancel Event Example
+
+```java
+@EventHandler
+public void onShardGain(ShardGainEvent event) {
+    Player player = event.getPlayer();
+
+    // Disable shard gain in specific world
+    if (player.getWorld().getName().equals("minigames")) {
+        event.setCancelled(true);
+        return;
+    }
+
+    // Prevent AFK farming during certain hours
+    if (event.getReason() == ShardGainEvent.GainReason.REGION_GENERATION) {
+        if (isMaintenanceHours()) {
+            event.setCancelled(true);
+            player.sendMessage("Shard generation is disabled during maintenance!");
+        }
+    }
+}
+```
+
+### Complete Integration Example
+
+```java
+public class ShardGainListener implements Listener {
+
+    private final MyPlugin plugin;
+
+    public ShardGainListener(MyPlugin plugin) {
+        this.plugin = plugin;
+    }
+
+    @EventHandler(priority = EventPriority.NORMAL)
+    public void onShardGain(ShardGainEvent event) {
+        Player player = event.getPlayer();
+        long originalAmount = event.getAmount();
+        ShardGainEvent.GainReason reason = event.getReason();
+
+        // Apply multipliers based on reason
+        double multiplier = getMultiplier(player, reason);
+        long newAmount = (long) (originalAmount * multiplier);
+        event.setAmount(newAmount);
+
+        // Log significant gains
+        if (newAmount >= 100) {
+            plugin.getLogger().info(String.format(
+                "%s gained %d shards (original: %d, reason: %s)",
+                player.getName(), newAmount, originalAmount, reason
+            ));
+        }
+    }
+
+    private double getMultiplier(Player player, ShardGainEvent.GainReason reason) {
+        double multiplier = 1.0;
+
+        // Base rank multipliers
+        if (player.hasPermission("rank.vip")) multiplier += 0.25;
+        if (player.hasPermission("rank.mvp")) multiplier += 0.5;
+
+        // Reason-specific multipliers
+        if (reason == ShardGainEvent.GainReason.KILL) {
+            if (plugin.isDoubleKillEventActive()) {
+                multiplier *= 2.0;
+            }
+        }
+
+        return multiplier;
+    }
+}
+```
+
+## shard lose event
+
+Fired when a player loses shards. This event is **cancellable**.
+
+### Package
+
+```
+bg.pikz.shards.api.events.ShardLoseEvent
+```
+
+### Event Information
+
+| Property    | Value |
+| ----------- | ----- |
+| Cancellable | Yes   |
+| Async       | No    |
+
+### Methods
+
+#### getPlayer()
+
+Gets the player losing shards.
+
+```java
+Player getPlayer()
+```
+
+**Returns:** The player
+
+#### getAmount()
+
+Gets the amount of shards being lost.
+
+```java
+long getAmount()
+```
+
+**Returns:** The shard amount
+
+#### setAmount(long amount)
+
+Sets a new amount of shards to be lost.
+
+```java
+void setAmount(long amount)
+```
+
+**Parameters:**
+
+* `amount` - The new amount
+
+#### getReason()
+
+Gets the reason for losing shards.
+
+```java
+LoseReason getReason()
+```
+
+**Returns:** The LoseReason enum value
+
+#### isCancelled()
+
+Check if the event is cancelled.
+
+```java
+boolean isCancelled()
+```
+
+**Returns:** `true` if cancelled
+
+#### setCancelled(boolean cancelled)
+
+Cancel or uncancel the event.
+
+```java
+void setCancelled(boolean cancelled)
+```
+
+**Parameters:**
+
+* `cancelled` - Whether to cancel
+
+### LoseReason Enum
+
+| Value           | Description                                    |
+| --------------- | ---------------------------------------------- |
+| `SHOP_PURCHASE` | Shards spent on a shop purchase                |
+| `PAYMENT_SENT`  | Shards sent to another player via `/shard pay` |
+| `ADMIN_TAKE`    | Shards taken by an admin command               |
+| `OTHER`         | Any other source                               |
+
+### Basic Listener Example
+
+```java
+import bg.pikz.shards.api.events.ShardLoseEvent;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+
+public class MyListener implements Listener {
+
+    @EventHandler
+    public void onShardLose(ShardLoseEvent event) {
+        Player player = event.getPlayer();
+        long amount = event.getAmount();
+        ShardLoseEvent.LoseReason reason = event.getReason();
+
+        // Log the shard loss
+        Bukkit.getLogger().info(player.getName() + " lost " + amount + " shards (" + reason + ")");
+    }
+}
+```
+
+### Apply Discount Example
+
+```java
+@EventHandler
+public void onShardLose(ShardLoseEvent event) {
+    Player player = event.getPlayer();
+
+    // Apply discounts on shop purchases
+    if (event.getReason() == ShardLoseEvent.LoseReason.SHOP_PURCHASE) {
+        long originalCost = event.getAmount();
+        long discount = 0;
+
+        // 10% discount for VIP
+        if (player.hasPermission("vip.discount")) {
+            discount = (long) (originalCost * 0.10);
+        }
+
+        // 20% discount for MVP
+        if (player.hasPermission("mvp.discount")) {
+            discount = (long) (originalCost * 0.20);
+        }
+
+        if (discount > 0) {
+            event.setAmount(originalCost - discount);
+            player.sendMessage("Discount applied! You saved " + discount + " shards!");
+        }
+    }
+}
+```
+
+### Cancel Event Example
+
+```java
+@EventHandler
+public void onShardLose(ShardLoseEvent event) {
+    Player player = event.getPlayer();
+
+    // Prevent spending during maintenance
+    if (isMaintenanceMode()) {
+        event.setCancelled(true);
+        player.sendMessage("Shard transactions are disabled during maintenance!");
+        return;
+    }
+
+    // Prevent payments to certain players (banned from trading)
+    if (event.getReason() == ShardLoseEvent.LoseReason.PAYMENT_SENT) {
+        if (isTradeBanned(player)) {
+            event.setCancelled(true);
+            player.sendMessage("You are banned from sending shards!");
+        }
+    }
+}
+```
+
+### Transaction Logging Example
+
+```java
+@EventHandler
+public void onShardLose(ShardLoseEvent event) {
+    Player player = event.getPlayer();
+    long amount = event.getAmount();
+    ShardLoseEvent.LoseReason reason = event.getReason();
+
+    // Log all transactions to database
+    plugin.getTransactionLogger().log(
+        player.getUniqueId(),
+        "LOSE",
+        amount,
+        reason.name(),
+        System.currentTimeMillis()
+    );
+
+    // Alert staff for large transactions
+    if (amount >= 10000) {
+        for (Player staff : Bukkit.getOnlinePlayers()) {
+            if (staff.hasPermission("staff.alerts")) {
+                staff.sendMessage("[Alert] " + player.getName() + " spent " + amount + " shards (" + reason + ")");
+            }
+        }
+    }
+}
+```
+
+### Complete Integration Example
+
+```java
+public class ShardLoseListener implements Listener {
+
+    private final MyPlugin plugin;
+
+    public ShardLoseListener(MyPlugin plugin) {
+        this.plugin = plugin;
+    }
+
+    @EventHandler(priority = EventPriority.NORMAL)
+    public void onShardLose(ShardLoseEvent event) {
+        Player player = event.getPlayer();
+        long amount = event.getAmount();
+        ShardLoseEvent.LoseReason reason = event.getReason();
+
+        // Apply discount for shop purchases
+        if (reason == ShardLoseEvent.LoseReason.SHOP_PURCHASE) {
+            double discount = getPlayerDiscount(player);
+            if (discount > 0) {
+                long savings = (long) (amount * discount);
+                event.setAmount(amount - savings);
+                player.sendMessage("You saved " + savings + " shards with your " + (int)(discount * 100) + "% discount!");
+            }
+        }
+
+        // Log transaction
+        logTransaction(player, amount, reason);
+    }
+
+    private double getPlayerDiscount(Player player) {
+        if (player.hasPermission("rank.legend")) return 0.25;
+        if (player.hasPermission("rank.mvp")) return 0.15;
+        if (player.hasPermission("rank.vip")) return 0.10;
+        return 0;
+    }
+
+    private void logTransaction(Player player, long amount, ShardLoseEvent.LoseReason reason) {
+        String log = String.format("[TRANSACTION] %s lost %d shards - Reason: %s",
+            player.getName(), amount, reason.name());
+        plugin.getLogger().info(log);
+    }
+}
+```d:["$","div",null,{"className":"dx-doc","style":{"--accent":"#ef4444"},"children":[["$","main",null,{"className":"dx-main","children":[["$","p",null,{"className":"dx-eyebrow","children":"Plugins"}],["$","header",null,{"className":"dx-doc-head","children":[["$","h1",null,{"children":"Shards"}],["$","span",null,{"className":"dx-ver","children":["v","2.3.9"]}]]}],["$","p",null,{"className":"dx-tagline","children":"AFK area shards and a shard shop."}],["$","$L16",null,{"markdown":"$17","resourceId":38393}],"$L18","$L19","$L1a"]}],"$L1b"]}]
+1d:I[55260,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js","/_next/static/chunks/014i8qp0m4e36.js"],"CodeEnhancer"]
+1e:I[22016,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js","/_next/static/chunks/014i8qp0m4e36.js"],""]
+1f:I[5014,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js","/_next/static/chunks/014i8qp0m4e36.js"],"default"]
+20:I[73785,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js","/_next/static/chunks/014i8qp0m4e36.js"],"DocsAside"]
+1c:T92dd,<h2 id="getting-started">Getting Started</h2><p>Welcome to the official wiki for the Shards plugin! This guide contains everything you need to know, from initial setup and configuration to commands and developer integration.</p><h4 id="requirements">Requirements</h4><ul><li><strong>Minecraft Version:</strong> 1.20+ (Recommended: 1.21+)</li><li><strong>Required Plugins:</strong> WorldGuard</li><li><strong>Optional Plugins:</strong> PlaceholderAPI, ShopGUIPlus</li></ul><h4 id="installation">Installation</h4><ol><li>Download the Shards plugin</li><li>Place the <code>.jar</code> file in your server's <code>plugins</code> folder</li><li>Start/restart your server</li><li>Configure your <code>config.yml</code> with your license key</li><li>Set up your WorldGuard regions for AFK shard generation</li></ol><h2 id="commands">Commands</h2><h4 id="player-commands">Player Commands</h4><div class="dx-table"><table><thead><tr><th>Command</th><th>Description</th></tr></thead><tbody><tr><td><code>/&lt;cmd&gt; help</code></td><td>Show help menu</td></tr><tr><td><code>/&lt;cmd&gt; balance</code></td><td>View your shard balance</td></tr><tr><td><code>/&lt;cmd&gt; pay &lt;player&gt; &lt;amount&gt;</code></td><td>Send shards to another player</td></tr><tr><td><code>/&lt;cmd&gt; shop</code></td><td>Open the shard shop</td></tr><tr><td><code>/&lt;cmd&gt; leaderboard</code></td><td>View the leaderboard</td></tr><tr><td><code>/afk</code></td><td>Teleport to AFK zone</td></tr></tbody></table></div><h4 id="admin-commands">Admin Commands</h4><div class="dx-table"><table><thead><tr><th>Command</th><th>Permission</th><th>Description</th></tr></thead><tbody><tr><td><code>/&lt;cmd&gt; set &lt;player&gt; &lt;amount&gt;</code></td><td><code>shard.admin</code></td><td>Set a player's balance</td></tr><tr><td><code>/&lt;cmd&gt; give &lt;player&gt; &lt;amount&gt;</code></td><td><code>shard.admin</code></td><td>Give shards to a player</td></tr><tr><td><code>/&lt;cmd&gt; take &lt;player&gt; &lt;amount&gt;</code></td><td><code>shard.admin</code></td><td>Take shards from a player</td></tr><tr><td><code>/&lt;cmd&gt; see &lt;player&gt;</code></td><td><code>shard.admin</code></td><td>View a player's balance</td></tr><tr><td><code>/&lt;cmd&gt; setafk</code></td><td><code>shard.admin</code></td><td>Set the AFK teleport location</td></tr><tr><td><code>/&lt;cmd&gt; reload</code></td><td><code>shard.admin</code></td><td>Reload the plugin</td></tr></tbody></table></div><div class="dx-callout dx-callout--info"><span class="dx-callout-ic" aria-hidden="true">&#128161;</span><div class="dx-callout-bd"><strong>Note:</strong> <code>&lt;cmd&gt;</code> is the command name set in <code>config.yml</code> (default: <code>shard</code>)</div></div><h2 id="permissions">Permissions</h2><h4 id="basic-permissions">Basic Permissions</h4><div class="dx-table"><table><thead><tr><th>Permission</th><th>Description</th></tr></thead><tbody><tr><td><code>shard.use</code></td><td>Access basic shard commands</td></tr><tr><td><code>shard.shop</code></td><td>Access the shop</td></tr><tr><td><code>shard.pay</code></td><td>Send shards to other players</td></tr><tr><td><code>shard.leaderboard</code></td><td>View the leaderboard</td></tr><tr><td><code>shard.afk</code></td><td>Use the AFK teleport command</td></tr><tr><td>shards.alwaysearn</td><td>Make the player earns shards anywhere</td></tr></tbody></table></div><h4 id="admin-permissions">Admin Permissions</h4><div class="dx-table"><table><thead><tr><th>Permission</th><th>Description</th></tr></thead><tbody><tr><td><code>shard.admin</code></td><td>Access all admin commands</td></tr><tr><td><code>shard.reload</code></td><td>Reload the plugin</td></tr></tbody></table></div><h4 id="bonus-permissions">Bonus Permissions</h4><div class="dx-table"><table><thead><tr><th>Permission</th><th>Description</th></tr></thead><tbody><tr><td><code>shard.gennodes.&lt;node&gt;</code></td><td>Bonus shards per generation</td></tr><tr><td><code>shard.killnodes.&lt;node&gt;</code></td><td>Bonus shards per kill</td></tr></tbody></table></div><h2 id="placeholders">Placeholders</h2><p><strong>Requires</strong> <a href="https://www.spigotmc.org/resources/placeholderapi.6245/" target="_blank" rel="noreferrer"><strong>PlaceholderAPI</strong></a></p><div class="dx-table"><table><thead><tr><th>Placeholder</th><th>Description</th></tr></thead><tbody><tr><td><code>%shards_value%</code></td><td>Player's shard balance</td></tr><tr><td><code>%shards_value_formatted%</code></td><td>Formatted balance (with commas)</td></tr><tr><td><code>%shards_currency%</code></td><td>Currency name</td></tr><tr><td><code>%shards_leaderboard_&lt;position&gt;%</code></td><td>Leaderboard entry at position</td></tr></tbody></table></div><p><strong>Leaderboard Format (configurable in messages.yml):</strong></p><pre data-lang="yaml" data-label="yaml"><code>leaderboard-placeholderapi-format: "&amp;d%player% &amp;7- &amp;f%amount%"</code></pre><h2 id="config-yml">config.yml</h2><p>The main configuration file for the Shards plugin.</p><h4 id="license">License</h4><pre data-lang="yaml" data-label="yaml"><code>License-Key: "YOUR-LICENSE-KEY"</code></pre><p>Get your license key from <a href="https://discord.gg/pikzstudios" target="_blank" rel="noreferrer">discord.gg/pikzstudios</a></p><h4 id="general-settings">General Settings</h4><div class="dx-table"><table><thead><tr><th>Option</th><th>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>Currency</code></td><td>String</td><td><code>"Shard"</code></td><td>The name of your currency displayed in messages</td></tr><tr><td><code>Command</code></td><td>String</td><td><code>"shard"</code></td><td>Main command name (e.g., <code>/shard</code>, <code>/shards</code>, <code>/points</code>)</td></tr><tr><td><code>pay-enabled</code></td><td>Boolean</td><td><code>true</code></td><td>Allow players to send shards to each other</td></tr></tbody></table></div><pre data-lang="yaml" data-label="yaml"><code>Currency: "Shard"
+Command: "shard"
+pay-enabled: true</code></pre><h4 id="feature-toggles">Feature Toggles</h4><p>Enable or disable specific plugin features:</p><pre data-lang="yaml" data-label="yaml"><code>Features:
+  AFK-Teleport: true    # /afk command and AFK teleportation system
+  Shop: true            # In-game shop where players can spend shards
+  Leaderboard: true     # Shard leaderboard GUI</code></pre><h4 id="shard-generation-afk-zones">Shard Generation (AFK Zones)</h4><p>Configure passive shard generation in WorldGuard regions:</p><div class="dx-table"><table><thead><tr><th>Option</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><code>AFK-Regions</code></td><td>List</td><td>WorldGuard region names where players earn shards</td></tr><tr><td><code>Shard-Delay</code></td><td>Integer</td><td>Time in seconds between each shard generation</td></tr></tbody></table></div><pre data-lang="yaml" data-label="yaml"><code>AFK-Regions:
+  - afk_zone
+  - spawn_afk
+
+Shard-Delay: 15</code></pre><h4 id="generation-bonus-nodes">Generation Bonus Nodes</h4><p>Grant bonus shards per generation based on permissions:</p><pre data-lang="yaml" data-label="yaml"><code>Gen-Nodes:
+  extra_two: 2      # Permission: shard.gennodes.extra_two
+  extra_three: 3    # Permission: shard.gennodes.extra_three
+  vip: 5            # Permission: shard.gennodes.vip</code></pre><p>Players with <code>shard.gennodes.extra_two</code> will receive +2 bonus shards per generation cycle.</p><h4 id="kill-rewards">Kill Rewards</h4><p>Configure shards earned from PvP kills:</p><div class="dx-table"><table><thead><tr><th>Option</th><th>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>Shard-Kill</code></td><td>Integer</td><td><code>15</code></td><td>Base shards awarded for killing a player</td></tr><tr><td><code>Kill-Nodes.prevent_abuse</code></td><td>Boolean</td><td><code>true</code></td><td>Prevent farming by blocking rewards for killing the same player twice in a row</td></tr></tbody></table></div><pre data-lang="yaml" data-label="yaml"><code>Shard-Kill: 15
+
+Kill-Nodes:
+  prevent_abuse: true
+  extra_ten: 10       # Permission: shard.killnodes.extra_ten
+  extra_twenty: 20    # Permission: shard.killnodes.extra_twenty</code></pre><h4 id="afk-teleport-system">AFK Teleport System</h4><p>Configure the <code>/afk</code> teleportation command:</p><pre data-lang="yaml" data-label="yaml"><code>AFK-Teleport:
+  enable-commands: true      # Enable the /afk command
+  command-name: "afk"        # Custom command name
+  countdown-time: 5          # Seconds before teleporting
+  use-action-bar: true       # Show countdown in action bar
+  use-chat: true             # Show countdown in chat</code></pre><h4 id="leaderboard-settings">Leaderboard Settings</h4><pre data-lang="yaml" data-label="yaml"><code>Leaderboard:
+  Refresh-Rate: 1200    # Refresh interval in seconds (20 minutes)</code></pre><div class="dx-callout dx-callout--info"><span class="dx-callout-ic" aria-hidden="true">&#128161;</span><div class="dx-callout-bd"><strong>Note:</strong> Minimum recommended refresh rate is 300 seconds (5 minutes) to avoid performance issues.</div></div><h4 id="time-formatting">Time Formatting</h4><p>Customize how time is displayed in messages:</p><pre data-lang="yaml" data-label="yaml"><code>time-format:
+  labels:
+    day: "d"
+    hour: "h"
+    minute: "m"
+    second: "s"
+
+  formats:
+    '1': "%d%%day% %h%%hour% %m%%minute% %s%%second%"   # Days remaining
+    '2': "%h%%hour% %m%%minute% %s%%second%"            # Hours remaining
+    '3': "%m%%minute% %s%%second%"                      # Minutes remaining
+    '4': "%s%%second%"                                  # Seconds only</code></pre><h4 id="database-configuration">Database Configuration</h4><p>Shards supports both SQLite and MySQL:</p><p><strong>SQLite (Default):</strong></p><pre data-lang="yaml" data-label="yaml"><code>Database:
+  Type: SQLite</code></pre><p><strong>MySQL:</strong></p><pre data-lang="yaml" data-label="yaml"><code>Database:
+  Type: MySQL
+  MySQL:
+    host: "localhost"
+    port: 3306
+    database: "shards"
+    user: "root"
+    password: "your_password"
+    max-pool: 15
+    use-ssl: false
+    url: ""    # Leave empty to use host/port/database</code></pre><h2 id="messages-yml">messages.yml</h2><p>Customize all plugin messages. Supports color codes and hex colors.</p><h4 id="available-placeholders">Available Placeholders</h4><div class="dx-table"><table><thead><tr><th>Placeholder</th><th>Description</th></tr></thead><tbody><tr><td><code>%currency%</code></td><td>Currency name from config.yml</td></tr><tr><td><code>%command%</code></td><td>Command name from config.yml</td></tr><tr><td><code>%player%</code></td><td>Player name</td></tr><tr><td><code>%amount%</code></td><td>Shard amount</td></tr><tr><td><code>%balance%</code></td><td>Player's balance</td></tr><tr><td><code>%target%</code></td><td>Target player name</td></tr><tr><td><code>%from%</code></td><td>Sender name (for payments)</td></tr><tr><td><code>%time%</code></td><td>Time remaining</td></tr><tr><td><code>%price%</code></td><td>Item price</td></tr><tr><td><code>%missing%</code></td><td>Missing shards amount</td></tr><tr><td><code>%product%</code></td><td>Product name</td></tr><tr><td><code>%page%</code></td><td>Current page</td></tr><tr><td><code>%max%</code></td><td>Maximum pages</td></tr></tbody></table></div><h4 id="color-codes">Color Codes</h4><ul><li><code>&amp;0-9</code>, <code>&amp;a-f</code> - Standard colors</li><li><code>&amp;l</code>, <code>&amp;n</code>, <code>&amp;o</code> - Bold, underline, italic</li><li><code>&amp;k</code>, <code>&amp;m</code> - Obfuscated, strikethrough</li><li><code>&amp;r</code> - Reset</li><li><code>&amp;#RRGGBB</code> - Hex colors (1.16+)</li></ul><h4 id="example-messages">Example Messages</h4><pre data-lang="yaml" data-label="yaml"><code># Help menus
+help:
+  - "&amp;d&amp;lShards Help &amp;7&gt;&gt;"
+  - "&amp;7/%command% balance &amp;8- &amp;fView your shard balance"
+  - "&amp;7/%command% pay &lt;player&gt; &lt;amount&gt; &amp;8- &amp;fSend shards"
+  - "&amp;7/%command% shop &amp;8- &amp;fOpen the shard shop"
+
+# General
+no-permission: "&amp;cYou do not have permission."
+invalid-player: "&amp;cInvalid player."
+balance: "&amp;7Your balance is &amp;d%balance% %currency%(s)&amp;7."
+
+# Shop
+no-enough-shard-shop: "&amp;cYou need %price% %currency% but you're missing %missing%."
+purchased-from-shop: "&amp;aYou purchased %product% &amp;afor %price% %currency%!"
+
+# AFK
+afk-countdown: "&amp;7Teleporting in &amp;b%time% &amp;7seconds..."
+afk-teleported: "&amp;7You have been teleported to the &amp;dAFK Area&amp;7."
+afk-cancelled: "&amp;cTeleportation cancelled due to movement."</code></pre><h2 id="shop-yml">shop.yml</h2><p>Configure the main shop menu and category buttons.</p><h4 id="global-settings">Global Settings</h4><pre data-lang="yaml" data-label="yaml"><code>CloseGuiOnPurchase: true        # Close GUI after purchase
+DisablePurchaseMessages: false  # Disable purchase messages in chat
+MultiCategory: true             # Use multiple categories
+Category: "spawners.yml"        # Default category (when MultiCategory is false)</code></pre><h4 id="shop-settings">Shop Settings</h4><pre data-lang="yaml" data-label="yaml"><code>shop:
+  title: "&amp;5&amp;lShards Shop"    # Shop GUI title
+  size: 36                     # Inventory size (9, 18, 27, 36, 45, 54)</code></pre><h4 id="navigation-items">Navigation Items</h4><pre data-lang="yaml" data-label="yaml"><code>navigation:
+  close:
+    material: BARRIER
+    name: "&amp;c&amp;lClose"
+    slot: 31
+
+  filler:
+    material: GRAY_STAINED_GLASS_PANE
+    name: " "</code></pre><h4 id="category-buttons">Category Buttons</h4><p>Define buttons that open category inventories:</p><pre data-lang="yaml" data-label="yaml"><code>categories:
+  blocks:
+    material: STONE
+    name: "&amp;e&amp;lBlocks"
+    lore:
+      - "&amp;7Click to browse blocks!"
+    slot: 11
+    file: "blocks.yml"
+    glow: true
+
+  spawners:
+    material: SPAWNER
+    name: "&amp;d&amp;lSpawners"
+    lore:
+      - "&amp;7Click to browse spawners!"
+    slot: 15
+    file: "spawners.yml"
+    permission: "shards.category.spawners"</code></pre><h2 id="sounds-yml">sounds.yml</h2><p>Configure all plugin sounds.</p><h4 id="sound-format">Sound Format</h4><pre data-lang="yaml" data-label="yaml"><code>sound-name:
+  sound: SOUND_NAME    # Bukkit sound enum
+  volume: 1.0          # Volume (0.0 - 1.0)
+  pitch: 1.0           # Pitch (0.5 - 2.0)</code></pre><p>Set <code>sound</code> to <code>"NONE"</code> to disable a specific sound.</p><h4 id="available-sounds">Available Sounds</h4><pre data-lang="yaml" data-label="yaml"><code># Shard sounds
+shard-given:
+  sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  volume: 1
+  pitch: 1
+
+shard-enter:
+  sound: UI_TOAST_IN
+  volume: 1
+  pitch: 1
+
+# UI sounds
+ui-click:
+  sound: UI_BUTTON_CLICK
+  volume: 1
+  pitch: 1
+
+error:
+  sound: ENTITY_VILLAGER_NO
+  volume: 1
+  pitch: 1
+
+purchase:
+  sound: ENTITY_PLAYER_LEVELUP
+  volume: 1
+  pitch: 1
+
+# AFK sounds
+afk-countdown:
+  sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  volume: 1
+  pitch: 1
+
+afk-teleport:
+  sound: ENTITY_ENDERMAN_TELEPORT
+  volume: 1
+  pitch: 1</code></pre><div class="dx-callout dx-callout--info"><span class="dx-callout-ic" aria-hidden="true">&#128161;</span><div class="dx-callout-bd"><strong>Sound List:</strong> <a href="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html" target="_blank" rel="noreferrer">Bukkit Sound Enum</a></div></div><h2 id="gui-s">Gui's</h2><h2 id="leaderboard">Leaderboard</h2><p>Configure the leaderboard GUI in <code>Gui/Leaderboard.yml</code>.</p><pre data-lang="yaml" data-label="yaml"><code>Title: '&amp;d%currency% Leaderboard &amp;8(&amp;7%page%/%max%&amp;8)'
+Size: 54
+
+# Slots where player heads will be displayed
+Players-Display-Slot: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+                       10, 11, 12, 13, 14, 15, 16, 17]
+
+# Player head configuration
+Head-config:
+  Player-Display-Name: '&amp;5&amp;l%player%'
+  Player-Lore:
+    - '&amp;7'
+    - '&amp;7%currency%: &amp;d%shard%'
+
+# Navigation items
+Items:
+  Current-Page:
+    slot: 49
+    material: SPECTRAL_ARROW
+    name: '&amp;eCurrent Page'
+    lore:
+      - '&amp;fThis is page %page%.'
+
+  Next-Page:
+    slot: 50
+    material: PLAYER_HEAD
+    name: '&amp;eNext Page'
+    texture: "eyJ0ZXh0dXJlcy..."
+
+  Previous-Page:
+    slot: 48
+    material: PLAYER_HEAD
+    name: '&amp;ePrevious Page'
+    texture: "eyJ0ZXh0dXJlcy..."</code></pre><h2 id="shop-system">Shop System</h2><h4 id="category-files">Category Files</h4><p>Category files are stored in the <code>plugins/Shards/Categories/</code> folder. Each <code>.yml</code> file represents a shop category.</p><h4 id="category-structure">Category Structure</h4><pre data-lang="yaml" data-label="yaml"><code>category:
+  title: "&amp;5&amp;lShards Shop &amp;8&gt;&gt; &amp;eBlocks"
+  size: 54              # Inventory size (9, 18, 27, 36, 45, 54)
+  total-pages: 3        # Number of pages
+  permission: ""        # Permission to access (optional)
+
+navigation:
+  next-page:
+    material: ARROW
+    name: "&amp;a&amp;lNext Page"
+    slot: 53
+
+  previous-page:
+    material: ARROW
+    name: "&amp;c&amp;lPrevious Page"
+    slot: 45
+
+  back:
+    material: BARRIER
+    name: "&amp;c&amp;lBack to Shop"
+    slot: 49
+
+  filler:
+    material: GRAY_STAINED_GLASS_PANE
+    name: " "
+
+items:
+  # Your shop items here</code></pre><h4 id="title-placeholders">Title Placeholders</h4><div class="dx-table"><table><thead><tr><th>Placeholder</th><th>Description</th></tr></thead><tbody><tr><td><code>%page%</code></td><td>Current page number</td></tr><tr><td><code>%max_page%</code></td><td>Total number of pages</td></tr></tbody></table></div><h2 id="custom-items">Custom Items</h2><h4 id="item-configuration">Item Configuration</h4><p>Complete reference for all item configuration options.</p><h4 id="basic-properties">Basic Properties</h4><div class="dx-table"><table><thead><tr><th>Property</th><th>Type</th><th>Required</th><th>Description</th></tr></thead><tbody><tr><td><code>material</code></td><td>String</td><td><strong>Yes</strong></td><td>Minecraft material name (e.g., <code>DIAMOND_SWORD</code>)</td></tr><tr><td><code>name</code></td><td>String</td><td>No</td><td>Display name (supports color codes)</td></tr><tr><td><code>displayName</code></td><td>String</td><td>No</td><td>Alternative to <code>name</code></td></tr><tr><td><code>lore</code></td><td>List</td><td>No</td><td>Item lore lines</td></tr><tr><td><code>amount</code></td><td>Integer</td><td>No</td><td>Stack size (default: 1)</td></tr></tbody></table></div><pre data-lang="yaml" data-label="yaml"><code>example_item:
+  material: DIAMOND_SWORD
+  name: "&amp;b&amp;lDiamond Sword"
+  lore:
+    - "&amp;7A powerful weapon"
+    - ""
+    - "&amp;eClick to purchase!"
+  amount: 1</code></pre><h4 id="shop-properties">Shop Properties</h4><div class="dx-table"><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><code>slot</code></td><td>Integer</td><td>Inventory slot position (0-53)</td></tr><tr><td><code>page</code></td><td>Integer</td><td>Page number (default: 1)</td></tr><tr><td><code>price</code></td><td>Integer</td><td>Cost in shards</td></tr><tr><td><code>commands</code></td><td>List</td><td>Commands executed on purchase</td></tr><tr><td><code>CommandType</code></td><td>String</td><td>Command executor: <code>PLAYER</code>, <code>CONSOLE</code>, or <code>BUNGEE</code></td></tr><tr><td><code>permission</code></td><td>String</td><td>Permission required to purchase</td></tr></tbody></table></div><pre data-lang="yaml" data-label="yaml"><code>vip_rank:
+  material: NETHER_STAR
+  name: "&amp;6&amp;lVIP Rank"
+  lore:
+    - "&amp;7Get VIP privileges!"
+    - "&amp;7Price: &amp;a1000 Shards"
+  slot: 13
+  page: 1
+  price: 1000
+  permission: "shop.buy.vip"
+  CommandType: CONSOLE
+  commands:
+    - "lp user %player% parent set vip"
+    - "broadcast &amp;a%player% purchased VIP!"</code></pre><h4 id="visual-properties">Visual Properties</h4><div class="dx-table"><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><code>glow</code></td><td>Boolean</td><td>Add enchantment glow effect</td></tr><tr><td><code>unbreakable</code></td><td>Boolean</td><td>Make item unbreakable</td></tr><tr><td><code>damage</code></td><td>Integer</td><td>Durability damage value</td></tr><tr><td><code>custom-model-data</code></td><td>Integer</td><td>Custom model data for resource packs</td></tr></tbody></table></div><pre data-lang="yaml" data-label="yaml"><code>glowing_item:
+  material: DIAMOND
+  name: "&amp;bGlowing Diamond"
+  glow: true
+  unbreakable: true
+  custom-model-data: 1001</code></pre><h4 id="item-flags">Item Flags</h4><p>Hide specific item attributes:</p><pre data-lang="yaml" data-label="yaml"><code>flags:
+  - HIDE_ATTRIBUTES      # Hide attack damage, armor, etc.
+  - HIDE_ENCHANTS        # Hide enchantment list
+  - HIDE_UNBREAKABLE     # Hide "Unbreakable" text
+  - HIDE_DESTROYS        # Hide "Can destroy" list
+  - HIDE_PLACED_ON       # Hide "Can be placed on" list
+  - HIDE_POTION_EFFECTS  # Hide potion effects
+  - HIDE_DYE             # Hide dye color</code></pre><p><strong>Example:</strong></p><pre data-lang="yaml" data-label="yaml"><code>clean_sword:
+  material: NETHERITE_SWORD
+  name: "&amp;c&amp;lBattle Sword"
+  flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+  glow: true</code></pre><div class="dx-callout dx-callout--info"><span class="dx-callout-ic" aria-hidden="true">&#128161;</span><div class="dx-callout-bd"><strong>Note:</strong> <code>HIDE_ATTRIBUTES</code> requires Minecraft 1.21+ for full functionality.</div></div><h4 id="enchantments">Enchantments</h4><p>Format: <code>ENCHANTMENT_NAME:LEVEL</code></p><pre data-lang="yaml" data-label="yaml"><code>enchantments:
+  - "SHARPNESS:5"
+  - "UNBREAKING:3"
+  - "FIRE_ASPECT:2"</code></pre><div class="dx-callout dx-callout--info"><span class="dx-callout-ic" aria-hidden="true">&#128161;</span><div class="dx-callout-bd"><strong>Enchantment List:</strong> <a href="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/enchantments/Enchantment.html" target="_blank" rel="noreferrer">Bukkit Enchantment Enum</a></div></div><h4 id="player-heads">Player Heads</h4><p><strong>Using Base64 Texture:</strong></p><pre data-lang="yaml" data-label="yaml"><code>custom_head:
+  material: PLAYER_HEAD
+  name: "&amp;eCustom Head"
+  texture: "eyJ0ZXh0d</code></pre><h2 id="api-overview">API Overview</h2><p>The Shards API provides access to:</p><div class="dx-table"><table><thead><tr><th>Component</th><th>Description</th></tr></thead><tbody><tr><td><code>ShardsAPI</code></td><td>Main API entry point</td></tr><tr><td><code>OfflineUserAPI</code></td><td>Player shard balance management</td></tr><tr><td><code>LeaderboardAPI</code></td><td>Leaderboard GUI access</td></tr><tr><td><code>AFKManagerAPI</code></td><td>AFK teleportation system</td></tr><tr><td><code>ShopAPI</code></td><td>Shop management</td></tr><tr><td><code>GenMultiplayerAPI</code></td><td>Generation bonus multipliers</td></tr><tr><td><code>KillMultiplayerAPI</code></td><td>Kill bonus multipliers</td></tr><tr><td><code>ShardGainEvent</code></td><td>Event fired when a player gains shards</td></tr><tr><td><code>ShardLoseEvent</code></td><td>Event fired when a player loses shards</td></tr></tbody></table></div><h2 id="accessing-the-api">Accessing the API</h2><p>Use <code>ShardsAPIProvider</code> to access the API:</p><pre data-lang="java" data-label="java"><code>import bg.pikz.shards.api.ShardsAPIProvider;
+import bg.pikz.shards.api.interfaces.ShardsAPI;
+
+public class MyPlugin extends JavaPlugin {
+
+    private ShardsAPI shardsAPI;
+
+    @Override
+    public void onEnable() {
+        // Check if Shards is loaded
+        if (getServer().getPluginManager().getPlugin("Shards") != null) {
+            shardsAPI = ShardsAPIProvider.getAPI();
+            getLogger().info("Hooked into Shards v" + shardsAPI.getVersion());
+        } else {
+            getLogger().warning("Shards not found! Some features will be disabled.");
+        }
+    }
+}</code></pre><h2 id="shard-gain-event">shard gain event</h2><p>Fired when a player gains shards. This event is <strong>cancellable</strong>.</p><h3 id="package">Package</h3><pre><code>bg.pikz.shards.api.events.ShardGainEvent</code></pre><h3 id="event-information">Event Information</h3><div class="dx-table"><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td>Cancellable</td><td>Yes</td></tr><tr><td>Async</td><td>No</td></tr></tbody></table></div><h3 id="methods">Methods</h3><h4 id="getplayer">getPlayer()</h4><p>Gets the player gaining shards.</p><pre data-lang="java" data-label="java"><code>Player getPlayer()</code></pre><p><strong>Returns:</strong> The player</p><h4 id="getamount">getAmount()</h4><p>Gets the amount of shards being gained.</p><pre data-lang="java" data-label="java"><code>long getAmount()</code></pre><p><strong>Returns:</strong> The shard amount</p><h4 id="setamount-long-amount">setAmount(long amount)</h4><p>Sets a new amount of shards to be gained.</p><pre data-lang="java" data-label="java"><code>void setAmount(long amount)</code></pre><p><strong>Parameters:</strong></p><ul><li><code>amount</code> - The new amount</li></ul><h4 id="getreason">getReason()</h4><p>Gets the reason for gaining shards.</p><pre data-lang="java" data-label="java"><code>GainReason getReason()</code></pre><p><strong>Returns:</strong> The GainReason enum value</p><h4 id="iscancelled">isCancelled()</h4><p>Check if the event is cancelled.</p><pre data-lang="java" data-label="java"><code>boolean isCancelled()</code></pre><p><strong>Returns:</strong> <code>true</code> if cancelled</p><h4 id="setcancelled-boolean-cancelled">setCancelled(boolean cancelled)</h4><p>Cancel or uncancel the event.</p><pre data-lang="java" data-label="java"><code>void setCancelled(boolean cancelled)</code></pre><p><strong>Parameters:</strong></p><ul><li><code>cancelled</code> - Whether to cancel</li></ul><h3 id="gainreason-enum">GainReason Enum</h3><div class="dx-table"><table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>REGION_GENERATION</code></td><td>Shards gained from being in an AFK region</td></tr><tr><td><code>KILL</code></td><td>Shards gained from killing another player</td></tr><tr><td><code>ADMIN_GIVE</code></td><td>Shards given by an admin command</td></tr><tr><td><code>PAYMENT_RECEIVED</code></td><td>Shards received from another player via <code>/shard pay</code></td></tr><tr><td><code>SHOP_PURCHASE</code></td><td>Shards refunded from a shop purchase (rare)</td></tr><tr><td><code>OTHER</code></td><td>Any other source</td></tr></tbody></table></div><h3 id="basic-listener-example">Basic Listener Example</h3><pre data-lang="java" data-label="java"><code>import bg.pikz.shards.api.events.ShardGainEvent;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+
+public class MyListener implements Listener {
+
+    @EventHandler
+    public void onShardGain(ShardGainEvent event) {
+        Player player = event.getPlayer();
+        long amount = event.getAmount();
+        ShardGainEvent.GainReason reason = event.getReason();
+
+        // Log the shard gain
+        Bukkit.getLogger().info(player.getName() + " gained " + amount + " shards (" + reason + ")");
+    }
+}</code></pre><h3 id="modify-shard-amount-example">Modify Shard Amount Example</h3><pre data-lang="java" data-label="java"><code>@EventHandler
+public void onShardGain(ShardGainEvent event) {
+    Player player = event.getPlayer();
+
+    // Double shards from kills for VIP players
+    if (event.getReason() == ShardGainEvent.GainReason.KILL) {
+        if (player.hasPermission("vip.doublekill")) {
+            event.setAmount(event.getAmount() * 2);
+            player.sendMessage("VIP bonus: Double kill reward!");
+        }
+    }
+
+    // 50% bonus shards from AFK generation during weekend
+    if (event.getReason() == ShardGainEvent.GainReason.REGION_GENERATION) {
+        if (isWeekend()) {
+            long bonus = event.getAmount() / 2;
+            event.setAmount(event.getAmount() + bonus);
+        }
+    }
+}</code></pre><h3 id="cancel-event-example">Cancel Event Example</h3><pre data-lang="java" data-label="java"><code>@EventHandler
+public void onShardGain(ShardGainEvent event) {
+    Player player = event.getPlayer();
+
+    // Disable shard gain in specific world
+    if (player.getWorld().getName().equals("minigames")) {
+        event.setCancelled(true);
+        return;
+    }
+
+    // Prevent AFK farming during certain hours
+    if (event.getReason() == ShardGainEvent.GainReason.REGION_GENERATION) {
+        if (isMaintenanceHours()) {
+            event.setCancelled(true);
+            player.sendMessage("Shard generation is disabled during maintenance!");
+        }
+    }
+}</code></pre><h3 id="complete-integration-example">Complete Integration Example</h3><pre data-lang="java" data-label="java"><code>public class ShardGainListener implements Listener {
+
+    private final MyPlugin plugin;
+
+    public ShardGainListener(MyPlugin plugin) {
+        this.plugin = plugin;
+    }
+
+    @EventHandler(priority = EventPriority.NORMAL)
+    public void onShardGain(ShardGainEvent event) {
+        Player player = event.getPlayer();
+        long originalAmount = event.getAmount();
+        ShardGainEvent.GainReason reason = event.getReason();
+
+        // Apply multipliers based on reason
+        double multiplier = getMultiplier(player, reason);
+        long newAmount = (long) (originalAmount * multiplier);
+        event.setAmount(newAmount);
+
+        // Log significant gains
+        if (newAmount &gt;= 100) {
+            plugin.getLogger().info(String.format(
+                "%s gained %d shards (original: %d, reason: %s)",
+                player.getName(), newAmount, originalAmount, reason
+            ));
+        }
+    }
+
+    private double getMultiplier(Player player, ShardGainEvent.GainReason reason) {
+        double multiplier = 1.0;
+
+        // Base rank multipliers
+        if (player.hasPermission("rank.vip")) multiplier += 0.25;
+        if (player.hasPermission("rank.mvp")) multiplier += 0.5;
+
+        // Reason-specific multipliers
+        if (reason == ShardGainEvent.GainReason.KILL) {
+            if (plugin.isDoubleKillEventActive()) {
+                multiplier *= 2.0;
+            }
+        }
+
+        return multiplier;
+    }
+}</code></pre><h2 id="shard-lose-event">shard lose event</h2><p>Fired when a player loses shards. This event is <strong>cancellable</strong>.</p><h3 id="package">Package</h3><pre><code>bg.pikz.shards.api.events.ShardLoseEvent</code></pre><h3 id="event-information">Event Information</h3><div class="dx-table"><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td>Cancellable</td><td>Yes</td></tr><tr><td>Async</td><td>No</td></tr></tbody></table></div><h3 id="methods">Methods</h3><h4 id="getplayer">getPlayer()</h4><p>Gets the player losing shards.</p><pre data-lang="java" data-label="java"><code>Player getPlayer()</code></pre><p><strong>Returns:</strong> The player</p><h4 id="getamount">getAmount()</h4><p>Gets the amount of shards being lost.</p><pre data-lang="java" data-label="java"><code>long getAmount()</code></pre><p><strong>Returns:</strong> The shard amount</p><h4 id="setamount-long-amount">setAmount(long amount)</h4><p>Sets a new amount of shards to be lost.</p><pre data-lang="java" data-label="java"><code>void setAmount(long amount)</code></pre><p><strong>Parameters:</strong></p><ul><li><code>amount</code> - The new amount</li></ul><h4 id="getreason">getReason()</h4><p>Gets the reason for losing shards.</p><pre data-lang="java" data-label="java"><code>LoseReason getReason()</code></pre><p><strong>Returns:</strong> The LoseReason enum value</p><h4 id="iscancelled">isCancelled()</h4><p>Check if the event is cancelled.</p><pre data-lang="java" data-label="java"><code>boolean isCancelled()</code></pre><p><strong>Returns:</strong> <code>true</code> if cancelled</p><h4 id="setcancelled-boolean-cancelled">setCancelled(boolean cancelled)</h4><p>Cancel or uncancel the event.</p><pre data-lang="java" data-label="java"><code>void setCancelled(boolean cancelled)</code></pre><p><strong>Parameters:</strong></p><ul><li><code>cancelled</code> - Whether to cancel</li></ul><h3 id="losereason-enum">LoseReason Enum</h3><div class="dx-table"><table><thead><tr><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><code>SHOP_PURCHASE</code></td><td>Shards spent on a shop purchase</td></tr><tr><td><code>PAYMENT_SENT</code></td><td>Shards sent to another player via <code>/shard pay</code></td></tr><tr><td><code>ADMIN_TAKE</code></td><td>Shards taken by an admin command</td></tr><tr><td><code>OTHER</code></td><td>Any other source</td></tr></tbody></table></div><h3 id="basic-listener-example">Basic Listener Example</h3><pre data-lang="java" data-label="java"><code>import bg.pikz.shards.api.events.ShardLoseEvent;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+
+public class MyListener implements Listener {
+
+    @EventHandler
+    public void onShardLose(ShardLoseEvent event) {
+        Player player = event.getPlayer();
+        long amount = event.getAmount();
+        ShardLoseEvent.LoseReason reason = event.getReason();
+
+        // Log the shard loss
+        Bukkit.getLogger().info(player.getName() + " lost " + amount + " shards (" + reason + ")");
+    }
+}</code></pre><h3 id="apply-discount-example">Apply Discount Example</h3><pre data-lang="java" data-label="java"><code>@EventHandler
+public void onShardLose(ShardLoseEvent event) {
+    Player player = event.getPlayer();
+
+    // Apply discounts on shop purchases
+    if (event.getReason() == ShardLoseEvent.LoseReason.SHOP_PURCHASE) {
+        long originalCost = event.getAmount();
+        long discount = 0;
+
+        // 10% discount for VIP
+        if (player.hasPermission("vip.discount")) {
+            discount = (long) (originalCost * 0.10);
+        }
+
+        // 20% discount for MVP
+        if (player.hasPermission("mvp.discount")) {
+            discount = (long) (originalCost * 0.20);
+        }
+
+        if (discount &gt; 0) {
+            event.setAmount(originalCost - discount);
+            player.sendMessage("Discount applied! You saved " + discount + " shards!");
+        }
+    }
+}</code></pre><h3 id="cancel-event-example">Cancel Event Example</h3><pre data-lang="java" data-label="java"><code>@EventHandler
+public void onShardLose(ShardLoseEvent event) {
+    Player player = event.getPlayer();
+
+    // Prevent spending during maintenance
+    if (isMaintenanceMode()) {
+        event.setCancelled(true);
+        player.sendMessage("Shard transactions are disabled during maintenance!");
+        return;
+    }
+
+    // Prevent payments to certain players (banned from trading)
+    if (event.getReason() == ShardLoseEvent.LoseReason.PAYMENT_SENT) {
+        if (isTradeBanned(player)) {
+            event.setCancelled(true);
+            player.sendMessage("You are banned from sending shards!");
+        }
+    }
+}</code></pre><h3 id="transaction-logging-example">Transaction Logging Example</h3><pre data-lang="java" data-label="java"><code>@EventHandler
+public void onShardLose(ShardLoseEvent event) {
+    Player player = event.getPlayer();
+    long amount = event.getAmount();
+    ShardLoseEvent.LoseReason reason = event.getReason();
+
+    // Log all transactions to database
+    plugin.getTransactionLogger().log(
+        player.getUniqueId(),
+        "LOSE",
+        amount,
+        reason.name(),
+        System.currentTimeMillis()
+    );
+
+    // Alert staff for large transactions
+    if (amount &gt;= 10000) {
+        for (Player staff : Bukkit.getOnlinePlayers()) {
+            if (staff.hasPermission("staff.alerts")) {
+                staff.sendMessage("[Alert] " + player.getName() + " spent " + amount + " shards (" + reason + ")");
+            }
+        }
+    }
+}</code></pre><h3 id="complete-integration-example">Complete Integration Example</h3><pre data-lang="java" data-label="java"><code>public class ShardLoseListener implements Listener {
+
+    private final MyPlugin plugin;
+
+    public ShardLoseListener(MyPlugin plugin) {
+        this.plugin = plugin;
+    }
+
+    @EventHandler(priority = EventPriority.NORMAL)
+    public void onShardLose(ShardLoseEvent event) {
+        Player player = event.getPlayer();
+        long amount = event.getAmount();
+        ShardLoseEvent.LoseReason reason = event.getReason();
+
+        // Apply discount for shop purchases
+        if (reason == ShardLoseEvent.LoseReason.SHOP_PURCHASE) {
+            double discount = getPlayerDiscount(player);
+            if (discount &gt; 0) {
+                long savings = (long) (amount * discount);
+                event.setAmount(amount - savings);
+                player.sendMessage("You saved " + savings + " shards with your " + (int)(discount * 100) + "% discount!");
+            }
+        }
+
+        // Log transaction
+        logTransaction(player, amount, reason);
+    }
+
+    private double getPlayerDiscount(Player player) {
+        if (player.hasPermission("rank.legend")) return 0.25;
+        if (player.hasPermission("rank.mvp")) return 0.15;
+        if (player.hasPermission("rank.vip")) return 0.10;
+        return 0;
+    }
+
+    private void logTransaction(Player player, long amount, ShardLoseEvent.LoseReason reason) {
+        String log = String.format("[TRANSACTION] %s lost %d shards - Reason: %s",
+            player.getName(), amount, reason.name());
+        plugin.getLogger().info(log);
+    }
+}</code></pre>18:["$","article",null,{"className":"dx-prose","dangerouslySetInnerHTML":{"__html":"$1c"}}]
+19:["$","$L1d",null,{}]
+1a:["$","nav",null,{"className":"dx-pager","children":[["$","$L1e",null,{"href":"/docs/zelbounty","className":"dx-pager-btn prev","children":[["$","$L1f",null,{"ref":"$undefined","icon":{"name":"arrow-left","size":24,"node":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]]},"className":"$undefined","size":16}],["$","span",null,{"children":[["$","small",null,{"children":"Prev"}],"ZelBounty"]}]]}],["$","$L1e",null,{"href":"/docs/easysell","className":"dx-pager-btn next","children":[["$","span",null,{"children":[["$","small",null,{"children":"Next"}],"EasySell"]}],["$","$L1f",null,{"ref":"$undefined","icon":{"name":"arrow-right","size":24,"node":[["path",{"d":"M5 12h14","key":"1ays0h"}],["path",{"d":"m12 5 7 7-7 7","key":"xquz4c"}]]},"className":"$undefined","size":16}]]}]]}]
+1b:["$","$L20",null,{"items":[{"level":2,"text":"Getting Started","id":"getting-started"},{"level":2,"text":"Commands","id":"commands"},{"level":2,"text":"Permissions","id":"permissions"},{"level":2,"text":"Placeholders","id":"placeholders"},{"level":2,"text":"config.yml","id":"config-yml"},{"level":2,"text":"messages.yml","id":"messages-yml"},{"level":2,"text":"shop.yml","id":"shop-yml"},{"level":2,"text":"sounds.yml","id":"sounds-yml"},{"level":2,"text":"Gui's","id":"gui-s"},{"level":2,"text":"Leaderboard","id":"leaderboard"},{"level":2,"text":"Shop System","id":"shop-system"},{"level":2,"text":"Custom Items","id":"custom-items"},{"level":2,"text":"API Overview","id":"api-overview"},{"level":2,"text":"Accessing the API","id":"accessing-the-api"},{"level":2,"text":"shard gain event","id":"shard-gain-event"},{"level":3,"text":"Package","id":"package"},{"level":3,"text":"Event Information","id":"event-information"},{"level":3,"text":"Methods","id":"methods"},{"level":3,"text":"GainReason Enum","id":"gainreason-enum"},{"level":3,"text":"Basic Listener Example","id":"basic-listener-example"},{"level":3,"text":"Modify Shard Amount Example","id":"modify-shard-amount-example"},{"level":3,"text":"Cancel Event Example","id":"cancel-event-example"},{"level":3,"text":"Complete Integration Example","id":"complete-integration-example"},{"level":2,"text":"shard lose event","id":"shard-lose-event"},{"level":3,"text":"Package","id":"package"},{"level":3,"text":"Event Information","id":"event-information"},{"level":3,"text":"Methods","id":"methods"},{"level":3,"text":"LoseReason Enum","id":"losereason-enum"},{"level":3,"text":"Basic Listener Example","id":"basic-listener-example"},{"level":3,"text":"Apply Discount Example","id":"apply-discount-example"},{"level":3,"text":"Cancel Event Example","id":"cancel-event-example"},{"level":3,"text":"Transaction Logging Example","id":"transaction-logging-example"},{"level":3,"text":"Complete Integration Example","id":"complete-integration-example"}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+21:I[27201,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"IconMark"]
+10:null
+15:[["$","title","0",{"children":"Shards — Docs"}],["$","meta","1",{"name":"description","content":"Setup guides, commands and configuration for every Pikz Studio product."}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L21","3",{}]]

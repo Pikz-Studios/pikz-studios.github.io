@@ -1,0 +1,497 @@
+1:"$Sreact.fragment"
+2:I[39756,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"default"]
+3:I[37457,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"default"]
+a:I[68027,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"default",1]
+:HL["/_next/static/chunks/38h9zm6zvt3ca.css","style"]
+:HL["/_next/static/media/797e433ab948586e-s.p.0r6juujl39pe6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+4:T5b5e,
+.dx-root{
+  --dx-nav-w:270px;
+  --dx-toc-w:230px;
+  --dx-topbar-h:52px;
+
+  --dx-bg:#0a0a0b;
+  --dx-bg-soft:#0f0f11;
+  --dx-panel:#131316;
+  --dx-panel-2:#191a1e;
+  --dx-border:rgba(255,255,255,.08);
+  --dx-border-strong:rgba(255,255,255,.15);
+
+  --dx-heading:#f2f2f3;
+  --dx-text:#b4b6bd;
+  --dx-muted:#8b8d95;
+  --dx-faint:#6a6c74;
+
+  --accent:#ef4444;
+  --dx-accent-high:#fca5a5;
+  --dx-accent-low:rgba(239,68,68,.14);
+
+  color:var(--dx-text);
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+/* Flat canvas. */
+body:has(.dx-root){background:var(--dx-bg) !important;background-image:none !important}
+html:has(.dx-root){background:#0a0a0b}
+.dx-root::before{content:"";position:fixed;inset:0;background:#0a0a0b;z-index:-1}
+
+/* ── Mobile top bar (hidden on desktop; the sidebar is the chrome) ────────── */
+.dx-topbar{display:none;position:fixed;top:0;left:0;right:0;z-index:50;height:var(--dx-topbar-h);
+  align-items:center;gap:10px;padding:0 14px;
+  background:color-mix(in srgb,var(--dx-bg) 88%,transparent);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--dx-border)}
+.dx-menu-btn{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;
+  border-radius:8px;border:1px solid var(--dx-border);background:var(--dx-panel);color:var(--dx-text);
+  cursor:pointer;flex:0 0 auto}
+.dx-menu-btn:hover{color:var(--dx-heading);border-color:var(--dx-border-strong)}
+
+/* ── Brand ──────────────────────────────────────────────────────────────── */
+.dx-brand{display:flex;align-items:center;gap:9px;min-width:0;
+  color:var(--dx-heading);text-decoration:none;font-size:14.5px;font-weight:650;letter-spacing:-.015em;
+  white-space:nowrap}
+.dx-brand:hover{color:#fff}
+.dx-brand-mark{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;
+  border-radius:7px;background:linear-gradient(135deg,var(--accent),#f97316);color:#fff;
+  font-size:11.5px;font-weight:800;flex:0 0 auto}
+.dx-brand-txt{overflow:hidden;text-overflow:ellipsis}
+
+/* ── Sidebar ────────────────────────────────────────────────────────────── */
+.dx-sidebar{position:fixed;top:0;left:0;bottom:0;width:var(--dx-nav-w);z-index:45;
+  display:flex;flex-direction:column;background:var(--dx-bg-soft);
+  border-right:1px solid var(--dx-border)}
+.dx-side-head{display:flex;align-items:center;justify-content:space-between;gap:10px;
+  height:56px;padding:0 14px;flex:0 0 auto}
+.dx-side-close{display:none;align-items:center;justify-content:center;width:30px;height:30px;
+  border-radius:7px;border:1px solid transparent;background:none;color:var(--dx-faint);cursor:pointer}
+.dx-side-close:hover{color:var(--dx-heading);border-color:var(--dx-border);background:var(--dx-panel)}
+
+.dx-sidebar .dx-search{margin:0 14px 10px;width:auto}
+.dx-scope{position:relative;margin:0 14px 12px;flex:0 0 auto}
+.dx-scope-btn{display:flex;align-items:center;gap:8px;width:100%;height:38px;padding:0 11px;
+  border-radius:9px;border:1px solid var(--dx-border);background:var(--dx-panel);
+  color:var(--dx-heading);font:inherit;font-size:13.5px;font-weight:550;cursor:pointer;text-align:left;
+  transition:border-color .15s,background .15s}
+.dx-scope-btn:hover{border-color:var(--dx-border-strong);background:var(--dx-panel-2)}
+.dx-scope-btn>span{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis}
+.dx-scope-btn svg{color:var(--dx-faint);flex:0 0 auto}
+.dx-scope-chev{transition:transform .18s}
+.dx-scope-btn[aria-expanded="true"] .dx-scope-chev{transform:rotate(180deg)}
+.dx-scope-pop{position:absolute;top:42px;left:0;right:0;z-index:60;padding:4px;
+  border-radius:10px;border:1px solid var(--dx-border-strong);background:var(--dx-panel);
+  box-shadow:0 24px 55px -22px rgba(0,0,0,.9)}
+.dx-scope-item{display:block;width:100%;padding:8px 10px;border:none;background:none;border-radius:7px;
+  color:var(--dx-text);font:inherit;font-size:13.5px;text-align:left;cursor:pointer}
+.dx-scope-item:hover{background:var(--dx-panel-2);color:var(--dx-heading)}
+.dx-scope-item.active{color:var(--dx-accent-high);background:var(--dx-accent-low);font-weight:600}
+
+.dx-nav{flex:1 1 auto;min-height:0;overflow-y:auto;padding:2px 14px 24px}
+.dx-nav-group+.dx-nav-group{margin-top:20px}
+.dx-nav-label{display:block;padding:5px 10px;color:var(--dx-heading);text-decoration:none;
+  font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.07em}
+.dx-nav-label:hover{color:var(--dx-accent-high)}
+/* The guide-rail: items hang off a hairline, the active one lights it up. */
+.dx-nav-items{display:flex;flex-direction:column;gap:1px;margin-top:5px;padding-left:10px;
+  border-left:1px solid var(--dx-border)}
+.dx-nav-link{position:relative;display:flex;align-items:center;justify-content:space-between;gap:8px;
+  padding:6px 10px;border-radius:7px;color:var(--dx-muted);text-decoration:none;font-size:13.5px;line-height:1.45}
+.dx-nav-link::before{content:"";position:absolute;left:-11px;top:5px;bottom:5px;width:1px;background:transparent}
+.dx-nav-link:hover{color:var(--dx-heading);background:rgba(255,255,255,.04)}
+.dx-nav-link.active{color:#fff;background:var(--dx-accent-low);font-weight:600}
+.dx-nav-link.active::before{background:var(--accent)}
+.dx-nav-img{width:20px;height:20px;border-radius:5px;object-fit:cover;flex:none;margin-right:0}.dx-nav-ph{background:rgba(255,255,255,.06)}
+.dx-nav-txt{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.dx-badge{flex:0 0 auto;padding:1px 6px;border-radius:999px;font-size:10px;font-weight:700;letter-spacing:.02em;
+  border:1px solid var(--dx-border);background:var(--dx-panel-2);color:var(--dx-faint)}
+.dx-nav-link.active .dx-badge{border-color:color-mix(in oklab,var(--accent) 40%,transparent);
+  background:color-mix(in oklab,var(--accent) 20%,transparent);color:var(--dx-accent-high)}
+.dx-nav-empty{padding:8px 10px;font-size:13px;color:var(--dx-faint)}
+
+.dx-side-foot{display:flex;align-items:center;gap:10px;flex:0 0 auto;padding:12px 14px;
+  border-top:1px solid var(--dx-border);background:var(--dx-bg-soft)}
+.dx-foot-btn{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;
+  border-radius:8px;border:1px solid var(--dx-border);background:var(--dx-panel);color:var(--dx-muted);
+  text-decoration:none;flex:0 0 auto}
+.dx-foot-btn:hover{color:var(--dx-heading);border-color:var(--dx-border-strong)}
+.dx-foot-link{color:var(--dx-muted);text-decoration:none;font-size:13px;font-weight:550}
+.dx-foot-link:hover{color:var(--dx-heading)}
+
+/* ── Search ─────────────────────────────────────────────────────────────── */
+.dx-search{position:relative}
+.dx-search-ic{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--dx-faint);pointer-events:none}
+.dx-search-in{width:100%;height:38px;padding:0 58px 0 33px;border-radius:9px;border:1px solid var(--dx-border);
+  background:var(--dx-panel);color:var(--dx-heading);font:inherit;font-size:13.5px;outline:none;
+  transition:border-color .15s,box-shadow .15s}
+.dx-search-in::placeholder{color:var(--dx-faint)}
+.dx-search-in:focus{border-color:color-mix(in oklab,var(--accent) 55%,var(--dx-border));
+  box-shadow:0 0 0 3px color-mix(in oklab,var(--accent) 16%,transparent)}
+.dx-kbd{position:absolute;right:8px;top:50%;transform:translateY(-50%);pointer-events:none;
+  padding:2px 6px;border-radius:5px;border:1px solid var(--dx-border);background:var(--dx-panel-2);
+  color:var(--dx-faint);font-size:10.5px;font-weight:600;letter-spacing:.02em}
+.dx-search-pop{position:absolute;top:44px;left:0;width:100%;min-width:260px;background:var(--dx-panel);
+  border:1px solid var(--dx-border-strong);border-radius:11px;padding:4px;z-index:60;
+  box-shadow:0 26px 60px -22px rgba(0,0,0,.9)}
+.dx-search-item{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;
+  padding:8px 10px;border:none;background:none;border-radius:8px;cursor:pointer;font:inherit;font-size:13px;
+  color:var(--dx-text);text-align:left}
+.dx-search-item.active{background:var(--dx-panel-2)}
+.dx-search-title{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  color:var(--dx-heading);font-weight:500}
+.dx-search-cat{flex:0 0 auto;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--dx-faint)}
+.dx-search-none{padding:14px 12px;font-size:13px;color:var(--dx-faint);text-align:center}
+
+/* ── Shell ──────────────────────────────────────────────────────────────── */
+.dx-panes{margin-left:var(--dx-nav-w);min-width:0}
+.dx-panes.splash{margin-left:var(--dx-nav-w)}
+
+/* Doc page: article + right rail */
+.dx-doc{display:grid;grid-template-columns:minmax(0,1fr) var(--dx-toc-w);gap:48px;
+  max-width:1120px;margin:0 auto;padding:56px 48px 96px}
+.dx-main{min-width:0}
+
+/* ── Article head ───────────────────────────────────────────────────────── */
+.dx-eyebrow{font-size:12px;font-weight:600;color:var(--accent);margin:0 0 10px;letter-spacing:.01em}
+.dx-doc-head{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:0 0 8px}
+.dx-doc-head h1{margin:0;font-size:34px;font-weight:700;line-height:1.2;letter-spacing:-.03em;color:var(--dx-heading)}
+.dx-ver{font-size:11.5px;font-weight:700;color:var(--dx-accent-high);
+  background:var(--dx-accent-low);border:1px solid color-mix(in oklab,var(--accent) 34%,transparent);
+  padding:3px 9px;border-radius:999px}
+.dx-tagline{margin:0;font-size:15.5px;color:var(--dx-muted);line-height:1.65}
+
+/* Action row under the title */
+.dx-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:20px 0 6px;
+  padding-bottom:22px;border-bottom:1px solid var(--dx-border)}
+.dx-action{display:inline-flex;align-items:center;gap:6px;height:30px;padding:0 11px;border-radius:8px;
+  border:1px solid var(--dx-border);background:var(--dx-panel);color:var(--dx-text);
+  font:inherit;font-size:12.5px;font-weight:550;text-decoration:none;cursor:pointer;
+  transition:color .15s,border-color .15s,background .15s}
+.dx-action:hover{color:var(--dx-heading);border-color:var(--dx-border-strong);background:var(--dx-panel-2)}
+.dx-action svg{color:var(--dx-faint)}
+.dx-action:hover svg{color:var(--dx-text)}
+
+/* ── Prose ──────────────────────────────────────────────────────────────── */
+.dx-prose{font-size:15px;line-height:1.75;color:var(--dx-text)}
+.dx-prose>*:first-child{margin-top:0}
+.dx-prose h2{font-size:22px;font-weight:650;margin:46px 0 14px;padding-top:8px;color:var(--dx-heading);
+  letter-spacing:-.02em;scroll-margin-top:72px}
+.dx-prose h3{font-size:17.5px;font-weight:650;margin:32px 0 10px;color:var(--dx-heading);
+  letter-spacing:-.012em;scroll-margin-top:72px}
+.dx-prose h4{font-size:15.5px;font-weight:650;margin:24px 0 8px;color:var(--dx-heading);scroll-margin-top:72px}
+.dx-prose p{margin:16px 0}
+.dx-prose ul,.dx-prose ol{margin:16px 0;padding-left:22px}
+.dx-prose li{margin:6px 0;padding-left:2px}
+.dx-prose li::marker{color:var(--dx-faint)}
+.dx-prose strong{color:var(--dx-heading);font-weight:650}
+.dx-prose a{color:var(--dx-heading);text-decoration:underline;text-underline-offset:3px;
+  text-decoration-color:var(--dx-border-strong);font-weight:500}
+.dx-prose a:hover{color:var(--dx-accent-high);text-decoration-color:currentColor}
+.dx-prose code{background:var(--dx-panel-2);border:1px solid var(--dx-border);padding:1.5px 5px;border-radius:5px;
+  font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:12.5px;color:var(--dx-heading)}
+.dx-table{margin:20px 0;overflow-x:auto;border:1px solid var(--dx-border);border-radius:10px}
+.dx-table table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.55}
+.dx-table th{text-align:left;font-weight:650;color:var(--dx-heading);background:var(--dx-panel);padding:10px 14px;border-bottom:1px solid var(--dx-border);white-space:nowrap}
+.dx-table td{padding:10px 14px;border-bottom:1px solid var(--dx-border);vertical-align:top}
+.dx-table tr:last-child td{border-bottom:none}
+.dx-table td code{white-space:nowrap}
+.dx-prose hr{border:none;border-top:1px solid var(--dx-border);margin:36px 0}
+.dx-prose img{max-width:100%;border-radius:12px;border:1px solid var(--dx-border)}
+
+/* ── Code block ─────────────────────────────────────────────────────────── */
+/* Base frame, so a block still looks right before the client enhancer wraps it. */
+.dx-prose pre{margin:20px 0;padding:16px 18px;overflow:auto;
+  border:1px solid var(--dx-border);border-radius:12px;background:#0d0d10}
+.dx-prose pre code{display:block;background:none;border:none;border-radius:0;padding:0;color:#c3c7d2;
+  font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:12.8px;line-height:1.72}
+.dx-code{position:relative;margin:20px 0;border:1px solid var(--dx-border);border-radius:12px;
+  background:#0d0d10;overflow:hidden}
+.dx-code-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  height:38px;padding:0 8px 0 13px;border-bottom:1px solid var(--dx-border);background:var(--dx-panel)}
+.dx-code-name{display:inline-flex;align-items:center;gap:7px;min-width:0;overflow:hidden;
+  text-overflow:ellipsis;white-space:nowrap;
+  font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:12px;color:var(--dx-muted)}
+.dx-code-name svg{color:var(--dx-faint);flex:0 0 auto}
+.dx-code pre{margin:0;background:none;border:none;border-radius:0;padding:16px 18px;overflow:auto}
+.dx-code pre code{display:block;background:none;border:none;padding:0;color:#c3c7d2;
+  font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:12.8px;line-height:1.72}
+.tk-c{color:#5c6070;font-style:italic}
+.tk-s{color:#8ee7a1}
+.tk-k{color:#c99bff}
+.tk-n{color:#ffc27a}
+.dx-copy{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;flex:0 0 auto;
+  border-radius:7px;border:1px solid transparent;background:none;color:var(--dx-faint);cursor:pointer;
+  transition:color .15s,border-color .15s,background .15s}
+.dx-code-bar .dx-copy:hover{color:var(--dx-heading);border-color:var(--dx-border);background:var(--dx-panel-2)}
+/* Bar-less block: the copy button floats over the code on hover. */
+.dx-code>.dx-copy{position:absolute;top:9px;right:9px;z-index:2;opacity:0;
+  border-color:var(--dx-border);background:var(--dx-panel)}
+.dx-code:hover>.dx-copy,.dx-code>.dx-copy:focus-visible{opacity:1}
+.dx-code>.dx-copy:hover{color:var(--dx-heading);border-color:var(--dx-border-strong)}
+.dx-copy.done{color:#8ee7a1;opacity:1}
+
+/* ── Callouts (from > blockquotes) ──────────────────────────────────────── */
+.dx-callout{display:flex;gap:11px;align-items:flex-start;margin:22px 0;padding:13px 15px;
+  border-radius:10px;border:1px solid var(--dx-border);background:var(--dx-bg-soft);
+  font-size:14px;line-height:1.65}
+.dx-callout-ic{font-size:14px;line-height:1.6;flex:0 0 auto}
+.dx-callout-bd{min-width:0;color:var(--dx-text)}
+.dx-callout--info{border-color:rgba(239,68,68,.3);background:rgba(239,68,68,.07)}
+.dx-callout--warn{border-color:rgba(240,68,68,.3);background:rgba(240,68,68,.07)}
+
+/* ── Pager ──────────────────────────────────────────────────────────────── */
+.dx-pager{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:60px;padding-top:0}
+.dx-pager-btn{display:inline-flex;align-items:center;gap:12px;padding:14px 16px;border-radius:11px;
+  border:1px solid var(--dx-border);background:var(--dx-bg-soft);text-decoration:none;color:var(--dx-heading);
+  transition:border-color .15s,background .15s}
+.dx-pager-btn:hover{border-color:var(--dx-border-strong);background:var(--dx-panel)}
+.dx-pager-btn.next{grid-column:2;justify-content:flex-end;text-align:right}
+.dx-pager-btn span{display:flex;flex-direction:column;min-width:0;font-weight:600;font-size:14px}
+.dx-pager-btn.next span{align-items:flex-end}
+.dx-pager-btn small{font-size:11px;font-weight:600;letter-spacing:.02em;color:var(--dx-faint);margin-bottom:3px}
+.dx-pager-btn svg{color:var(--dx-faint);flex:0 0 auto}
+
+/* ── Right rail ─────────────────────────────────────────────────────────── */
+.dx-aside{position:sticky;top:56px;align-self:start;max-height:calc(100vh - 96px);overflow-y:auto}
+.dx-aside-h{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:650;
+  color:var(--dx-heading);margin:0 0 12px;padding-left:13px}
+.dx-aside-h:not(:first-child){margin-top:26px}
+.dx-aside-h svg{color:var(--dx-faint)}
+/* Indicator line: the whole TOC hangs off a rail, the active item lights its segment. */
+.dx-aside-toc{display:flex;flex-direction:column;border-left:1px solid var(--dx-border)}
+.dx-toc-link{position:relative;display:block;padding:5px 10px 5px 13px;color:var(--dx-muted);
+  text-decoration:none;font-size:12.8px;line-height:1.5}
+.dx-toc-link::before{content:"";position:absolute;left:-1px;top:0;bottom:0;width:2px;
+  background:transparent;border-radius:2px;transition:background .15s}
+.dx-toc-link.sub{padding-left:26px;font-size:12.5px}
+.dx-toc-link:hover{color:var(--dx-heading)}
+.dx-toc-link.active{color:var(--dx-heading);font-weight:600}
+.dx-toc-link.active::before{background:var(--accent)}
+.dx-aside-links{display:flex;flex-direction:column;padding-left:13px}
+.dx-aside-link{padding:5px 0;color:var(--dx-muted);text-decoration:none;font-size:12.8px}
+.dx-aside-link:hover{color:var(--dx-heading)}
+
+/* ── Splash / landing ───────────────────────────────────────────────────── */
+.dx-splash{max-width:880px;margin:0 auto;padding:0 48px 110px}
+.dx-hero{padding:72px 0 8px;border-bottom:1px solid var(--dx-border);margin-bottom:52px}
+.dx-hero h1{font-size:44px;line-height:1.12;font-weight:700;letter-spacing:-.035em;color:var(--dx-heading);
+  margin:0 0 14px}
+.dx-hero p{font-size:16px;color:var(--dx-muted);margin:0 0 26px;max-width:56ch;line-height:1.65}
+.dx-cta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding-bottom:44px}
+.dx-btn{display:inline-flex;align-items:center;gap:7px;height:36px;padding:0 16px;border-radius:9px;
+  font-size:13.5px;font-weight:600;text-decoration:none;transition:background .15s,border-color .15s,color .15s}
+.dx-btn-primary{background:var(--accent);color:#fff;border:1px solid var(--accent)}
+.dx-btn-primary:hover{background:color-mix(in oklab,var(--accent) 84%,#fff)}
+.dx-btn-ghost{color:var(--dx-text);border:1px solid var(--dx-border);background:var(--dx-panel)}
+.dx-btn-ghost:hover{color:var(--dx-heading);border-color:var(--dx-border-strong);background:var(--dx-panel-2)}
+
+.dx-sec-h{font-size:19px;font-weight:650;letter-spacing:-.02em;color:var(--dx-heading);margin:0 0 18px}
+.dx-sec+.dx-sec{margin-top:56px}
+.dx-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.dx-card{display:block;padding:18px;border-radius:12px;border:1px solid var(--dx-border);background:var(--dx-bg-soft);
+  text-decoration:none;transition:border-color .15s,background .15s}
+.dx-card:hover{border-color:color-mix(in oklab,var(--accent) 45%,var(--dx-border));background:var(--dx-panel)}
+.dx-card-top{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.dx-card-ic{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:8px;
+  background:color-mix(in oklab,var(--accent) 18%,transparent);
+  border:1px solid color-mix(in oklab,var(--accent) 30%,transparent);font-size:14px;flex:0 0 auto}
+.dx-card h3{margin:0;flex:1 1 auto;min-width:0;font-size:14.5px;font-weight:650;color:var(--dx-heading)}
+.dx-card p{margin:0;font-size:13.5px;line-height:1.6;color:var(--dx-muted)}
+.dx-card-count{margin-top:11px;font-size:11.5px;font-weight:600;color:var(--dx-faint)}
+
+.dx-quick{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;
+  border:1px solid var(--dx-border);border-radius:12px;overflow:hidden;background:var(--dx-bg-soft)}
+.dx-quick li{font-size:14px;line-height:1.6}
+.dx-quick li+li{border-top:1px solid var(--dx-border)}
+.dx-quick a{display:flex;align-items:baseline;gap:10px;padding:13px 16px;color:var(--dx-text);text-decoration:none}
+.dx-quick strong{flex:0 0 auto;color:var(--dx-heading);font-weight:600}
+.dx-quick em{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  font-style:normal;font-size:13px;color:var(--dx-faint)}
+.dx-quick a:hover{color:var(--dx-heading);background:var(--dx-panel)}
+
+/* ── Category page ──────────────────────────────────────────────────────── */
+.dx-cat{max-width:1120px;margin:0 auto;padding:56px 48px 96px}
+.dx-back{display:inline-flex;align-items:center;gap:6px;color:var(--dx-muted);text-decoration:none;
+  font-size:13px;font-weight:550}
+.dx-back:hover{color:var(--dx-heading)}
+.dx-cat-head{display:flex;align-items:center;gap:12px;margin:18px 0 6px}
+.dx-cat-head .dx-cemoji{font-size:26px;line-height:1}
+.dx-cat-head h1{margin:0;font-size:32px;font-weight:700;letter-spacing:-.03em;color:var(--dx-heading)}
+.dx-cat-blurb{margin:0 0 30px;font-size:15px;color:var(--dx-muted)}
+.dx-cat .dx-cards{grid-template-columns:repeat(auto-fill,minmax(270px,1fr))}
+.dx-empty{color:var(--dx-faint);padding:44px 0;font-size:15px}
+
+/* ── Responsive ─────────────────────────────────────────────────────────── */
+@media(max-width:1180px){
+  .dx-doc{grid-template-columns:minmax(0,1fr);gap:0}
+  .dx-aside{display:none}
+}
+@media(max-width:960px){
+  .dx-root{--dx-nav-w:0px;overflow-x:hidden}
+  .dx-topbar{display:flex}
+  .dx-panes,.dx-panes.splash{margin-left:0;padding-top:var(--dx-topbar-h)}
+  .dx-sidebar{display:none;width:min(300px,86vw);z-index:60;
+    box-shadow:0 0 0 100vmax rgba(0,0,0,.55)}
+  .dx-sidebar.open{display:flex}
+  .dx-side-close{display:inline-flex}
+  .dx-doc,.dx-cat{padding:30px 20px 76px}
+  .dx-splash{padding:0 20px 84px}
+  .dx-hero{padding:38px 0 6px;margin-bottom:40px}
+  .dx-hero h1{font-size:34px}
+  .dx-doc-head h1{font-size:28px}
+  .dx-cards{grid-template-columns:minmax(0,1fr)}
+  .dx-pager{grid-template-columns:minmax(0,1fr)}
+  .dx-pager-btn.next{grid-column:1}
+}
+@media(max-width:620px){
+  .dx-hero h1{font-size:30px}
+  .dx-doc-head h1{font-size:24px}
+}
+0:{"P":null,"c":["","docs","ecobank",""],"q":"","i":false,"f":[[["",{"children":["docs",{"children":[["slug","ecobank","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/38h9zm6zvt3ca.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/05-c3ty_6dwfk.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/14mrh2-p_w84d.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable","children":["$","body",null,{"children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":[["$","$1","c",{"children":[[["$","script","script-0",{"src":"/_next/static/chunks/06j2s2t32br7l.js","async":true,"nonce":"$undefined"}]],[["$","style",null,{"children":"$4"}],"$L5"]]}],{"children":["$L6",{"children":["$L7",{},null,false,null]},null,false,"$@8"]},null,false,null]},null,false,null],"$L9",false]],"m":"$undefined","G":["$a",["$Lb"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"6h6-rO3s1NA9jLY1OWXvg"}
+c:I[81365,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js"],"DocsShell"]
+e:I[97367,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+f:"$Sreact.suspense"
+12:I[97367,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"ViewportBoundary"]
+14:I[97367,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"MetadataBoundary"]
+5:["$","$Lc",null,{"nav":[{"slug":"economysmp","title":"EconomySMP","bucket":"setups","version":null,"image":null},{"slug":"zelauction","title":"ZelAuction","bucket":"plugins","version":"2.0.3","image":null},{"slug":"zelbounty","title":"ZelBounty","bucket":"plugins","version":"3.0.2","image":null},{"slug":"shards","title":"Shards","bucket":"plugins","version":"2.3.9","image":null},{"slug":"easysell","title":"EasySell","bucket":"plugins","version":null,"image":null},{"slug":"ecobank","title":"EcoBank","bucket":"plugins","version":null,"image":null},{"slug":"adminpanel","title":"AdminPanel","bucket":"plugins","version":"1.0.4","image":null},{"slug":"essentials-staff-moderation","title":"Essentials Staff & Moderation","bucket":"plugins","version":"1.0.0","image":null},{"slug":"boosters","title":"Boosters","bucket":"plugins","version":"1.0.0","image":null},{"slug":"economycore","title":"EconomyCore","bucket":"plugins","version":"1.0.0","image":null},{"slug":"gens","title":"Gens","bucket":"plugins","version":null,"image":null},{"slug":"donuthomes","title":"DonutHomes","bucket":"plugins","version":null,"image":null}],"children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}]
+6:["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+7:["$","$1","c",{"children":["$Ld",[["$","script","script-0",{"src":"/_next/static/chunks/014i8qp0m4e36.js","async":true,"nonce":"$undefined"}]],["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]]}]
+11:[]
+8:"$W11"
+9:["$","$1","h",{"children":[null,["$","$L12",null,{"children":"$L13"}],["$","div",null,{"hidden":true,"children":["$","$L14",null,{"children":["$","$f",null,{"name":"Next.Metadata","children":"$L15"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/38h9zm6zvt3ca.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+16:I[84103,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js","/_next/static/chunks/014i8qp0m4e36.js"],"DocsActions"]
+17:Tf00,## Overview
+
+EcoBank adds a loan system to your server economy. Players open the bank menu, pick a loan size, and pay it back through a debt menu. Loans carry interest and a due date, and players who stay overdue run into punishments you define.
+
+### Requirements
+
+* Paper or Folia 1.21 or newer
+* Vault and a Vault-compatible economy plugin
+* Optional: PlaceholderAPI for the stat lines in menus
+
+### Installation
+
+1. Put `EcoBank.jar` in your `plugins` folder.
+2. Start the server once so the config files are created.
+3. Set `license-key` in `plugins/EcoBank/config.yml`. Get your key on [discord.gg/pikzstudios](https://discord.gg/pikzstudios).
+4. Restart the server.
+
+## Commands
+
+| Command | Description | Permission |
+| --- | --- | --- |
+| `/bank` | Open the loan menu | `ecobank.bank` |
+| `/debt` | Open the debt menu to repay what you owe | `ecobank.debt` |
+| `/ecobank` | Open the admin config menu (aliases `/ecob`, `/eb`) | `ecobank.admin` |
+| `/ecobank gui` | Open the admin config menu | `ecobank.admin` |
+| `/ecobank reload` | Reload all config files | `ecobank.admin` |
+| `/ecobank save` | Save the config | `ecobank.admin` |
+
+## Permissions
+
+| Permission | Description | Default |
+| --- | --- | --- |
+| `ecobank.bank` | Use `/bank` | everyone |
+| `ecobank.debt` | Use `/debt` | everyone |
+| `ecobank.admin` | Admin command and config menu | op |
+
+## Configuration
+
+### config.yml
+
+| Option | Default | Description |
+| --- | --- | --- |
+| `license-key` | | Your license key |
+| `database.type` | `sqlite` | `sqlite` or `mysql` |
+| `loans.interest-rate` | `5.0` | Interest in percent, added to every loan |
+| `loans.max-active-loans` | `1` | Loans a player can hold at once |
+| `loans.due-days` | `7` | Days until a loan is due |
+| `loans.max-debt` | `98000.0` | Highest total debt a player can reach |
+| `anti-alt.enabled` | `true` | Block loans when another online account on the same IP has an active loan |
+| `punishment.check-interval-minutes` | `60` | How often overdue loans are checked |
+| `stat-requirements.enabled` | `false` | Require player statistics before a loan |
+
+### Stat requirements
+
+When enabled, a player must meet every listed statistic before borrowing. Any Bukkit statistic name works.
+
+```yaml
+stat-requirements:
+  enabled: true
+  requirements:
+    kills:
+      statistic: PLAYER_KILLS
+      min-value: 10
+      display-name: Player Kills
+    mob-kills:
+      statistic: MOB_KILLS
+      min-value: 50
+      display-name: Mob Kills
+```
+
+### Loan sizes
+
+`loans.yml` defines the loans shown in the bank menu. The defaults are `small` (1,000), `medium` (5,000), `large` (10,000) and `massive` (50,000). Each loan sets its `amount`, menu `slot`, `material`, `name` and `lore`. The lore supports `{amount}`, `{interest_rate}`, `{interest_amount}`, `{total_owed}`, `{due_days}` and `{requirements}`.
+
+### Punishments
+
+`punishments.yml` lists tiers that trigger when a loan is a number of days overdue. Each tier has `days-overdue`, a `type` and a `value`.
+
+| Type | Value |
+| --- | --- |
+| `MESSAGE` | Message sent to the player |
+| `COMMAND` | Console command, `%player%` is the player name |
+| `KICK` | Kick message |
+| `TEMP_BAN` | `<days>\|<reason>` |
+| `BAN` | Ban reason |
+
+```yaml
+punishments:
+  tier-1:
+    days-overdue: 1
+    type: MESSAGE
+    value: '&eYour loan is overdue.'
+  tier-4:
+    days-overdue: 14
+    type: TEMP_BAN
+    value: '3|You failed to repay your loan.'
+```
+
+### Menus and messages
+
+The bank menu and the debt menu are configured in `config.yml` under `bank-gui` and `debt-gui`: titles, sizes, filler glass, item materials, names, lore and slots. The debt menu has repay buttons for fixed amounts (`pay-amounts`) and a pay full button. All chat messages are in `messages.yml`.
+
+## Support
+
+Join [discord.gg/pikzstudios](https://discord.gg/pikzstudios) for help and license keys.d:["$","div",null,{"className":"dx-doc","style":{"--accent":"#ef4444"},"children":[["$","main",null,{"className":"dx-main","children":[["$","p",null,{"className":"dx-eyebrow","children":"Plugins"}],["$","header",null,{"className":"dx-doc-head","children":[["$","h1",null,{"children":"EcoBank"}],null]}],["$","p",null,{"className":"dx-tagline","children":"A bank where players borrow money and repay it with interest."}],["$","$L16",null,{"markdown":"$17","resourceId":106809}],"$L18","$L19","$L1a"]}],"$L1b"]}]
+1d:I[55260,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js","/_next/static/chunks/014i8qp0m4e36.js"],"CodeEnhancer"]
+1e:I[22016,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js","/_next/static/chunks/014i8qp0m4e36.js"],""]
+1f:I[5014,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js","/_next/static/chunks/014i8qp0m4e36.js"],"default"]
+20:I[73785,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/06j2s2t32br7l.js","/_next/static/chunks/014i8qp0m4e36.js"],"DocsAside"]
+1c:T1795,<h2 id="overview">Overview</h2><p>EcoBank adds a loan system to your server economy. Players open the bank menu, pick a loan size, and pay it back through a debt menu. Loans carry interest and a due date, and players who stay overdue run into punishments you define.</p><h3 id="requirements">Requirements</h3><ul><li>Paper or Folia 1.21 or newer</li><li>Vault and a Vault-compatible economy plugin</li><li>Optional: PlaceholderAPI for the stat lines in menus</li></ul><h3 id="installation">Installation</h3><ol><li>Put <code>EcoBank.jar</code> in your <code>plugins</code> folder.</li><li>Start the server once so the config files are created.</li><li>Set <code>license-key</code> in <code>plugins/EcoBank/config.yml</code>. Get your key on <a href="https://discord.gg/pikzstudios" target="_blank" rel="noreferrer">discord.gg/pikzstudios</a>.</li><li>Restart the server.</li></ol><h2 id="commands">Commands</h2><div class="dx-table"><table><thead><tr><th>Command</th><th>Description</th><th>Permission</th></tr></thead><tbody><tr><td><code>/bank</code></td><td>Open the loan menu</td><td><code>ecobank.bank</code></td></tr><tr><td><code>/debt</code></td><td>Open the debt menu to repay what you owe</td><td><code>ecobank.debt</code></td></tr><tr><td><code>/ecobank</code></td><td>Open the admin config menu (aliases <code>/ecob</code>, <code>/eb</code>)</td><td><code>ecobank.admin</code></td></tr><tr><td><code>/ecobank gui</code></td><td>Open the admin config menu</td><td><code>ecobank.admin</code></td></tr><tr><td><code>/ecobank reload</code></td><td>Reload all config files</td><td><code>ecobank.admin</code></td></tr><tr><td><code>/ecobank save</code></td><td>Save the config</td><td><code>ecobank.admin</code></td></tr></tbody></table></div><h2 id="permissions">Permissions</h2><div class="dx-table"><table><thead><tr><th>Permission</th><th>Description</th><th>Default</th></tr></thead><tbody><tr><td><code>ecobank.bank</code></td><td>Use <code>/bank</code></td><td>everyone</td></tr><tr><td><code>ecobank.debt</code></td><td>Use <code>/debt</code></td><td>everyone</td></tr><tr><td><code>ecobank.admin</code></td><td>Admin command and config menu</td><td>op</td></tr></tbody></table></div><h2 id="configuration">Configuration</h2><h3 id="config-yml">config.yml</h3><div class="dx-table"><table><thead><tr><th>Option</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>license-key</code></td><td></td><td>Your license key</td></tr><tr><td><code>database.type</code></td><td><code>sqlite</code></td><td><code>sqlite</code> or <code>mysql</code></td></tr><tr><td><code>loans.interest-rate</code></td><td><code>5.0</code></td><td>Interest in percent, added to every loan</td></tr><tr><td><code>loans.max-active-loans</code></td><td><code>1</code></td><td>Loans a player can hold at once</td></tr><tr><td><code>loans.due-days</code></td><td><code>7</code></td><td>Days until a loan is due</td></tr><tr><td><code>loans.max-debt</code></td><td><code>98000.0</code></td><td>Highest total debt a player can reach</td></tr><tr><td><code>anti-alt.enabled</code></td><td><code>true</code></td><td>Block loans when another online account on the same IP has an active loan</td></tr><tr><td><code>punishment.check-interval-minutes</code></td><td><code>60</code></td><td>How often overdue loans are checked</td></tr><tr><td><code>stat-requirements.enabled</code></td><td><code>false</code></td><td>Require player statistics before a loan</td></tr></tbody></table></div><h3 id="stat-requirements">Stat requirements</h3><p>When enabled, a player must meet every listed statistic before borrowing. Any Bukkit statistic name works.</p><pre data-lang="yaml" data-label="yaml"><code>stat-requirements:
+  enabled: true
+  requirements:
+    kills:
+      statistic: PLAYER_KILLS
+      min-value: 10
+      display-name: Player Kills
+    mob-kills:
+      statistic: MOB_KILLS
+      min-value: 50
+      display-name: Mob Kills</code></pre><h3 id="loan-sizes">Loan sizes</h3><p><code>loans.yml</code> defines the loans shown in the bank menu. The defaults are <code>small</code> (1,000), <code>medium</code> (5,000), <code>large</code> (10,000) and <code>massive</code> (50,000). Each loan sets its <code>amount</code>, menu <code>slot</code>, <code>material</code>, <code>name</code> and <code>lore</code>. The lore supports <code>{amount}</code>, <code>{interest_rate}</code>, <code>{interest_amount}</code>, <code>{total_owed}</code>, <code>{due_days}</code> and <code>{requirements}</code>.</p><h3 id="punishments">Punishments</h3><p><code>punishments.yml</code> lists tiers that trigger when a loan is a number of days overdue. Each tier has <code>days-overdue</code>, a <code>type</code> and a <code>value</code>.</p><div class="dx-table"><table><thead><tr><th>Type</th><th>Value</th></tr></thead><tbody><tr><td><code>MESSAGE</code></td><td>Message sent to the player</td></tr><tr><td><code>COMMAND</code></td><td>Console command, <code>%player%</code> is the player name</td></tr><tr><td><code>KICK</code></td><td>Kick message</td></tr><tr><td><code>TEMP_BAN</code></td><td><code>&lt;days&gt;|&lt;reason&gt;</code></td></tr><tr><td><code>BAN</code></td><td>Ban reason</td></tr></tbody></table></div><pre data-lang="yaml" data-label="yaml"><code>punishments:
+  tier-1:
+    days-overdue: 1
+    type: MESSAGE
+    value: '&amp;eYour loan is overdue.'
+  tier-4:
+    days-overdue: 14
+    type: TEMP_BAN
+    value: '3|You failed to repay your loan.'</code></pre><h3 id="menus-and-messages">Menus and messages</h3><p>The bank menu and the debt menu are configured in <code>config.yml</code> under <code>bank-gui</code> and <code>debt-gui</code>: titles, sizes, filler glass, item materials, names, lore and slots. The debt menu has repay buttons for fixed amounts (<code>pay-amounts</code>) and a pay full button. All chat messages are in <code>messages.yml</code>.</p><h2 id="support">Support</h2><p>Join <a href="https://discord.gg/pikzstudios" target="_blank" rel="noreferrer">discord.gg/pikzstudios</a> for help and license keys.</p>18:["$","article",null,{"className":"dx-prose","dangerouslySetInnerHTML":{"__html":"$1c"}}]
+19:["$","$L1d",null,{}]
+1a:["$","nav",null,{"className":"dx-pager","children":[["$","$L1e",null,{"href":"/docs/easysell","className":"dx-pager-btn prev","children":[["$","$L1f",null,{"ref":"$undefined","icon":{"name":"arrow-left","size":24,"node":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]]},"className":"$undefined","size":16}],["$","span",null,{"children":[["$","small",null,{"children":"Prev"}],"EasySell"]}]]}],["$","$L1e",null,{"href":"/docs/adminpanel","className":"dx-pager-btn next","children":[["$","span",null,{"children":[["$","small",null,{"children":"Next"}],"AdminPanel"]}],["$","$L1f",null,{"ref":"$undefined","icon":{"name":"arrow-right","size":24,"node":[["path",{"d":"M5 12h14","key":"1ays0h"}],["path",{"d":"m12 5 7 7-7 7","key":"xquz4c"}]]},"className":"$undefined","size":16}]]}]]}]
+1b:["$","$L20",null,{"items":[{"level":2,"text":"Overview","id":"overview"},{"level":3,"text":"Requirements","id":"requirements"},{"level":3,"text":"Installation","id":"installation"},{"level":2,"text":"Commands","id":"commands"},{"level":2,"text":"Permissions","id":"permissions"},{"level":2,"text":"Configuration","id":"configuration"},{"level":3,"text":"config.yml","id":"config-yml"},{"level":3,"text":"Stat requirements","id":"stat-requirements"},{"level":3,"text":"Loan sizes","id":"loan-sizes"},{"level":3,"text":"Punishments","id":"punishments"},{"level":3,"text":"Menus and messages","id":"menus-and-messages"},{"level":2,"text":"Support","id":"support"}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+21:I[27201,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"IconMark"]
+10:null
+15:[["$","title","0",{"children":"EcoBank — Docs"}],["$","meta","1",{"name":"description","content":"Setup guides, commands and configuration for every Pikz Studio product."}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L21","3",{}]]
