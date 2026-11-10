@@ -5,7 +5,7 @@ a:I[68027,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-
 :HL["/_next/static/chunks/38h9zm6zvt3ca.css","style"]
 :HL["/_next/static/media/797e433ab948586e-s.p.0r6juujl39pe6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-4:T6452,
+4:T5788,
 .dx-root{
   --dx-nav-w:270px;
   --dx-toc-w:230px;
@@ -31,12 +31,10 @@ a:I[68027,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-
   font-size:16px;
   -webkit-font-smoothing:antialiased;
 }
-/* Flat canvas. */
 body:has(.dx-root){background:var(--dx-bg) !important;background-image:none !important}
 html:has(.dx-root){background:#0a0a0b}
 .dx-root::before{content:"";position:fixed;inset:0;background:#0a0a0b;z-index:-1}
 
-/* ── Mobile top bar (hidden on desktop; the sidebar is the chrome) ────────── */
 .dx-topbar{display:none;position:fixed;top:0;left:0;right:0;z-index:50;height:var(--dx-topbar-h);
   align-items:center;gap:10px;padding:0 14px;
   background:color-mix(in srgb,var(--dx-bg) 88%,transparent);
@@ -47,17 +45,13 @@ html:has(.dx-root){background:#0a0a0b}
   cursor:pointer;flex:0 0 auto}
 .dx-menu-btn:hover{color:var(--dx-heading);border-color:var(--dx-border-strong)}
 
-/* ── Brand ──────────────────────────────────────────────────────────────── */
 .dx-brand{display:flex;align-items:center;gap:9px;min-width:0;
   color:var(--dx-heading);text-decoration:none;font-size:14.5px;font-weight:650;letter-spacing:-.015em;
   white-space:nowrap}
 .dx-brand:hover{color:#fff}
-.dx-brand-mark{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;
-  border-radius:7px;background:linear-gradient(135deg,var(--accent),#f97316);color:#fff;
-  font-size:11.5px;font-weight:800;flex:0 0 auto}
+.dx-brand-mark{display:block;width:24px;height:24px;border-radius:7px;object-fit:cover;flex:0 0 auto}
 .dx-brand-txt{overflow:hidden;text-overflow:ellipsis}
 
-/* ── Sidebar ────────────────────────────────────────────────────────────── */
 .dx-sidebar{position:fixed;top:0;left:0;bottom:0;width:var(--dx-nav-w);z-index:45;
   display:flex;flex-direction:column;background:var(--dx-bg-soft);
   border-right:1px solid var(--dx-border)}
@@ -91,7 +85,6 @@ html:has(.dx-root){background:#0a0a0b}
 .dx-nav-label{display:block;padding:5px 10px;color:var(--dx-heading);text-decoration:none;
   font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.07em}
 .dx-nav-label:hover{color:var(--dx-accent-high)}
-/* The guide-rail: items hang off a hairline, the active one lights it up. */
 .dx-nav-items{display:flex;flex-direction:column;gap:1px;margin-top:5px;padding-left:10px;
   border-left:1px solid var(--dx-border)}
 .dx-nav-link{position:relative;display:flex;align-items:center;justify-content:space-between;gap:8px;
@@ -117,7 +110,6 @@ html:has(.dx-root){background:#0a0a0b}
 .dx-foot-link{color:var(--dx-muted);text-decoration:none;font-size:13px;font-weight:550}
 .dx-foot-link:hover{color:var(--dx-heading)}
 
-/* ── Search ─────────────────────────────────────────────────────────────── */
 .dx-search{position:relative}
 .dx-search-ic{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--dx-faint);pointer-events:none}
 .dx-search-in{width:100%;height:38px;padding:0 58px 0 33px;border-radius:9px;border:1px solid var(--dx-border);
@@ -141,16 +133,13 @@ html:has(.dx-root){background:#0a0a0b}
 .dx-search-cat{flex:0 0 auto;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--dx-faint)}
 .dx-search-none{padding:14px 12px;font-size:13px;color:var(--dx-faint);text-align:center}
 
-/* ── Shell ──────────────────────────────────────────────────────────────── */
 .dx-panes{margin-left:var(--dx-nav-w);min-width:0}
 .dx-panes.splash{margin-left:var(--dx-nav-w)}
 
-/* Doc page: article + right rail */
 .dx-doc{display:grid;grid-template-columns:minmax(0,1fr) var(--dx-toc-w);gap:48px;
   max-width:1120px;margin:0 auto;padding:56px 48px 96px}
 .dx-main{min-width:0}
 
-/* ── Article head ───────────────────────────────────────────────────────── */
 .dx-eyebrow{font-size:12px;font-weight:600;color:var(--accent);margin:0 0 10px;letter-spacing:.01em}
 .dx-doc-head{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:0 0 8px}
 .dx-doc-head h1{margin:0;font-size:34px;font-weight:700;line-height:1.2;letter-spacing:-.03em;color:var(--dx-heading)}
@@ -159,7 +148,6 @@ html:has(.dx-root){background:#0a0a0b}
   padding:3px 9px;border-radius:999px}
 .dx-tagline{margin:0;font-size:15.5px;color:var(--dx-muted);line-height:1.65}
 
-/* Action row under the title */
 .dx-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:20px 0 6px;
   padding-bottom:22px;border-bottom:1px solid var(--dx-border)}
 .dx-action{display:inline-flex;align-items:center;gap:6px;height:30px;padding:0 11px;border-radius:8px;
@@ -170,7 +158,6 @@ html:has(.dx-root){background:#0a0a0b}
 .dx-action svg{color:var(--dx-faint)}
 .dx-action:hover svg{color:var(--dx-text)}
 
-/* ── Prose ──────────────────────────────────────────────────────────────── */
 .dx-prose{font-size:15px;line-height:1.75;color:var(--dx-text)}
 .dx-prose>*:first-child{margin-top:0}
 .dx-prose h2{font-size:22px;font-weight:650;margin:46px 0 14px;padding-top:8px;color:var(--dx-heading);
@@ -197,8 +184,6 @@ html:has(.dx-root){background:#0a0a0b}
 .dx-prose hr{border:none;border-top:1px solid var(--dx-border);margin:36px 0}
 .dx-prose img{max-width:100%;border-radius:12px;border:1px solid var(--dx-border)}
 
-/* ── Code block ─────────────────────────────────────────────────────────── */
-/* Base frame, so a block still looks right before the client enhancer wraps it. */
 .dx-prose pre{margin:20px 0;padding:16px 18px;overflow:auto;
   border:1px solid var(--dx-border);border-radius:12px;background:#0d0d10}
 .dx-prose pre code{display:block;background:none;border:none;border-radius:0;padding:0;color:#c3c7d2;
@@ -222,14 +207,12 @@ html:has(.dx-root){background:#0a0a0b}
   border-radius:7px;border:1px solid transparent;background:none;color:var(--dx-faint);cursor:pointer;
   transition:color .15s,border-color .15s,background .15s}
 .dx-code-bar .dx-copy:hover{color:var(--dx-heading);border-color:var(--dx-border);background:var(--dx-panel-2)}
-/* Bar-less block: the copy button floats over the code on hover. */
 .dx-code>.dx-copy{position:absolute;top:9px;right:9px;z-index:2;opacity:0;
   border-color:var(--dx-border);background:var(--dx-panel)}
 .dx-code:hover>.dx-copy,.dx-code>.dx-copy:focus-visible{opacity:1}
 .dx-code>.dx-copy:hover{color:var(--dx-heading);border-color:var(--dx-border-strong)}
 .dx-copy.done{color:#8ee7a1;opacity:1}
 
-/* ── Callouts (from > blockquotes) ──────────────────────────────────────── */
 .dx-callout{display:flex;gap:11px;align-items:flex-start;margin:22px 0;padding:13px 15px;
   border-radius:10px;border:1px solid var(--dx-border);background:var(--dx-bg-soft);
   font-size:14px;line-height:1.65}
@@ -238,7 +221,6 @@ html:has(.dx-root){background:#0a0a0b}
 .dx-callout--info{border-color:rgba(239,68,68,.3);background:rgba(239,68,68,.07)}
 .dx-callout--warn{border-color:rgba(240,68,68,.3);background:rgba(240,68,68,.07)}
 
-/* ── Pager ──────────────────────────────────────────────────────────────── */
 .dx-pager{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:60px;padding-top:0}
 .dx-pager-btn{display:inline-flex;align-items:center;gap:12px;padding:14px 16px;border-radius:11px;
   border:1px solid var(--dx-border);background:var(--dx-bg-soft);text-decoration:none;color:var(--dx-heading);
@@ -250,13 +232,11 @@ html:has(.dx-root){background:#0a0a0b}
 .dx-pager-btn small{font-size:11px;font-weight:600;letter-spacing:.02em;color:var(--dx-faint);margin-bottom:3px}
 .dx-pager-btn svg{color:var(--dx-faint);flex:0 0 auto}
 
-/* ── Right rail ─────────────────────────────────────────────────────────── */
 .dx-aside{position:sticky;top:56px;align-self:start;max-height:calc(100vh - 96px);overflow-y:auto}
 .dx-aside-h{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:650;
   color:var(--dx-heading);margin:0 0 12px;padding-left:13px}
 .dx-aside-h:not(:first-child){margin-top:26px}
 .dx-aside-h svg{color:var(--dx-faint)}
-/* Indicator line: the whole TOC hangs off a rail, the active item lights its segment. */
 .dx-aside-toc{display:flex;flex-direction:column;border-left:1px solid var(--dx-border)}
 .dx-toc-link{position:relative;display:block;padding:5px 10px 5px 13px;color:var(--dx-muted);
   text-decoration:none;font-size:12.8px;line-height:1.5}
@@ -270,7 +250,6 @@ html:has(.dx-root){background:#0a0a0b}
 .dx-aside-link{padding:5px 0;color:var(--dx-muted);text-decoration:none;font-size:12.8px}
 .dx-aside-link:hover{color:var(--dx-heading)}
 
-/* ── Splash / landing ───────────────────────────────────────────────────── */
 .dx-splash{max-width:880px;margin:0 auto;padding:0 48px 110px}
 .dx-hero{padding:72px 0 8px;border-bottom:1px solid var(--dx-border);margin-bottom:52px}
 .dx-hero h1{font-size:44px;line-height:1.12;font-weight:700;letter-spacing:-.035em;color:var(--dx-heading);
@@ -308,7 +287,6 @@ html:has(.dx-root){background:#0a0a0b}
   font-style:normal;font-size:13px;color:var(--dx-faint)}
 .dx-quick a:hover{color:var(--dx-heading);background:var(--dx-panel)}
 
-/* ── Category page ──────────────────────────────────────────────────────── */
 .dx-cat{max-width:1120px;margin:0 auto;padding:56px 48px 96px}
 .dx-back{display:inline-flex;align-items:center;gap:6px;color:var(--dx-muted);text-decoration:none;
   font-size:13px;font-weight:550}
@@ -320,7 +298,6 @@ html:has(.dx-root){background:#0a0a0b}
 .dx-cat .dx-cards{grid-template-columns:repeat(auto-fill,minmax(270px,1fr))}
 .dx-empty{color:var(--dx-faint);padding:44px 0;font-size:15px}
 
-/* ── Responsive ─────────────────────────────────────────────────────────── */
 @media(max-width:1180px){
   .dx-doc{grid-template-columns:minmax(0,1fr);gap:0}
   .dx-aside{display:none}
@@ -372,8 +349,8 @@ html:has(.dx-root){background:#0a0a0b}
 .dx-ask-form button{display:inline-flex;align-items:center;justify-content:center;width:38px;border:0;border-radius:9px;background:var(--accent);color:#fff;cursor:pointer}
 .dx-ask-form button:disabled{opacity:.45;cursor:default}
 .dx-ask-left{padding:0 14px 10px;margin:0;font-size:12px}
-0:{"P":null,"c":["","docs","zelbounty",""],"q":"","i":false,"f":[[["",{"children":["docs",{"children":[["slug","zelbounty","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/38h9zm6zvt3ca.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/05-c3ty_6dwfk.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/14mrh2-p_w84d.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable","children":["$","body",null,{"children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":[["$","$1","c",{"children":[[["$","script","script-0",{"src":"/_next/static/chunks/0ogjwre3ijllq.js","async":true,"nonce":"$undefined"}]],[["$","style",null,{"children":"$4"}],"$L5"]]}],{"children":["$L6",{"children":["$L7",{},null,false,null]},null,false,"$@8"]},null,false,null]},null,false,null],"$L9",false]],"m":"$undefined","G":["$a",["$Lb"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"F-hTDtA9tzkvvF_PGX3h5"}
-c:I[81365,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/0ogjwre3ijllq.js"],"DocsShell"]
+0:{"P":null,"c":["","docs","zelbounty",""],"q":"","i":false,"f":[[["",{"children":["docs",{"children":[["slug","zelbounty","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/38h9zm6zvt3ca.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/05-c3ty_6dwfk.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/14mrh2-p_w84d.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable","children":["$","body",null,{"children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":[["$","$1","c",{"children":[[["$","script","script-0",{"src":"/_next/static/chunks/0nyqmbvww96s3.js","async":true,"nonce":"$undefined"}]],[["$","style",null,{"children":"$4"}],"$L5"]]}],{"children":["$L6",{"children":["$L7",{},null,false,null]},null,false,"$@8"]},null,false,null]},null,false,null],"$L9",false]],"m":"$undefined","G":["$a",["$Lb"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"73MHOH9N4KFT0hoB8SmMD"}
+c:I[81365,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/0nyqmbvww96s3.js"],"DocsShell"]
 e:I[97367,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
 f:"$Sreact.suspense"
 12:I[97367,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"ViewportBoundary"]
@@ -385,7 +362,7 @@ f:"$Sreact.suspense"
 8:"$W11"
 9:["$","$1","h",{"children":[null,["$","$L12",null,{"children":"$L13"}],["$","div",null,{"hidden":true,"children":["$","$L14",null,{"children":["$","$f",null,{"name":"Next.Metadata","children":"$L15"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
 b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/38h9zm6zvt3ca.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
-16:I[84103,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/0ogjwre3ijllq.js","/_next/static/chunks/014i8qp0m4e36.js"],"DocsActions"]
+16:I[84103,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/0nyqmbvww96s3.js","/_next/static/chunks/014i8qp0m4e36.js"],"DocsActions"]
 17:T1309,## Overview
 
 ZelBounty lets players put money on each other's heads. Anyone can raise a bounty through a menu or a command, and the player who kills the target collects it. Amounts accept short forms like `100k`, `1.5m` and `250000`.
@@ -505,10 +482,10 @@ Requires PlaceholderAPI. The identifier is `zelbounty`.
 ## Support
 
 Join [discord.gg/pikzstudios](https://discord.gg/pikzstudios) for help and license keys.d:["$","div",null,{"className":"dx-doc","style":{"--accent":"#ef4444"},"children":[["$","main",null,{"className":"dx-main","children":[["$","p",null,{"className":"dx-eyebrow","children":"Plugins"}],["$","header",null,{"className":"dx-doc-head","children":[["$","h1",null,{"children":"ZelBounty"}],["$","span",null,{"className":"dx-ver","children":["v","3.0.2"]}]]}],["$","p",null,{"className":"dx-tagline","children":"Player bounties with dialog menus and durable storage."}],["$","$L16",null,{"markdown":"$17","resourceId":44894}],"$L18","$L19","$L1a"]}],"$L1b"]}]
-1d:I[55260,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/0ogjwre3ijllq.js","/_next/static/chunks/014i8qp0m4e36.js"],"CodeEnhancer"]
-1e:I[22016,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/0ogjwre3ijllq.js","/_next/static/chunks/014i8qp0m4e36.js"],""]
-1f:I[5014,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/0ogjwre3ijllq.js","/_next/static/chunks/014i8qp0m4e36.js"],"default"]
-20:I[73785,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/0ogjwre3ijllq.js","/_next/static/chunks/014i8qp0m4e36.js"],"DocsAside"]
+1d:I[55260,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/0nyqmbvww96s3.js","/_next/static/chunks/014i8qp0m4e36.js"],"CodeEnhancer"]
+1e:I[22016,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/0nyqmbvww96s3.js","/_next/static/chunks/014i8qp0m4e36.js"],""]
+1f:I[5014,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/0nyqmbvww96s3.js","/_next/static/chunks/014i8qp0m4e36.js"],"default"]
+20:I[73785,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/0nyqmbvww96s3.js","/_next/static/chunks/014i8qp0m4e36.js"],"DocsAside"]
 1c:T1e92,<h2 id="overview">Overview</h2><p>ZelBounty lets players put money on each other's heads. Anyone can raise a bounty through a menu or a command, and the player who kills the target collects it. Amounts accept short forms like <code>100k</code>, <code>1.5m</code> and <code>250000</code>.</p><h3 id="requirements">Requirements</h3><ul><li>Paper or Folia 1.21.11 or newer</li><li>Vault and a Vault-compatible economy plugin</li><li>Optional: PlaceholderAPI, Floodgate, Geyser, ViaVersion</li></ul><h3 id="installation">Installation</h3><ol><li>Put <code>ZelBounty.jar</code> in your <code>plugins</code> folder.</li><li>Start the server once so the config files are created.</li><li>Set <code>license-key</code> in <code>plugins/ZelBounty/config.yml</code>. Get your key on <a href="https://discord.gg/pikzstudios" target="_blank" rel="noreferrer">discord.gg/pikzstudios</a>.</li><li>Restart the server.</li></ol><h2 id="commands">Commands</h2><div class="dx-table"><table><thead><tr><th>Command</th><th>Description</th><th>Permission</th></tr></thead><tbody><tr><td><code>/bounty</code></td><td>Open the bounty board (aliases <code>/bounties</code>, <code>/zbounty</code>, <code>/zelbounty</code>)</td><td><code>zelbounty.use</code></td></tr><tr><td><code>/bounty place [player] [amount]</code></td><td>Place or raise a bounty (aliases <code>add</code>, <code>set</code>)</td><td><code>zelbounty.place</code></td></tr><tr><td><code>/bounty check [player]</code></td><td>Look up a bounty (alias <code>info</code>)</td><td><code>zelbounty.use</code></td></tr><tr><td><code>/bounty toggle</code></td><td>Toggle bounty announcements for yourself (alias <code>announcements</code>)</td><td><code>zelbounty.toggle</code></td></tr><tr><td><code>/bountytoggle</code></td><td>Same as <code>/bounty toggle</code></td><td><code>zelbounty.toggle</code></td></tr><tr><td><code>/bounty help</code></td><td>Show the help message</td><td><code>zelbounty.use</code></td></tr></tbody></table></div><p>Without a player, <code>/bounty place</code> opens a player picker. With a player but no amount it opens an amount prompt.</p><h3 id="admin-commands">Admin commands</h3><div class="dx-table"><table><thead><tr><th>Command</th><th>Description</th></tr></thead><tbody><tr><td><code>/bounty admin add &lt;player&gt; &lt;amount&gt;</code></td><td>Add a free bounty</td></tr><tr><td><code>/bounty admin remove &lt;player&gt; &lt;amount&gt;</code></td><td>Remove part of a bounty</td></tr><tr><td><code>/bounty admin reset &lt;player&gt;</code></td><td>Clear a bounty</td></tr><tr><td><code>/bounty reload</code></td><td>Reload all config files</td></tr></tbody></table></div><p>The console can also run <code>add</code>, <code>remove</code> and <code>reset</code> directly.</p><h2 id="permissions">Permissions</h2><div class="dx-table"><table><thead><tr><th>Permission</th><th>Description</th><th>Default</th></tr></thead><tbody><tr><td><code>zelbounty.use</code></td><td>Open the board and look up bounties</td><td>everyone</td></tr><tr><td><code>zelbounty.place</code></td><td>Place and raise bounties</td><td>everyone</td></tr><tr><td><code>zelbounty.claim</code></td><td>Collect bounties on kill</td><td>everyone</td></tr><tr><td><code>zelbounty.toggle</code></td><td>Toggle announcements</td><td>everyone</td></tr><tr><td><code>zelbounty.bypass-cooldown</code></td><td>Skip the add cooldown</td><td>op</td></tr><tr><td><code>zelbounty.admin</code></td><td>Admin commands</td><td>op</td></tr></tbody></table></div><p>Node names can be changed under <code>permissions:</code> in <code>config.yml</code>.</p><h2 id="configuration">Configuration</h2><h3 id="config-yml">config.yml</h3><div class="dx-table"><table><thead><tr><th>Option</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>prefix</code></td><td><code>&amp;#FF0000&amp;lBOUNTY &amp;7▷ </code></td><td>Message prefix</td></tr><tr><td><code>bounty.minimum-addable</code></td><td><code>1000</code></td><td>Smallest amount a player can add</td></tr><tr><td><code>bounty.maximum-addable</code></td><td><code>0</code></td><td>Largest amount a player can add, <code>0</code> is unlimited</td></tr><tr><td><code>bounty.add-cooldown.enabled</code></td><td><code>true</code></td><td>Cooldown between additions</td></tr><tr><td><code>bounty.add-cooldown.duration-seconds</code></td><td><code>5</code></td><td>Length of the cooldown</td></tr><tr><td><code>allow-bounty-on-self</code></td><td><code>false</code></td><td>Allow players to bounty themselves</td></tr><tr><td><code>enable-money-decimals</code></td><td><code>false</code></td><td>Allow decimal amounts</td></tr><tr><td><code>confirm-place</code></td><td><code>true</code></td><td>Ask before placing</td></tr><tr><td><code>bounty-announce</code></td><td><code>true</code></td><td>Announce new bounties</td></tr><tr><td><code>bounty-claim-announce</code></td><td><code>true</code></td><td>Announce claimed bounties</td></tr><tr><td><code>announce.place-minimum</code></td><td><code>100000</code></td><td>Smallest bounty that is announced</td></tr><tr><td><code>announce.claim-minimum</code></td><td><code>100000</code></td><td>Smallest claim that is announced</td></tr><tr><td><code>blacklisted-worlds.enabled</code></td><td><code>false</code></td><td>Disable bounties in listed worlds</td></tr><tr><td><code>blacklisted-worlds.worlds</code></td><td><code>world_nether</code>, <code>world_the_end</code></td><td>Worlds where bounties do not work</td></tr><tr><td><code>dialogs.mode</code></td><td><code>DIALOG</code></td><td><code>DIALOG</code> for native dialogs, or chat prompts</td></tr><tr><td><code>dialogs.chat-timeout-seconds</code></td><td><code>60</code></td><td>Time to answer a chat prompt</td></tr><tr><td><code>dialogs.bedrock-prefix</code></td><td><code>.</code></td><td>Prefix of Bedrock player names</td></tr></tbody></table></div><h3 id="money-formatting">Money formatting</h3><p>The <code>formatting.money</code> section controls how amounts look. With compact mode on, large values show as <code>K</code>, <code>M</code>, <code>B</code> and <code>T</code>.</p><pre data-lang="yaml" data-label="yaml"><code>formatting:
   money:
     pattern: '#,##0.##'
@@ -525,4 +502,4 @@ Join [discord.gg/pikzstudios](https://discord.gg/pikzstudios) for help and licen
 13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 21:I[27201,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"IconMark"]
 10:null
-15:[["$","title","0",{"children":"ZelBounty — Docs"}],["$","meta","1",{"name":"description","content":"Setup guides, commands and configuration for every Pikz Studio product."}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L21","3",{}]]
+15:[["$","title","0",{"children":"ZelBounty | Pikz Wiki"}],["$","meta","1",{"name":"description","content":"Setup guides, commands and configuration for every Pikz Studio product."}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.2xxogrrx6sydd.ico","sizes":"64x64","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/icon.png?icon.0b1vd2vnxl7rv.png","sizes":"512x512","type":"image/png"}],["$","link","4",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.3fd8yipxq-9e3.png","sizes":"180x180","type":"image/png"}],["$","$L21","5",{}]]

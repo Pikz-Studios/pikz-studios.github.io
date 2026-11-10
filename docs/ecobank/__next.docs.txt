@@ -1,8 +1,8 @@
 1:"$Sreact.fragment"
-4:I[81365,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/0ogjwre3ijllq.js"],"DocsShell"]
+4:I[81365,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/0nyqmbvww96s3.js"],"DocsShell"]
 5:I[39756,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"default"]
 6:I[37457,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"default"]
-2:T6452,
+2:T5788,
 .dx-root{
   --dx-nav-w:270px;
   --dx-toc-w:230px;
@@ -28,12 +28,10 @@
   font-size:16px;
   -webkit-font-smoothing:antialiased;
 }
-/* Flat canvas. */
 body:has(.dx-root){background:var(--dx-bg) !important;background-image:none !important}
 html:has(.dx-root){background:#0a0a0b}
 .dx-root::before{content:"";position:fixed;inset:0;background:#0a0a0b;z-index:-1}
 
-/* ── Mobile top bar (hidden on desktop; the sidebar is the chrome) ────────── */
 .dx-topbar{display:none;position:fixed;top:0;left:0;right:0;z-index:50;height:var(--dx-topbar-h);
   align-items:center;gap:10px;padding:0 14px;
   background:color-mix(in srgb,var(--dx-bg) 88%,transparent);
@@ -44,17 +42,13 @@ html:has(.dx-root){background:#0a0a0b}
   cursor:pointer;flex:0 0 auto}
 .dx-menu-btn:hover{color:var(--dx-heading);border-color:var(--dx-border-strong)}
 
-/* ── Brand ──────────────────────────────────────────────────────────────── */
 .dx-brand{display:flex;align-items:center;gap:9px;min-width:0;
   color:var(--dx-heading);text-decoration:none;font-size:14.5px;font-weight:650;letter-spacing:-.015em;
   white-space:nowrap}
 .dx-brand:hover{color:#fff}
-.dx-brand-mark{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;
-  border-radius:7px;background:linear-gradient(135deg,var(--accent),#f97316);color:#fff;
-  font-size:11.5px;font-weight:800;flex:0 0 auto}
+.dx-brand-mark{display:block;width:24px;height:24px;border-radius:7px;object-fit:cover;flex:0 0 auto}
 .dx-brand-txt{overflow:hidden;text-overflow:ellipsis}
 
-/* ── Sidebar ────────────────────────────────────────────────────────────── */
 .dx-sidebar{position:fixed;top:0;left:0;bottom:0;width:var(--dx-nav-w);z-index:45;
   display:flex;flex-direction:column;background:var(--dx-bg-soft);
   border-right:1px solid var(--dx-border)}
@@ -88,7 +82,6 @@ html:has(.dx-root){background:#0a0a0b}
 .dx-nav-label{display:block;padding:5px 10px;color:var(--dx-heading);text-decoration:none;
   font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.07em}
 .dx-nav-label:hover{color:var(--dx-accent-high)}
-/* The guide-rail: items hang off a hairline, the active one lights it up. */
 .dx-nav-items{display:flex;flex-direction:column;gap:1px;margin-top:5px;padding-left:10px;
   border-left:1px solid var(--dx-border)}
 .dx-nav-link{position:relative;display:flex;align-items:center;justify-content:space-between;gap:8px;
@@ -114,7 +107,6 @@ html:has(.dx-root){background:#0a0a0b}
 .dx-foot-link{color:var(--dx-muted);text-decoration:none;font-size:13px;font-weight:550}
 .dx-foot-link:hover{color:var(--dx-heading)}
 
-/* ── Search ─────────────────────────────────────────────────────────────── */
 .dx-search{position:relative}
 .dx-search-ic{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--dx-faint);pointer-events:none}
 .dx-search-in{width:100%;height:38px;padding:0 58px 0 33px;border-radius:9px;border:1px solid var(--dx-border);
@@ -138,16 +130,13 @@ html:has(.dx-root){background:#0a0a0b}
 .dx-search-cat{flex:0 0 auto;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--dx-faint)}
 .dx-search-none{padding:14px 12px;font-size:13px;color:var(--dx-faint);text-align:center}
 
-/* ── Shell ──────────────────────────────────────────────────────────────── */
 .dx-panes{margin-left:var(--dx-nav-w);min-width:0}
 .dx-panes.splash{margin-left:var(--dx-nav-w)}
 
-/* Doc page: article + right rail */
 .dx-doc{display:grid;grid-template-columns:minmax(0,1fr) var(--dx-toc-w);gap:48px;
   max-width:1120px;margin:0 auto;padding:56px 48px 96px}
 .dx-main{min-width:0}
 
-/* ── Article head ───────────────────────────────────────────────────────── */
 .dx-eyebrow{font-size:12px;font-weight:600;color:var(--accent);margin:0 0 10px;letter-spacing:.01em}
 .dx-doc-head{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:0 0 8px}
 .dx-doc-head h1{margin:0;font-size:34px;font-weight:700;line-height:1.2;letter-spacing:-.03em;color:var(--dx-heading)}
@@ -156,7 +145,6 @@ html:has(.dx-root){background:#0a0a0b}
   padding:3px 9px;border-radius:999px}
 .dx-tagline{margin:0;font-size:15.5px;color:var(--dx-muted);line-height:1.65}
 
-/* Action row under the title */
 .dx-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:20px 0 6px;
   padding-bottom:22px;border-bottom:1px solid var(--dx-border)}
 .dx-action{display:inline-flex;align-items:center;gap:6px;height:30px;padding:0 11px;border-radius:8px;
@@ -167,7 +155,6 @@ html:has(.dx-root){background:#0a0a0b}
 .dx-action svg{color:var(--dx-faint)}
 .dx-action:hover svg{color:var(--dx-text)}
 
-/* ── Prose ──────────────────────────────────────────────────────────────── */
 .dx-prose{font-size:15px;line-height:1.75;color:var(--dx-text)}
 .dx-prose>*:first-child{margin-top:0}
 .dx-prose h2{font-size:22px;font-weight:650;margin:46px 0 14px;padding-top:8px;color:var(--dx-heading);
@@ -194,8 +181,6 @@ html:has(.dx-root){background:#0a0a0b}
 .dx-prose hr{border:none;border-top:1px solid var(--dx-border);margin:36px 0}
 .dx-prose img{max-width:100%;border-radius:12px;border:1px solid var(--dx-border)}
 
-/* ── Code block ─────────────────────────────────────────────────────────── */
-/* Base frame, so a block still looks right before the client enhancer wraps it. */
 .dx-prose pre{margin:20px 0;padding:16px 18px;overflow:auto;
   border:1px solid var(--dx-border);border-radius:12px;background:#0d0d10}
 .dx-prose pre code{display:block;background:none;border:none;border-radius:0;padding:0;color:#c3c7d2;
@@ -219,14 +204,12 @@ html:has(.dx-root){background:#0a0a0b}
   border-radius:7px;border:1px solid transparent;background:none;color:var(--dx-faint);cursor:pointer;
   transition:color .15s,border-color .15s,background .15s}
 .dx-code-bar .dx-copy:hover{color:var(--dx-heading);border-color:var(--dx-border);background:var(--dx-panel-2)}
-/* Bar-less block: the copy button floats over the code on hover. */
 .dx-code>.dx-copy{position:absolute;top:9px;right:9px;z-index:2;opacity:0;
   border-color:var(--dx-border);background:var(--dx-panel)}
 .dx-code:hover>.dx-copy,.dx-code>.dx-copy:focus-visible{opacity:1}
 .dx-code>.dx-copy:hover{color:var(--dx-heading);border-color:var(--dx-border-strong)}
 .dx-copy.done{color:#8ee7a1;opacity:1}
 
-/* ── Callouts (from > blockquotes) ──────────────────────────────────────── */
 .dx-callout{display:flex;gap:11px;align-items:flex-start;margin:22px 0;padding:13px 15px;
   border-radius:10px;border:1px solid var(--dx-border);background:var(--dx-bg-soft);
   font-size:14px;line-height:1.65}
@@ -235,7 +218,6 @@ html:has(.dx-root){background:#0a0a0b}
 .dx-callout--info{border-color:rgba(239,68,68,.3);background:rgba(239,68,68,.07)}
 .dx-callout--warn{border-color:rgba(240,68,68,.3);background:rgba(240,68,68,.07)}
 
-/* ── Pager ──────────────────────────────────────────────────────────────── */
 .dx-pager{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:60px;padding-top:0}
 .dx-pager-btn{display:inline-flex;align-items:center;gap:12px;padding:14px 16px;border-radius:11px;
   border:1px solid var(--dx-border);background:var(--dx-bg-soft);text-decoration:none;color:var(--dx-heading);
@@ -247,13 +229,11 @@ html:has(.dx-root){background:#0a0a0b}
 .dx-pager-btn small{font-size:11px;font-weight:600;letter-spacing:.02em;color:var(--dx-faint);margin-bottom:3px}
 .dx-pager-btn svg{color:var(--dx-faint);flex:0 0 auto}
 
-/* ── Right rail ─────────────────────────────────────────────────────────── */
 .dx-aside{position:sticky;top:56px;align-self:start;max-height:calc(100vh - 96px);overflow-y:auto}
 .dx-aside-h{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:650;
   color:var(--dx-heading);margin:0 0 12px;padding-left:13px}
 .dx-aside-h:not(:first-child){margin-top:26px}
 .dx-aside-h svg{color:var(--dx-faint)}
-/* Indicator line: the whole TOC hangs off a rail, the active item lights its segment. */
 .dx-aside-toc{display:flex;flex-direction:column;border-left:1px solid var(--dx-border)}
 .dx-toc-link{position:relative;display:block;padding:5px 10px 5px 13px;color:var(--dx-muted);
   text-decoration:none;font-size:12.8px;line-height:1.5}
@@ -267,7 +247,6 @@ html:has(.dx-root){background:#0a0a0b}
 .dx-aside-link{padding:5px 0;color:var(--dx-muted);text-decoration:none;font-size:12.8px}
 .dx-aside-link:hover{color:var(--dx-heading)}
 
-/* ── Splash / landing ───────────────────────────────────────────────────── */
 .dx-splash{max-width:880px;margin:0 auto;padding:0 48px 110px}
 .dx-hero{padding:72px 0 8px;border-bottom:1px solid var(--dx-border);margin-bottom:52px}
 .dx-hero h1{font-size:44px;line-height:1.12;font-weight:700;letter-spacing:-.035em;color:var(--dx-heading);
@@ -305,7 +284,6 @@ html:has(.dx-root){background:#0a0a0b}
   font-style:normal;font-size:13px;color:var(--dx-faint)}
 .dx-quick a:hover{color:var(--dx-heading);background:var(--dx-panel)}
 
-/* ── Category page ──────────────────────────────────────────────────────── */
 .dx-cat{max-width:1120px;margin:0 auto;padding:56px 48px 96px}
 .dx-back{display:inline-flex;align-items:center;gap:6px;color:var(--dx-muted);text-decoration:none;
   font-size:13px;font-weight:550}
@@ -317,7 +295,6 @@ html:has(.dx-root){background:#0a0a0b}
 .dx-cat .dx-cards{grid-template-columns:repeat(auto-fill,minmax(270px,1fr))}
 .dx-empty{color:var(--dx-faint);padding:44px 0;font-size:15px}
 
-/* ── Responsive ─────────────────────────────────────────────────────────── */
 @media(max-width:1180px){
   .dx-doc{grid-template-columns:minmax(0,1fr);gap:0}
   .dx-aside{display:none}
@@ -369,5 +346,5 @@ html:has(.dx-root){background:#0a0a0b}
 .dx-ask-form button{display:inline-flex;align-items:center;justify-content:center;width:38px;border:0;border-radius:9px;background:var(--accent);color:#fff;cursor:pointer}
 .dx-ask-form button:disabled{opacity:.45;cursor:default}
 .dx-ask-left{padding:0 14px 10px;margin:0;font-size:12px}
-0:{"rsc":["$","$1","c",{"children":[[["$","script","script-0",{"src":"/_next/static/chunks/0ogjwre3ijllq.js","async":true}]],[["$","style",null,{"children":"$2"}],"$L3"]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"F-hTDtA9tzkvvF_PGX3h5"}
+0:{"rsc":["$","$1","c",{"children":[[["$","script","script-0",{"src":"/_next/static/chunks/0nyqmbvww96s3.js","async":true}]],[["$","style",null,{"children":"$2"}],"$L3"]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"73MHOH9N4KFT0hoB8SmMD"}
 3:["$","$L4",null,{"nav":[{"slug":"economysmp","title":"EconomySMP","bucket":"setups","version":null,"image":null},{"slug":"zelauction","title":"ZelAuction","bucket":"plugins","version":"2.0.3","image":null},{"slug":"zelbounty","title":"ZelBounty","bucket":"plugins","version":"3.0.2","image":null},{"slug":"shards","title":"Shards","bucket":"plugins","version":"2.3.9","image":null},{"slug":"easysell","title":"EasySell","bucket":"plugins","version":null,"image":null},{"slug":"ecobank","title":"EcoBank","bucket":"plugins","version":null,"image":null},{"slug":"adminpanel","title":"AdminPanel","bucket":"plugins","version":"1.0.4","image":null},{"slug":"essentials-staff-moderation","title":"Essentials Staff & Moderation","bucket":"plugins","version":"1.0.0","image":null},{"slug":"boosters","title":"Boosters","bucket":"plugins","version":"1.0.0","image":null},{"slug":"economycore","title":"EconomyCore","bucket":"plugins","version":"1.0.0","image":null},{"slug":"gens","title":"Gens","bucket":"plugins","version":null,"image":null},{"slug":"donuthomes","title":"DonutHomes","bucket":"plugins","version":null,"image":null},{"slug":"donutcore","title":"DonutCore","bucket":"plugins","version":null,"image":null},{"slug":"suspicious","title":"Suspicious","bucket":"plugins","version":"1.2","image":null},{"slug":"halloweencosmetics","title":"HalloweenCosmetics","bucket":"plugins","version":null,"image":null},{"slug":"neospawner","title":"NeoSpawner","bucket":"plugins","version":null,"image":null}],"children":["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]}]
