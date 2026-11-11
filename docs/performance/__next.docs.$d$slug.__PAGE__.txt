@@ -1,0 +1,89 @@
+1:"$Sreact.fragment"
+2:I[84103,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/0nyqmbvww96s3.js","/_next/static/chunks/2h1wlseph1rpa.js"],"DocsActions"]
+b:I[55260,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/0nyqmbvww96s3.js","/_next/static/chunks/2h1wlseph1rpa.js"],"CodeEnhancer"]
+c:I[22016,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/0nyqmbvww96s3.js","/_next/static/chunks/2h1wlseph1rpa.js"],""]
+d:I[5014,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/0nyqmbvww96s3.js","/_next/static/chunks/2h1wlseph1rpa.js"],"default"]
+e:I[73785,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/0nyqmbvww96s3.js","/_next/static/chunks/2h1wlseph1rpa.js"],"DocsAside"]
+f:I[97367,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+3:Te4e,## Overview
+
+Performance keeps a busy SMP running smoothly. It limits entities per player, chunk and world, trims overcrowded farms, stacks and cleans up dropped items, slows down mob AI far from players and steps in with an anti-lag system when TPS drops. Every feature is a module you switch on or off in `config.yml`.
+
+### Requirements
+
+* Paper or Folia 1.21 or newer
+
+### Installation
+
+1. Put `DonutPerformance.jar` in your `plugins` folder.
+2. Start the server once so the config files are created.
+3. Set `license-key` in `plugins/DonutPerformance/config.yml`. Get your key on [discord.gg/pikzstudios](https://discord.gg/pikzstudios).
+4. Restart the server.
+
+## Commands
+
+| Command | Description | Permission |
+| --- | --- | --- |
+| `/donutperf` | TPS, MSPT, chunk scanner and every active feature (aliases `/dperf`, `/dperformance`) | `donutperf.use` |
+| `/donutperf reload` | Reload the config | `donutperf.reload` |
+| `/entityclear gui` | Menu that counts every entity type and clears a category with a click (aliases `/eclear`, `/dpclear`) | `donutperf.clear` |
+| `/entityclear <all\|category>` | Clear entities from the command line | `donutperf.clear` |
+| `/farm [top\|inspect\|stats\|reload]` | Farm detection and inspection | `donutperf.farm` |
+| `/player [stats\|afk\|rankings\|recommendations] <player>` | Player performance and AFK analytics | `donutperf.player` |
+| `/antilag [status\|reload]` | Anti-lag status | `donutperf.antilag` |
+
+## Permissions
+
+| Permission | Description | Default |
+| --- | --- | --- |
+| `donutperf.use` | Use `/donutperf` | op |
+| `donutperf.reload` | Reload the config | op |
+| `donutperf.notify` | Receive overcrowding and performance alerts | op |
+| `donutperf.clear` | Use `/entityclear` | op |
+| `donutperf.farm` | Use `/farm` | op |
+| `donutperf.player` | Use `/player` | op |
+| `donutperf.antilag` | Use `/antilag` | op |
+
+## Features
+
+* **Overcrowding protection:** pens with too many animals are trimmed, with an alert for staff.
+* **Entity limits:** per player, per chunk and per world caps, breeding limits and villager limits.
+* **Mob AI throttling and activation range:** mobs far from players use less server time.
+* **Item optimizer:** item stacking, faster despawn, density limits and rare item protection.
+* **Anti-lag in 8 stages:** when TPS drops it steps in stage by stage, from entity caps to view distance.
+* **Entity clear menu and scheduled auto clear.**
+* **AFK optimization:** AFK players cost less, with alerts and analytics.
+
+## Configuration
+
+`config.yml` turns each module on or off:
+
+| Section | Modules |
+| --- | --- |
+| `entitylimiter` | `playerlimit`, `chunklimit`, `worldlimit`, `dynamiccaps`, `breeding`, `mobai`, `activationrange`, `freezing`, `villageropt`, `overcrowding`, `clear`, `autoclear` |
+| `itemoptimizer` | `stacking`, `despawn`, `rareprotection`, `density`, `cleanup`, `emergency`, `analytics` |
+| `farmoptimizer` | `scanner`, `controller`, `cropthrottle`, `villagerlimit` |
+| `antilag` | `controller` |
+| `playeroptimizer` | `afk`, `afkopt`, `alerts` |
+
+| Option | Default | Description |
+| --- | --- | --- |
+| `license-key` | | Your license key |
+| `observe-mode` | `false` | Measure and report only, without acting |
+| `scanner.interval-ticks` | `60` | Ticks between chunk scans |
+| `scanner.chunks-per-tick` | `150` | Chunks scanned per tick |
+| `scanner.folia-radius-chunks` | `4` | Scan radius around players on Folia |
+
+Each module has its own file under `features/<section>/<module>/config.yml` with its limits and thresholds. Messages are in `messages.yml`.
+
+## Support
+
+Join [discord.gg/pikzstudios](https://discord.gg/pikzstudios) for help and license keys.0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"dx-doc","style":{"--accent":"#ef4444"},"children":[["$","main",null,{"className":"dx-main","children":[["$","p",null,{"className":"dx-eyebrow","children":"Plugins"}],["$","header",null,{"className":"dx-doc-head","children":[["$","h1",null,{"children":"Performance"}],null]}],["$","p",null,{"className":"dx-tagline","children":"Anti-lag toolkit with entity limits, item cleanup, farm limits and a staged lag response."}],["$","$L2",null,{"markdown":"$3","designSlug":"performance"}],"$L4","$L5","$L6"]}],"$L7"]}],["$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"-8G329IcD94S8LB0h_zSf"}
+a:T16f4,<h2 id="overview">Overview</h2><p>Performance keeps a busy SMP running smoothly. It limits entities per player, chunk and world, trims overcrowded farms, stacks and cleans up dropped items, slows down mob AI far from players and steps in with an anti-lag system when TPS drops. Every feature is a module you switch on or off in <code>config.yml</code>.</p><h3 id="requirements">Requirements</h3><ul><li>Paper or Folia 1.21 or newer</li></ul><h3 id="installation">Installation</h3><ol><li>Put <code>DonutPerformance.jar</code> in your <code>plugins</code> folder.</li><li>Start the server once so the config files are created.</li><li>Set <code>license-key</code> in <code>plugins/DonutPerformance/config.yml</code>. Get your key on <a href="https://discord.gg/pikzstudios" target="_blank" rel="noreferrer">discord.gg/pikzstudios</a>.</li><li>Restart the server.</li></ol><h2 id="commands">Commands</h2><div class="dx-table"><table><thead><tr><th>Command</th><th>Description</th><th>Permission</th></tr></thead><tbody><tr><td><code>/donutperf</code></td><td>TPS, MSPT, chunk scanner and every active feature (aliases <code>/dperf</code>, <code>/dperformance</code>)</td><td><code>donutperf.use</code></td></tr><tr><td><code>/donutperf reload</code></td><td>Reload the config</td><td><code>donutperf.reload</code></td></tr><tr><td><code>/entityclear gui</code></td><td>Menu that counts every entity type and clears a category with a click (aliases <code>/eclear</code>, <code>/dpclear</code>)</td><td><code>donutperf.clear</code></td></tr><tr><td><code>/entityclear &lt;all|category&gt;</code></td><td>Clear entities from the command line</td><td><code>donutperf.clear</code></td></tr><tr><td><code>/farm [top|inspect|stats|reload]</code></td><td>Farm detection and inspection</td><td><code>donutperf.farm</code></td></tr><tr><td><code>/player [stats|afk|rankings|recommendations] &lt;player&gt;</code></td><td>Player performance and AFK analytics</td><td><code>donutperf.player</code></td></tr><tr><td><code>/antilag [status|reload]</code></td><td>Anti-lag status</td><td><code>donutperf.antilag</code></td></tr></tbody></table></div><h2 id="permissions">Permissions</h2><div class="dx-table"><table><thead><tr><th>Permission</th><th>Description</th><th>Default</th></tr></thead><tbody><tr><td><code>donutperf.use</code></td><td>Use <code>/donutperf</code></td><td>op</td></tr><tr><td><code>donutperf.reload</code></td><td>Reload the config</td><td>op</td></tr><tr><td><code>donutperf.notify</code></td><td>Receive overcrowding and performance alerts</td><td>op</td></tr><tr><td><code>donutperf.clear</code></td><td>Use <code>/entityclear</code></td><td>op</td></tr><tr><td><code>donutperf.farm</code></td><td>Use <code>/farm</code></td><td>op</td></tr><tr><td><code>donutperf.player</code></td><td>Use <code>/player</code></td><td>op</td></tr><tr><td><code>donutperf.antilag</code></td><td>Use <code>/antilag</code></td><td>op</td></tr></tbody></table></div><h2 id="features">Features</h2><ul><li><strong>Overcrowding protection:</strong> pens with too many animals are trimmed, with an alert for staff.</li><li><strong>Entity limits:</strong> per player, per chunk and per world caps, breeding limits and villager limits.</li><li><strong>Mob AI throttling and activation range:</strong> mobs far from players use less server time.</li><li><strong>Item optimizer:</strong> item stacking, faster despawn, density limits and rare item protection.</li><li><strong>Anti-lag in 8 stages:</strong> when TPS drops it steps in stage by stage, from entity caps to view distance.</li><li><strong>Entity clear menu and scheduled auto clear.</strong></li><li><strong>AFK optimization:</strong> AFK players cost less, with alerts and analytics.</li></ul><h2 id="configuration">Configuration</h2><p><code>config.yml</code> turns each module on or off:</p><div class="dx-table"><table><thead><tr><th>Section</th><th>Modules</th></tr></thead><tbody><tr><td><code>entitylimiter</code></td><td><code>playerlimit</code>, <code>chunklimit</code>, <code>worldlimit</code>, <code>dynamiccaps</code>, <code>breeding</code>, <code>mobai</code>, <code>activationrange</code>, <code>freezing</code>, <code>villageropt</code>, <code>overcrowding</code>, <code>clear</code>, <code>autoclear</code></td></tr><tr><td><code>itemoptimizer</code></td><td><code>stacking</code>, <code>despawn</code>, <code>rareprotection</code>, <code>density</code>, <code>cleanup</code>, <code>emergency</code>, <code>analytics</code></td></tr><tr><td><code>farmoptimizer</code></td><td><code>scanner</code>, <code>controller</code>, <code>cropthrottle</code>, <code>villagerlimit</code></td></tr><tr><td><code>antilag</code></td><td><code>controller</code></td></tr><tr><td><code>playeroptimizer</code></td><td><code>afk</code>, <code>afkopt</code>, <code>alerts</code></td></tr></tbody></table></div><div class="dx-table"><table><thead><tr><th>Option</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>license-key</code></td><td></td><td>Your license key</td></tr><tr><td><code>observe-mode</code></td><td><code>false</code></td><td>Measure and report only, without acting</td></tr><tr><td><code>scanner.interval-ticks</code></td><td><code>60</code></td><td>Ticks between chunk scans</td></tr><tr><td><code>scanner.chunks-per-tick</code></td><td><code>150</code></td><td>Chunks scanned per tick</td></tr><tr><td><code>scanner.folia-radius-chunks</code></td><td><code>4</code></td><td>Scan radius around players on Folia</td></tr></tbody></table></div><p>Each module has its own file under <code>features/&lt;section&gt;/&lt;module&gt;/config.yml</code> with its limits and thresholds. Messages are in <code>messages.yml</code>.</p><h2 id="support">Support</h2><p>Join <a href="https://discord.gg/pikzstudios" target="_blank" rel="noreferrer">discord.gg/pikzstudios</a> for help and license keys.</p>4:["$","article",null,{"className":"dx-prose","dangerouslySetInnerHTML":{"__html":"$a"}}]
+5:["$","$Lb",null,{}]
+6:["$","nav",null,{"className":"dx-pager","children":[["$","$Lc",null,{"href":"/docs/leaderboards","className":"dx-pager-btn prev","children":[["$","$Ld",null,{"icon":{"name":"arrow-left","size":24,"node":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]]},"size":16}],["$","span",null,{"children":[["$","small",null,{"children":"Prev"}],"Leaderboards"]}]]}],["$","span",null,{}]]}]
+7:["$","$Le",null,{"items":[{"level":2,"text":"Overview","id":"overview"},{"level":3,"text":"Requirements","id":"requirements"},{"level":3,"text":"Installation","id":"installation"},{"level":2,"text":"Commands","id":"commands"},{"level":2,"text":"Permissions","id":"permissions"},{"level":2,"text":"Features","id":"features"},{"level":2,"text":"Configuration","id":"configuration"},{"level":2,"text":"Support","id":"support"}]}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/2h1wlseph1rpa.js","async":true}]
+9:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+11:null

@@ -1,0 +1,75 @@
+1:"$Sreact.fragment"
+2:I[84103,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/0nyqmbvww96s3.js","/_next/static/chunks/2h1wlseph1rpa.js"],"DocsActions"]
+b:I[55260,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/0nyqmbvww96s3.js","/_next/static/chunks/2h1wlseph1rpa.js"],"CodeEnhancer"]
+c:I[22016,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/0nyqmbvww96s3.js","/_next/static/chunks/2h1wlseph1rpa.js"],""]
+d:I[5014,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/0nyqmbvww96s3.js","/_next/static/chunks/2h1wlseph1rpa.js"],"default"]
+e:I[73785,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js","/_next/static/chunks/0nyqmbvww96s3.js","/_next/static/chunks/2h1wlseph1rpa.js"],"DocsAside"]
+f:I[97367,["/_next/static/chunks/05-c3ty_6dwfk.js","/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+3:Tb7a,## Overview
+
+ModernAuction is an auction house for your server. Players list the item in their hand with `/ah sell <price>`, check it on a confirm screen, and everyone can buy it from `/ah`. Listings can be filtered by category, sorted and searched through a dialog. The plugin also includes a shard shop that admins stock in game.
+
+### Requirements
+
+* Paper or Folia 1.21 or newer
+* Optional: PlaceholderAPI
+
+### Installation
+
+1. Put `DonutAuction.jar` in your `plugins` folder.
+2. Start the server once so the config files are created.
+3. Set `license` in `plugins/DonutAuction/config.yml`. Get your key on [discord.gg/pikzstudios](https://discord.gg/pikzstudios).
+4. Restart the server.
+
+## Commands
+
+| Command | Description | Permission |
+| --- | --- | --- |
+| `/ah` | Open the auction house (aliases `/auction`, `/auctionhouse`) | `donutauction.use` |
+| `/ah sell <price>` | List the item in your hand for that price | `donutauction.use` |
+| `/shards give <player> <amount>` | Give shards to a player | `donutauction.admin` |
+| `/shards admin` | Open the shard shop editor | `donutauction.admin` |
+| `/donutauction reload` | Reload every config file (alias `/da`) | `donutauction.reload` |
+
+## Permissions
+
+| Permission | Description | Default |
+| --- | --- | --- |
+| `donutauction.use` | Open the auction house and sell items | everyone |
+| `donutauction.admin` | Shard admin commands and menus | op |
+| `donutauction.reload` | Reload the configuration | op |
+
+## Features
+
+* **Auction house:** every listing shows the item, price, seller and time left.
+* **Filters and sorting:** switch categories from the filter button and sort by lowest price, highest price or recently listed.
+* **Search dialog:** type an item name into a dialog instead of a sign, and buy from the results with one click.
+* **Confirm before listing:** `/ah sell` shows the item and price before it goes live.
+* **Your Items:** see everything you have on sale and take it back at any time.
+* **Shard shop:** admins add items while holding them, players buy them with shards.
+
+## Configuration
+
+| Option | Default | Description |
+| --- | --- | --- |
+| `license` | | Your license key |
+| `database.type` | `SQLITE` | `SQLITE` or `MYSQL` |
+| `database.host` | `127.0.0.1` | MySQL host |
+| `database.port` | `3306` | MySQL port |
+| `database.database` | `donutauction` | MySQL database name |
+| `database.tablePrefix` | `donutauction_` | Prefix for every table |
+| `database.maximumPoolSize` | `10` | Connection pool size |
+
+Every menu has its own file: `auction-gui.yml`, `my-items-gui.yml`, `insert-item-gui.yml`, `confirm-listing-gui.yml`, `search-dialog.yml`, `sign-gui.yml`, `shard-shop-gui.yml`, `shard-confirm-gui.yml`, `shard-admin-gui.yml` and `ranks-gui.yml`. Messages are in `messages.yml` and sounds in `sounds.yml`, all with `&` and hex color codes.
+
+## Support
+
+Join [discord.gg/pikzstudios](https://discord.gg/pikzstudios) for help and license keys.0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"dx-doc","style":{"--accent":"#ef4444"},"children":[["$","main",null,{"className":"dx-main","children":[["$","p",null,{"className":"dx-eyebrow","children":"Plugins"}],["$","header",null,{"className":"dx-doc-head","children":[["$","h1",null,{"children":"ModernAuction"}],null]}],["$","p",null,{"className":"dx-tagline","children":"A modern auction house with filters, a search dialog and a shard shop."}],["$","$L2",null,{"markdown":"$3","designSlug":"modernauction"}],"$L4","$L5","$L6"]}],"$L7"]}],["$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"-8G329IcD94S8LB0h_zSf"}
+a:T11d6,<h2 id="overview">Overview</h2><p>ModernAuction is an auction house for your server. Players list the item in their hand with <code>/ah sell &lt;price&gt;</code>, check it on a confirm screen, and everyone can buy it from <code>/ah</code>. Listings can be filtered by category, sorted and searched through a dialog. The plugin also includes a shard shop that admins stock in game.</p><h3 id="requirements">Requirements</h3><ul><li>Paper or Folia 1.21 or newer</li><li>Optional: PlaceholderAPI</li></ul><h3 id="installation">Installation</h3><ol><li>Put <code>DonutAuction.jar</code> in your <code>plugins</code> folder.</li><li>Start the server once so the config files are created.</li><li>Set <code>license</code> in <code>plugins/DonutAuction/config.yml</code>. Get your key on <a href="https://discord.gg/pikzstudios" target="_blank" rel="noreferrer">discord.gg/pikzstudios</a>.</li><li>Restart the server.</li></ol><h2 id="commands">Commands</h2><div class="dx-table"><table><thead><tr><th>Command</th><th>Description</th><th>Permission</th></tr></thead><tbody><tr><td><code>/ah</code></td><td>Open the auction house (aliases <code>/auction</code>, <code>/auctionhouse</code>)</td><td><code>donutauction.use</code></td></tr><tr><td><code>/ah sell &lt;price&gt;</code></td><td>List the item in your hand for that price</td><td><code>donutauction.use</code></td></tr><tr><td><code>/shards give &lt;player&gt; &lt;amount&gt;</code></td><td>Give shards to a player</td><td><code>donutauction.admin</code></td></tr><tr><td><code>/shards admin</code></td><td>Open the shard shop editor</td><td><code>donutauction.admin</code></td></tr><tr><td><code>/donutauction reload</code></td><td>Reload every config file (alias <code>/da</code>)</td><td><code>donutauction.reload</code></td></tr></tbody></table></div><h2 id="permissions">Permissions</h2><div class="dx-table"><table><thead><tr><th>Permission</th><th>Description</th><th>Default</th></tr></thead><tbody><tr><td><code>donutauction.use</code></td><td>Open the auction house and sell items</td><td>everyone</td></tr><tr><td><code>donutauction.admin</code></td><td>Shard admin commands and menus</td><td>op</td></tr><tr><td><code>donutauction.reload</code></td><td>Reload the configuration</td><td>op</td></tr></tbody></table></div><h2 id="features">Features</h2><ul><li><strong>Auction house:</strong> every listing shows the item, price, seller and time left.</li><li><strong>Filters and sorting:</strong> switch categories from the filter button and sort by lowest price, highest price or recently listed.</li><li><strong>Search dialog:</strong> type an item name into a dialog instead of a sign, and buy from the results with one click.</li><li><strong>Confirm before listing:</strong> <code>/ah sell</code> shows the item and price before it goes live.</li><li><strong>Your Items:</strong> see everything you have on sale and take it back at any time.</li><li><strong>Shard shop:</strong> admins add items while holding them, players buy them with shards.</li></ul><h2 id="configuration">Configuration</h2><div class="dx-table"><table><thead><tr><th>Option</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>license</code></td><td></td><td>Your license key</td></tr><tr><td><code>database.type</code></td><td><code>SQLITE</code></td><td><code>SQLITE</code> or <code>MYSQL</code></td></tr><tr><td><code>database.host</code></td><td><code>127.0.0.1</code></td><td>MySQL host</td></tr><tr><td><code>database.port</code></td><td><code>3306</code></td><td>MySQL port</td></tr><tr><td><code>database.database</code></td><td><code>donutauction</code></td><td>MySQL database name</td></tr><tr><td><code>database.tablePrefix</code></td><td><code>donutauction_</code></td><td>Prefix for every table</td></tr><tr><td><code>database.maximumPoolSize</code></td><td><code>10</code></td><td>Connection pool size</td></tr></tbody></table></div><p>Every menu has its own file: <code>auction-gui.yml</code>, <code>my-items-gui.yml</code>, <code>insert-item-gui.yml</code>, <code>confirm-listing-gui.yml</code>, <code>search-dialog.yml</code>, <code>sign-gui.yml</code>, <code>shard-shop-gui.yml</code>, <code>shard-confirm-gui.yml</code>, <code>shard-admin-gui.yml</code> and <code>ranks-gui.yml</code>. Messages are in <code>messages.yml</code> and sounds in <code>sounds.yml</code>, all with <code>&amp;</code> and hex color codes.</p><h2 id="support">Support</h2><p>Join <a href="https://discord.gg/pikzstudios" target="_blank" rel="noreferrer">discord.gg/pikzstudios</a> for help and license keys.</p>4:["$","article",null,{"className":"dx-prose","dangerouslySetInnerHTML":{"__html":"$a"}}]
+5:["$","$Lb",null,{}]
+6:["$","nav",null,{"className":"dx-pager","children":[["$","$Lc",null,{"href":"/docs/neospawner","className":"dx-pager-btn prev","children":[["$","$Ld",null,{"icon":{"name":"arrow-left","size":24,"node":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]]},"size":16}],["$","span",null,{"children":[["$","small",null,{"children":"Prev"}],"NeoSpawner"]}]]}],["$","$Lc",null,{"href":"/docs/friends","className":"dx-pager-btn next","children":[["$","span",null,{"children":[["$","small",null,{"children":"Next"}],"Friends"]}],["$","$Ld",null,{"icon":{"name":"arrow-right","size":24,"node":[["path",{"d":"M5 12h14","key":"1ays0h"}],["path",{"d":"m12 5 7 7-7 7","key":"xquz4c"}]]},"size":16}]]}]]}]
+7:["$","$Le",null,{"items":[{"level":2,"text":"Overview","id":"overview"},{"level":3,"text":"Requirements","id":"requirements"},{"level":3,"text":"Installation","id":"installation"},{"level":2,"text":"Commands","id":"commands"},{"level":2,"text":"Permissions","id":"permissions"},{"level":2,"text":"Features","id":"features"},{"level":2,"text":"Configuration","id":"configuration"},{"level":2,"text":"Support","id":"support"}]}]
+8:["$","script","script-0",{"src":"/_next/static/chunks/2h1wlseph1rpa.js","async":true}]
+9:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+11:null
